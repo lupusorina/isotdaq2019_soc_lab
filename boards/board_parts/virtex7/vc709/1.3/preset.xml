@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ip_presets schema="1.0">
+	<ip_preset preset_proc_name="emc_preset">
+		<ip vendor="xilinx.com" library="ip" name="axi_emc" version="3.0">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_MAX_MEM_WIDTH" value="16"/> 
+				<user_parameter name="CONFIG.C_TAVDV_PS_MEM_0" value="130000"/> 
+				<user_parameter name="CONFIG.C_TCEDV_PS_MEM_0" value="130000"/> 
+				<user_parameter name="CONFIG.C_THZCE_PS_MEM_0" value="35000"/> 
+				<user_parameter name="CONFIG.C_TLZWE_PS_MEM_0" value="50000"/> 
+				<user_parameter name="CONFIG.C_TWC_PS_MEM_0" value="13000"/> 
+				<user_parameter name="CONFIG.C_TWP_PS_MEM_0" value="80000"/> 
+				<user_parameter name="CONFIG.C_WR_REC_TIME_MEM_0" value="100000"/> 
+			</user_parameters>
+		</ip>
+	</ip_preset>
+</ip_presets>

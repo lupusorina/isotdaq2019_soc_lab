@@ -1,0 +1,9 @@
+15:19:34 INFO  : Registering command handlers for SDK TCF services
+15:19:39 ERROR : Unsatisfied link error while loading librdi_repo_manager.so: java.lang.UnsatisfiedLinkError: no rdi_repo_manager in java.library.path
+15:19:39 INFO  : Launching XSCT server: xsct -n -interactive /opt/Xilinx/Vivado/CERN_projects/HelloWorld/temp_xsdb_launch_script.tcl
+15:19:42 ERROR : (XSDB Server)couldn't read file "/scripts/xsdb/xsdb/xsdb-server.tcl": no such file or directory
+    while executing
+"source /scripts/xsdb/xsdb/xsdb-server.tcl"
+    (file "/opt/Xilinx/Vivado/CERN_projects/HelloWorld/temp_xsdb_launch_script.tcl" line 1)
+15:19:42 ERROR : (XSDB Server)
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="LED_Buzzer_Control_wrapper_hw_platform_0-offSet"/>
+	<item value="LED_Buzzer_Control_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="Auto Detect" key="LED_Buzzer_Control_wrapper_hw_platform_0-device"/>
+	<item value="qspi_single" key="LED_Buzzer_Control_wrapper_hw_platform_0-flashType"/>
+	<item value="false" key="LED_Buzzer_Control_wrapper_hw_platform_0-blankCheck"/>
+	<item value="" key="LED_Buzzer_Control_wrapper_hw_platform_0-imgFile"/>
+	<item value="false" key="LED_Buzzer_Control_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="" key="LED_Buzzer_Control_wrapper_hw_platform_0-fsblFile"/>
+	<item value="Local" key="LED_Buzzer_Control_wrapper_hw_platform_0-target"/>
+</section>

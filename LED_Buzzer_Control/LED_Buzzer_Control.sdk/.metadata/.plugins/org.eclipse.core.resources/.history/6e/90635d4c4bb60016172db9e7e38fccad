@@ -1,0 +1,70 @@
+#include "xparameters.h"
+#include "xil_io.h"
+#include "stdlib.h"
+#include "itoa_fcn.h"
+//#define MY_PWM  XPAR_MY_PWM_CORE_0_S00_AXI_BASEADDR //Because of a bug in Vivado 2015.3 and 2015.4, this value is not correct.
+#define MY_PWM 0x43C00000 //This value is found in the Address editor tab in Vivado (next to Diagram tab)
+#define OFFSET 4
+#define FREQUENCY_FPGA 50000000 // 50 MHz
+int main(){
+    int red_pwm = 0;
+    int blue_pwm = 0;
+    int green_pwm = 0;
+
+    int led_duty_cycle_max = 50000;
+    int rand_choose_color;
+    int i;
+    int register_red_pwm;
+    char buffer_red[10];
+    char buffer_rand[10];
+    while(1){
+
+    	rand_choose_color = (rand() % 3) + 1;
+
+    	switch (rand_choose_color){
+    			case 1:
+    				red_pwm = 0;
+    				blue_pwm = led_duty_cycle_max;
+       				green_pwm = led_duty_cycle_max;
+       			break;
+
+    			case 2:
+    				red_pwm = led_duty_cycle_max;
+    				blue_pwm = 0;
+    				green_pwm = led_duty_cycle_max;
+    			break;
+
+    			case 3:
+    				red_pwm = led_duty_cycle_max;
+    				blue_pwm = led_duty_cycle_max;
+    				green_pwm = 0;
+    			default:
+    				red_pwm = led_duty_cycle_max;
+    				blue_pwm = led_duty_cycle_max;
+    				green_pwm = 0;
+    	}
+
+
+        Xil_Out32(MY_PWM, red_pwm);
+        Xil_Out32((MY_PWM + OFFSET), blue_pwm);
+        Xil_Out32((MY_PWM + 2 * OFFSET), green_pwm);
+
+        register_red_pwm = Xil_In32(MY_PWM);
+
+        itoa_fcn(register_red_pwm, buffer_red);
+        itoa_fcn(rand_choose_color, buffer_rand);
+
+        // wait 3 seconds
+        for(i=0;i < 3 * FREQUENCY_FPGA; i++){
+        	print("");
+        }
+
+        print("(REG READ): Duty Cycle for RED: = ");
+        print(buffer_red);
+        print(" Random color: ");
+        print(buffer_rand);
+
+        print("\n");
+
+    }
+}

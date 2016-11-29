@@ -1,0 +1,52 @@
+
+*** Running vivado
+    with args -log LED_Buzzer_Control_processing_system7_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LED_Buzzer_Control_processing_system7_0_0.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source LED_Buzzer_Control_processing_system7_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1108.438 ; gain = 197.301 ; free physical = 6741 ; free virtual = 9515
+INFO: [Synth 8-638] synthesizing module 'LED_Buzzer_Control_processing_system7_0_0' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_processing_system7_0_0/synth/LED_Buzzer_Control_processing_system7_0_0.v:60]
+INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (1#1) [/opt/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BIBUF' [/opt/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-256] done synthesizing module 'BIBUF' (2#1) [/opt/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-638] synthesizing module 'PS7' [/opt/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:33182]
+INFO: [Synth 8-256] done synthesizing module 'PS7' (3#1) [/opt/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:33182]
+INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-256] done synthesizing module 'LED_Buzzer_Control_processing_system7_0_0' (5#1) [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_processing_system7_0_0/synth/LED_Buzzer_Control_processing_system7_0_0.v:60]
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1148.906 ; gain = 237.770 ; free physical = 6698 ; free virtual = 9474
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1148.906 ; gain = 237.770 ; free physical = 6697 ; free virtual = 9473
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1375.543 ; gain = 0.000 ; free physical = 6468 ; free virtual = 9289
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1375.543 ; gain = 464.406 ; free physical = 6469 ; free virtual = 9290
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1375.543 ; gain = 464.406 ; free physical = 6469 ; free virtual = 9290
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1375.543 ; gain = 464.406 ; free physical = 6469 ; free virtual = 9290
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1375.543 ; gain = 464.406 ; free physical = 6465 ; free virtual = 9287
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1383.551 ; gain = 472.414 ; free physical = 6456 ; free virtual = 9279
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1574.551 ; gain = 663.414 ; free physical = 6264 ; free virtual = 9094
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1594.559 ; gain = 683.422 ; free physical = 6244 ; free virtual = 9074
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1602.566 ; gain = 691.430 ; free physical = 6236 ; free virtual = 9065
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1602.566 ; gain = 691.430 ; free physical = 6236 ; free virtual = 9066
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1602.566 ; gain = 691.430 ; free physical = 6236 ; free virtual = 9066
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1602.566 ; gain = 691.430 ; free physical = 6236 ; free virtual = 9066
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1602.566 ; gain = 691.430 ; free physical = 6236 ; free virtual = 9066
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1602.566 ; gain = 691.430 ; free physical = 6236 ; free virtual = 9066
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1602.566 ; gain = 691.430 ; free physical = 6236 ; free virtual = 9066
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BIBUF |   130|
+|2     |BUFG  |     2|
+|3     |LUT1  |   112|
+|4     |PS7   |     1|
++------+------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1602.566 ; gain = 691.430 ; free physical = 6236 ; free virtual = 9066
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1614.566 ; gain = 591.711 ; free physical = 6225 ; free virtual = 9057

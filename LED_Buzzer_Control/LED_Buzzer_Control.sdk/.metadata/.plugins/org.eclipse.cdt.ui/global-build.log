@@ -1,0 +1,2235 @@
+16:12:48 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:12:58 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:13:36 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22812	   1148	  22568	  46528	   b5c0	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:13:39 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22812	   1148	  22568	  46528	   b5c0	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:13:51 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:14:39 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22808	   1148	  22568	  46524	   b5bc	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:14:48 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22808	   1148	  22568	  46524	   b5bc	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:14:50 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:15:26 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22808	   1148	  22568	  46524	   b5bc	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:15:47 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:16:48 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:14:12: error: 'red' undeclared (first use in this function)
+         if(red == 50000)
+            ^
+../src/main.c:14:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:16:53 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:14:12: error: 'red' undeclared (first use in this function)
+         if(red == 50000)
+            ^
+../src/main.c:14:12: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+../src/main.c:9:9: warning: unused variable 'num' [-Wunused-variable]
+     int num=0;
+         ^
+make: *** [src/main.o] Error 1
+16:16:58 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:14:12: error: 'red' undeclared (first use in this function)
+         if(red == 50000)
+            ^
+../src/main.c:14:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:9:9: warning: unused variable 'num' [-Wunused-variable]
+     int num=0;
+         ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:17:05 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22808	   1148	  22568	  46524	   b5bc	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:17:17 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:14:12: error: 'red' undeclared (first use in this function)
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+         if(red == 50000)
+            ^
+../src/main.c:14:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+16:17:21 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+../src/main.c: In function 'main':
+../src/main.c:14:12: error: 'red' undeclared (first use in this function)
+         if(red == 50000)
+            ^
+../src/main.c:14:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+16:17:32 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:14:12: error: 'red' undeclared (first use in this function)
+         if(red == 50000)
+            ^
+../src/main.c:14:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:23:9: error: 'register_red_pwm' undeclared (first use in this function)
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+         register_red_pwm = Xil_In32(MY_PWM);
+         ^
+make: *** [src/main.o] Error 1
+16:17:51 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:14:12: error: 'red' undeclared (first use in this function)
+         if(red == 50000)
+            ^
+../src/main.c:14:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:23:9: error: 'register_red_pwm' undeclared (first use in this function)
+         register_red_pwm = Xil_In32(MY_PWM);
+         ^
+../src/main.c:29:10: error: expected ';' before 'print'
+          print(buffer);
+          ^
+../src/main.c:11:9: warning: unused variable 'return_value' [-Wunused-variable]
+     int return_value;
+         ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:18:04 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:14:12: error: 'red' undeclared (first use in this function)
+         if(red == 50000)
+            ^
+../src/main.c:14:12: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+../src/main.c:23:9: error: 'register_red_pwm' undeclared (first use in this function)
+         register_red_pwm = Xil_In32(MY_PWM);
+         ^
+../src/main.c:29:10: error: expected ';' before 'print'
+          print(buffer);
+          ^
+../src/main.c:11:9: warning: unused variable 'return_value' [-Wunused-variable]
+     int return_value;
+         ^
+make: *** [src/main.o] Error 1
+16:18:07 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:14:12: error: 'red' undeclared (first use in this function)
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+         if(red == 50000)
+            ^
+../src/main.c:14:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:23:9: error: 'register_red_pwm' undeclared (first use in this function)
+         register_red_pwm = Xil_In32(MY_PWM);
+         ^
+../src/main.c:11:9: warning: unused variable 'return_value' [-Wunused-variable]
+     int return_value;
+         ^
+make: *** [src/main.o] Error 1
+16:18:25 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:25:36: error: 'buffer' undeclared (first use in this function)
+         itoa_fcn(register_red_pwm, buffer);
+                                    ^
+../src/main.c:25:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:12:10: warning: unused variable 'buffer_red' [-Wunused-variable]
+     char buffer_red[10];
+          ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:18:39 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:25:36: error: 'buffer' undeclared (first use in this function)
+         itoa_fcn(register_red_pwm, buffer);
+                                    ^
+../src/main.c:25:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:12:10: warning: unused variable 'buffer_red' [-Wunused-variable]
+     char buffer_red[10];
+          ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:18:56 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:25:36: error: 'buffer' undeclared (first use in this function)
+         itoa_fcn(register_red_pwm, buffer);
+                                    ^
+../src/main.c:25:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:12:10: warning: unused variable 'buffer_red' [-Wunused-variable]
+     char buffer_red[10];
+          ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:19:00 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:25:36: error: 'buffer' undeclared (first use in this function)
+         itoa_fcn(register_red_pwm, buffer);
+                                    ^
+../src/main.c:25:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:12:10: warning: unused variable 'buffer_red' [-Wunused-variable]
+     char buffer_red[10];
+          ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:19:03 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:25:36: error: 'buffer' undeclared (first use in this function)
+         itoa_fcn(register_red_pwm, buffer);
+                                    ^
+../src/main.c:25:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:12:10: warning: unused variable 'buffer_red' [-Wunused-variable]
+     char buffer_red[10];
+          ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:19:08 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+../src/main.c:26:36: error: 'buffer' undeclared (first use in this function)
+         itoa_fcn(register_red_pwm, buffer);
+                                    ^
+../src/main.c:26:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:12:10: warning: unused variable 'buffer_red' [-Wunused-variable]
+     char buffer_red[10];
+          ^
+make: *** [src/main.o] Error 1
+16:19:20 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:27:15: error: 'buffer' undeclared (first use in this function)
+         print(buffer);
+               ^
+../src/main.c:27:15: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:19:31 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22840	   1148	  22568	  46556	   b5dc	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:19:43 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22832	   1148	  22568	  46548	   b5d4	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:19:54 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22844	   1148	  22568	  46560	   b5e0	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:20:00 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:20:38 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22844	   1148	  22568	  46560	   b5e0	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:20:44 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22844	   1148	  22568	  46560	   b5e0	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:20:47 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22844	   1148	  22568	  46560	   b5e0	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:21:10 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:21:48 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22848	   1148	  22568	  46564	   b5e4	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:21:52 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22844	   1148	  22568	  46560	   b5e0	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:21:59 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:22:31 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22848	   1148	  22568	  46564	   b5e4	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:22:37 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22852	   1148	  22568	  46568	   b5e8	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:22:41 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:23:21 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22852	   1148	  22568	  46568	   b5e8	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:23:23 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:25:06 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:10:9: warning: unused variable 'blue_pwm' [-Wunused-variable]
+     int blue_pwm = 0;
+         ^
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22892	   1148	  22568	  46608	   b610	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:25:20 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22852	   1148	  22568	  46568	   b5e8	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:25:24 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22852	   1148	  22568	  46568	   b5e8	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:25:31 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22872	   1148	  22568	  46588	   b5fc	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:25:38 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:26:23 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22872	   1148	  22568	  46588	   b5fc	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:32:18 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:29:9: error: 'r' undeclared (first use in this function)
+         r = rand() & 3;
+         ^
+../src/main.c:29:9: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:32:30 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:29:9: error: 'r' undeclared (first use in this function)
+         r = rand() % 3;
+         ^
+../src/main.c:29:9: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:32:35 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:9: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int r;
+         ^
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22940	   1148	  22568	  46656	   b640	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:32:48 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:34:9: error: too few arguments to function 'itoa_fcn'
+         itoa_fcn(rand());
+         ^
+In file included from ../src/main.c:4:0:
+../src/itoa_fcn.h:1:7: note: declared here
+  void itoa_fcn(int n, char s[]);
+       ^
+../src/main.c:11:9: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int r;
+         ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:32:57 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:34:21: error: 'buffer_rand' undeclared (first use in this function)
+         itoa_fcn(r, buffer_rand);
+                     ^
+../src/main.c:34:21: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:33:07 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22972	   1148	  22568	  46688	   b660	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:33:19 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22980	   1148	  22568	  46696	   b668	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:34:30 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22996	   1148	  22568	  46712	   b678	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:34:37 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:34:44 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:35:59 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:14: error: expected expression before ')' token
+      switch ()
+              ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:36:10 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:16: error: expected expression before ':' token
+      switch (r):
+                ^
+../src/main.c:9:9: warning: unused variable 'red_pwm' [-Wunused-variable]
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+     int red_pwm = 0;
+         ^
+make: *** [src/main.o] Error 1
+16:36:47 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:21:6: error: expected expression before '}' token
+      }
+      ^
+../src/main.c:21:6: error: label at end of compound statement
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:37:12 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:21:8: error: expected expression before 'default'
+        default:
+        ^
+../src/main.c:23:6: error: expected ';' before '}' token
+      }
+      ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:37:27 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:22:8: error: expected expression before 'default'
+        default:
+        ^
+../src/main.c:24:6: error: expected ';' before '}' token
+      }
+      ^
+../src/main.c:11:9: warning: unused variable 'led_duty_cycle' [-Wunused-variable]
+     int led_duty_cycle;
+         ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:37:39 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:22:8: error: expected expression before 'default'
+        default:
+        ^
+../src/main.c:24:6: error: expected ';' before '}' token
+      }
+      ^
+../src/main.c:11:9: warning: unused variable 'led_duty_cycle_max' [-Wunused-variable]
+     int led_duty_cycle_max = 50000;
+         ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:38:01 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:22:8: error: expected expression before 'default'
+        default:
+        ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+../src/main.c:25:9: error: 'green_pwm' undeclared (first use in this function)
+         green_pwm = led_duty_cycle_max;
+         ^
+../src/main.c:25:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+16:38:42 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:12: error: 'green_pwm' undeclared (first use in this function)
+            green_pwm = led_duty_cycle_max;
+            ^
+../src/main.c:24:12: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:38:47 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:12: error: 'green_pwm' undeclared (first use in this function)
+            green_pwm = led_duty_cycle_max;
+            ^
+../src/main.c:24:12: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:39:14 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+../src/main.c: In function 'main':
+../src/main.c:24:12: error: 'green_pwm' undeclared (first use in this function)
+            green_pwm = led_duty_cycle_max;
+            ^
+../src/main.c:24:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+16:39:19 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:12: error: 'green_pwm' undeclared (first use in this function)
+            green_pwm = led_duty_cycle_max;
+            ^
+../src/main.c:24:12: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:39:21 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:12: error: 'green_pwm' undeclared (first use in this function)
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+            green_pwm = led_duty_cycle_max;
+            ^
+../src/main.c:24:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+16:39:32 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:9: warning: variable 'green_pwm' set but not used [-Wunused-but-set-variable]
+     int green_pwm = 0;
+         ^
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22968	   1148	  22568	  46684	   b65c	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:39:34 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:9: warning: variable 'green_pwm' set but not used [-Wunused-but-set-variable]
+     int green_pwm = 0;
+         ^
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22968	   1148	  22568	  46684	   b65c	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:39:41 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:21:6: error: 'r' undeclared (first use in this function)
+      r = (rand() % 3) + 1;
+      ^
+../src/main.c:21:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:14:9: warning: unused variable 'rand_choose_color' [-Wunused-variable]
+     int rand_choose_color;
+         ^
+../src/main.c:11:9: warning: variable 'green_pwm' set but not used [-Wunused-but-set-variable]
+     int green_pwm = 0;
+         ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:39:49 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:48:18: error: 'r' undeclared (first use in this function)
+         itoa_fcn(r, buffer_rand);
+                  ^
+../src/main.c:48:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:11:9: warning: variable 'green_pwm' set but not used [-Wunused-but-set-variable]
+     int green_pwm = 0;
+         ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:40:05 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:52:18: error: 'r' undeclared (first use in this function)
+         itoa_fcn(r, buffer_rand);
+                  ^
+../src/main.c:52:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:11:9: warning: variable 'green_pwm' set but not used [-Wunused-but-set-variable]
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+     int green_pwm = 0;
+         ^
+make: *** [src/main.o] Error 1
+16:40:18 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:54:18: error: 'r' undeclared (first use in this function)
+         itoa_fcn(r, buffer_rand);
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+                  ^
+../src/main.c:54:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:11:9: warning: variable 'green_pwm' set but not used [-Wunused-but-set-variable]
+     int green_pwm = 0;
+         ^
+make: *** [src/main.o] Error 1
+16:40:36 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:54:18: error: 'r' undeclared (first use in this function)
+         itoa_fcn(r, buffer_rand);
+                  ^
+../src/main.c:54:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:11:9: warning: variable 'green_pwm' set but not used [-Wunused-but-set-variable]
+     int green_pwm = 0;
+         ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:40:41 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:54:18: error: 'r' undeclared (first use in this function)
+         itoa_fcn(r, buffer_rand);
+                  ^
+../src/main.c:54:18: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:40:58 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22996	   1148	  22568	  46712	   b678	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:41:31 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23012	   1148	  22568	  46728	   b688	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:41:33 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:42:04 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23028	   1148	  22568	  46744	   b698	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:43:30 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23028	   1148	  22568	  46744	   b698	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:43:32 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:44:07 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:10: error: too few arguments to function 'print'
+          print();
+          ^
+In file included from ../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include/xil_io.h:63:0,
+                 from ../src/main.c:2:
+../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include/xil_printf.h:36:6: note: declared here
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+ void print( const char8 *ptr);
+      ^
+make: *** [src/main.o] Error 1
+16:44:12 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23048	   1148	  22568	  46764	   b6ac	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:44:14 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:45:06 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23048	   1148	  22568	  46764	   b6ac	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:45:28 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23048	   1148	  22568	  46764	   b6ac	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:45:45 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23048	   1148	  22568	  46764	   b6ac	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:45:48 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23048	   1148	  22568	  46764	   b6ac	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:45:58 **** Incremental Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:47:18 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23048	   1148	  22568	  46764	   b6ac	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:48:40 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23048	   1148	  22568	  46764	   b6ac	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:48:50 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23048	   1148	  22568	  46764	   b6ac	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:48:54 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23048	   1148	  22568	  46764	   b6ac	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:48:57 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23048	   1148	  22568	  46764	   b6ac	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:49:07 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:51:19: error: 'MY_PWM' undeclared (first use in this function)
+         Xil_Out32(MY_PWM, red_pwm);
+                   ^
+../src/main.c:51:19: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:49:14 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:51:19: error: 'MY_PWM' undeclared (first use in this function)
+         Xil_Out32(MY_PWM, red_pwm);
+                   ^
+../src/main.c:51:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:52:29: error: 'OFFSET' undeclared (first use in this function)
+         Xil_Out32((MY_PWM + OFFSET), blue_pwm);
+                             ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:49:32 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:51:19: error: 'MY_PWM' undeclared (first use in this function)
+         Xil_Out32(MY_PWM, red_pwm);
+                   ^
+../src/main.c:51:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:52:29: error: 'OFFSET' undeclared (first use in this function)
+         Xil_Out32((MY_PWM + OFFSET), blue_pwm);
+                             ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:49:42 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:52:40: error: 'OFFSET' undeclared (first use in this function)
+         Xil_Out32((MY_PWM_MEMORY_MAP + OFFSET), blue_pwm);
+                                        ^
+../src/main.c:52:40: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:55:37: error: 'MY_PWM' undeclared (first use in this function)
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+         register_red_pwm = Xil_In32(MY_PWM);
+                                     ^
+make: *** [src/main.o] Error 1
+16:49:52 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:55:37: error: 'MY_PWM' undeclared (first use in this function)
+         register_red_pwm = Xil_In32(MY_PWM);
+                                     ^
+../src/main.c:55:37: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:49:59 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23048	   1148	  22568	  46764	   b6ac	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:51:05 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23092	   1148	  22568	  46808	   b6d8	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:51:08 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23092	   1148	  22568	  46808	   b6d8	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:51:24 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23120	   1148	  22568	  46836	   b6f4	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:51:47 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23196	   1148	  22568	  46912	   b740	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:52:26 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23184	   1148	  22568	  46900	   b734	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:52:52 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23180	   1148	  22568	  46896	   b730	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:53:17 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:73:37: error: 'buffer_rand' undeclared (first use in this function)
+         itoa_fcn(rand_choose_color, buffer_rand);
+                                     ^
+../src/main.c:73:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:23:10: warning: unused variable 'buffer_green' [-Wunused-variable]
+     char buffer_green[10];
+          ^
+../src/main.c:22:10: warning: unused variable 'buffer_blue' [-Wunused-variable]
+     char buffer_blue[10];
+          ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:53:20 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:74:37: error: 'buffer_rand' undeclared (first use in this function)
+         itoa_fcn(rand_choose_color, buffer_rand);
+                                     ^
+../src/main.c:74:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:23:10: warning: unused variable 'buffer_green' [-Wunused-variable]
+     char buffer_green[10];
+          ^
+../src/main.c:22:10: warning: unused variable 'buffer_blue' [-Wunused-variable]
+     char buffer_blue[10];
+          ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:54:25 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23240	   1148	  22568	  46956	   b76c	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:54:37 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23256	   1148	  22568	  46972	   b77c	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:54:45 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:87:5: error: expected ';' before '}' token
+     }
+     ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+16:54:58 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23328	   1148	  22568	  47044	   b7c4	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:55:09 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23328	   1148	  22568	  47044	   b7c4	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:55:23 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23444	   1148	  22568	  47160	   b838	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:55:36 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23444	   1148	  22568	  47160	   b838	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:56:50 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:72:9: error: 'register_green_pwm' undeclared (first use in this function)
+         register_green_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
+         ^
+../src/main.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+../src/main.c:73:9: error: 'register_blue_pwm' undeclared (first use in this function)
+         register_blue_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
+         ^
+make: *** [src/main.o] Error 1
+16:57:02 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:72:9: error: 'register_green_pwm' undeclared (first use in this function)
+         register_green_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
+         ^
+../src/main.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:73:9: error: 'register_blue_pwm' undeclared (first use in this function)
+         register_blue_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
+         ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:57:35 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23448	   1148	  22568	  47164	   b83c	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+16:59:36 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:25:10: warning: unused variable 'buffer_green' [-Wunused-variable]
+     char buffer_green[10];
+          ^
+../src/main.c:24:10: warning: unused variable 'buffer_blue' [-Wunused-variable]
+     char buffer_blue[10];
+          ^
+../src/main.c:23:10: warning: unused variable 'buffer_red' [-Wunused-variable]
+     char buffer_red[10];
+          ^
+../src/main.c:22:9: warning: unused variable 'register_blue_pwm' [-Wunused-variable]
+     int register_blue_pwm;
+         ^
+../src/main.c:21:9: warning: unused variable 'register_green_pwm' [-Wunused-variable]
+     int register_green_pwm;
+         ^
+../src/main.c:20:9: warning: unused variable 'register_red_pwm' [-Wunused-variable]
+     int register_red_pwm;
+         ^
+../src/main.c: In function 'print_memory_mapped_registers':
+../src/main.c:78:3: error: 'register_red_pwm' undeclared (first use in this function)
+   register_red_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
+   ^
+../src/main.c:78:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:79:10: error: 'register_green_pwm' undeclared (first use in this function)
+          register_green_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
+          ^
+../src/main.c:80:10: error: 'register_blue_pwm' undeclared (first use in this function)
+          register_blue_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
+          ^
+../src/main.c:82:37: error: 'buffer_red' undeclared (first use in this function)
+          itoa_fcn(register_red_pwm, buffer_red);
+                                     ^
+../src/main.c:83:39: error: 'buffer_green' undeclared (first use in this function)
+          itoa_fcn(register_green_pwm, buffer_green);
+                                       ^
+../src/main.c:84:38: error: 'buffer_blue' undeclared (first use in this function)
+          itoa_fcn(register_blue_pwm, buffer_blue);
+                                      ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+17:00:18 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:25:10: warning: unused variable 'buffer_green' [-Wunused-variable]
+     char buffer_green[10];
+          ^
+../src/main.c:24:10: warning: unused variable 'buffer_blue' [-Wunused-variable]
+     char buffer_blue[10];
+          ^
+../src/main.c:23:10: warning: unused variable 'buffer_red' [-Wunused-variable]
+     char buffer_red[10];
+          ^
+../src/main.c:22:9: warning: unused variable 'register_blue_pwm' [-Wunused-variable]
+     int register_blue_pwm;
+         ^
+../src/main.c:21:9: warning: unused variable 'register_green_pwm' [-Wunused-variable]
+     int register_green_pwm;
+         ^
+../src/main.c:20:9: warning: unused variable 'register_red_pwm' [-Wunused-variable]
+     int register_red_pwm;
+         ^
+../src/main.c: In function 'print_memory_mapped_registers':
+../src/main.c:78:3: error: 'register_red_pwm' undeclared (first use in this function)
+   register_red_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
+   ^
+../src/main.c:78:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:79:3: error: 'register_green_pwm' undeclared (first use in this function)
+   register_green_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
+   ^
+../src/main.c:80:3: error: 'register_blue_pwm' undeclared (first use in this function)
+   register_blue_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
+   ^
+../src/main.c:82:30: error: 'buffer_red' undeclared (first use in this function)
+   itoa_fcn(register_red_pwm, buffer_red);
+                              ^
+../src/main.c:83:32: error: 'buffer_green' undeclared (first use in this function)
+   itoa_fcn(register_green_pwm, buffer_green);
+                                ^
+../src/main.c:84:31: error: 'buffer_blue' undeclared (first use in this function)
+   itoa_fcn(register_blue_pwm, buffer_blue);
+                               ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+17:01:08 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23508	   1148	  22568	  47224	   b878	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+17:01:13 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23508	   1148	  22568	  47224	   b878	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+17:01:26 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:61:9: warning: implicit declaration of function 'print_memory_mapped_registers' [-Wimplicit-function-declaration]
+         print_memory_mapped_registers();
+         ^
+../src/main.c: At top level:
+../src/main.c:72:6: warning: conflicting types for 'print_memory_mapped_registers'
+ void print_memory_mapped_registers(){
+      ^
+../src/main.c:61:9: note: previous implicit declaration of 'print_memory_mapped_registers' was here
+         print_memory_mapped_registers();
+         ^
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23512	   1148	  22568	  47228	   b87c	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+17:02:06 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23512	   1148	  22568	  47228	   b87c	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 
+17:02:15 **** Auto Build of configuration Release for project PWM_AXI_Tutorial ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: PWM_AXI_Tutorial.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_AXI_Tutorial_bsp/ps7_cortexa9_0/lib -o "PWM_AXI_Tutorial.elf"  ./src/itoa_fcn.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_AXI_Tutorial.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_AXI_Tutorial.elf  |tee "PWM_AXI_Tutorial.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23512	   1148	  22568	  47228	   b87c	PWM_AXI_Tutorial.elf
+Finished building: PWM_AXI_Tutorial.elf.size
+ 

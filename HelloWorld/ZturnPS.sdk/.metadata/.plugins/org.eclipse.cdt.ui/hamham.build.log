@@ -1,0 +1,8 @@
+15:32:00 **** Incremental Build of configuration Release for project hamham ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+
+15:32:01 Build Finished (took 309ms)
+

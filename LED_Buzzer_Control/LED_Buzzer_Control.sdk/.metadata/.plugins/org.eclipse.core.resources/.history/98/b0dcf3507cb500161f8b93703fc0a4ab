@@ -1,0 +1,30 @@
+#include "xparameters.h"
+#include "xil_io.h"
+#include "stdlib.h"
+//#define MY_PWM  XPAR_MY_PWM_CORE_0_S00_AXI_BASEADDR //Because of a bug in Vivado 2015.3 and 2015.4, this value is not correct.
+#define MY_PWM 0x43C00000 //This value is found in the Address editor tab in Vivado (next to Diagram tab)
+
+int main(){
+    int num=0;
+    int i;
+    int return_value;
+    char buffer[10];
+    while(1){
+        /*if(num == 65535)
+             num = 0;
+        else
+             num++;
+		*/
+    	num = 65500;
+        Xil_Out32(MY_PWM, num);
+        return_value = Xil_In32(MY_PWM);
+        if (return_value == 0)
+        	print("e zero");
+        else
+        	print ("e diferit de 0");
+        //itoa(return_value, buffer, 10);
+        //print(buffer);
+        for(i=0;i<30000000; i++);
+        	print("Hello World\n\r");
+    }
+}

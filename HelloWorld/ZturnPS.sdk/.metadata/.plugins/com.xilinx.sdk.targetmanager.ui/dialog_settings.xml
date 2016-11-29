@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Local" key="PSDesign_wrapper_hw_platform_4-target"/>
+	<item value="Auto Detect" key="PSDesign_wrapper_hw_platform_5-device"/>
+	<item value="false" key="PSDesign_wrapper_hw_platform_4-partial_bit"/>
+	<item value="PSDesign_wrapper_hw_platform_5" key="programfpga.hwplatform"/>
+	<item value="" key="PSDesign_wrapper_hw_platform_4-bmmFile"/>
+	<item value="/opt/Xilinx/Vivado/CERN_projects/HelloWorld/ZturnPS.sdk/PSDesign_wrapper_hw_platform_5/PSDesign_wrapper.bit" key="PSDesign_wrapper_hw_platform_5-bitFile"/>
+	<item value="false" key="PSDesign_wrapper_hw_platform_5-partial_bit"/>
+	<item value="Auto Detect" key="PSDesign_wrapper_hw_platform_4-device"/>
+	<item value="Local" key="PSDesign_wrapper_hw_platform_5-target"/>
+	<item value="PSDesign_wrapper.bit" key="PSDesign_wrapper_hw_platform_4-bitFile"/>
+	<item value="" key="PSDesign_wrapper_hw_platform_5-bmmFile"/>
+</section>
