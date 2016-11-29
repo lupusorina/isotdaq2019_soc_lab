@@ -1,1 +1,1 @@
-boards folder - to be copied in Vivado/<path_version>/data
+boards folder - to be copied in Vivado/path_version/data
