@@ -5,25 +5,25 @@ use ieee.numeric_std.all;
 entity PWM_v1_0_S00_AXI is
 	generic (
 		-- Users to add parameters here
-        PWM_SIZE            : integer    :=1024;
+        PWM_LEDs_PERIOD_COUNTER : integer   :=50000;
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line
-
 		-- Width of S_AXI data bus
-		C_S_AXI_DATA_WIDTH	: integer	:= 32;
+		C_S_AXI_DATA_WIDTH	   : integer	:= 32;
 		-- Width of S_AXI address bus
-		C_S_AXI_ADDR_WIDTH	: integer	:= 4
+		C_S_AXI_ADDR_WIDTH	   : integer	:= 4
 	);
 	port (
 		-- Users to add ports here
         PWM_RED     : out std_logic;
-        PWM_GREEN     : out std_logic;
-        PWM_BLUE     : out std_logic;
+        PWM_GREEN   : out std_logic;
+        PWM_BLUE    : out std_logic;
+        PWM_BUZZER  : out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
 		-- Global Clock Signal
-		S_AXI_ACLK	: in std_logic;
+		S_AXI_ACLK	    : in std_logic;
 		-- Global Reset Signal. This Signal is Active LOW
 		S_AXI_ARESETN	: in std_logic;
 		-- Write address (issued by master, acceped by Slave)
@@ -39,11 +39,11 @@ entity PWM_v1_0_S00_AXI is
     		-- to accept an address and associated control signals.
 		S_AXI_AWREADY	: out std_logic;
 		-- Write data (issued by master, acceped by Slave) 
-		S_AXI_WDATA	: in std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+		S_AXI_WDATA	    : in std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 		-- Write strobes. This signal indicates which byte lanes hold
     		-- valid data. There is one write strobe bit for each eight
     		-- bits of the write data bus.    
-		S_AXI_WSTRB	: in std_logic_vector((C_S_AXI_DATA_WIDTH/8)-1 downto 0);
+		S_AXI_WSTRB	    : in std_logic_vector((C_S_AXI_DATA_WIDTH/8)-1 downto 0);
 		-- Write valid. This signal indicates that valid write
     		-- data and strobes are available.
 		S_AXI_WVALID	: in std_logic;
@@ -72,10 +72,10 @@ entity PWM_v1_0_S00_AXI is
     		-- ready to accept an address and associated control signals.
 		S_AXI_ARREADY	: out std_logic;
 		-- Read data (issued by slave)
-		S_AXI_RDATA	: out std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+		S_AXI_RDATA   	: out std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 		-- Read response. This signal indicates the status of the
     		-- read transfer.
-		S_AXI_RRESP	: out std_logic_vector(1 downto 0);
+		S_AXI_RRESP   	: out std_logic_vector(1 downto 0);
 		-- Read valid. This signal indicates that the channel is
     		-- signaling the required read data.
 		S_AXI_RVALID	: out std_logic;
@@ -110,26 +110,28 @@ architecture arch_imp of PWM_v1_0_S00_AXI is
 	---- Signals for user logic register space example
 	--------------------------------------------------
 	---- Number of Slave Registers 4
-	signal slv_reg0	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
-	signal slv_reg1	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
-	signal slv_reg2	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
-	signal slv_reg3	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
-	signal slv_reg_rden	: std_logic;
-	signal slv_reg_wren	: std_logic;
-	signal reg_data_out	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
-	signal byte_index	: integer;
-    signal counter_pwm  : integer;
-    signal temp         : integer;
+	signal slv_reg0    	    : std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+	signal slv_reg1        	: std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+	signal slv_reg2        	: std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+	signal slv_reg3        	: std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+	signal slv_reg_rden    	: std_logic;
+	signal slv_reg_wren    	: std_logic;
+	signal reg_data_out    	: std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+	signal byte_index    	: integer;
+    signal counter_pwm      : integer;
+    signal temp             : integer;
+    signal counter_pwm_buzzer  : integer;
+    signal temp_pwm_buzzer     : integer;
 begin
 	-- I/O Connections assignments
 
 	S_AXI_AWREADY	<= axi_awready;
 	S_AXI_WREADY	<= axi_wready;
-	S_AXI_BRESP	<= axi_bresp;
+	S_AXI_BRESP    	<= axi_bresp;
 	S_AXI_BVALID	<= axi_bvalid;
 	S_AXI_ARREADY	<= axi_arready;
-	S_AXI_RDATA	<= axi_rdata;
-	S_AXI_RRESP	<= axi_rresp;
+	S_AXI_RDATA    	<= axi_rdata;
+	S_AXI_RRESP    	<= axi_rresp;
 	S_AXI_RVALID	<= axi_rvalid;
 	-- Implement axi_awready generation
 	-- axi_awready is asserted for one S_AXI_ACLK clock cycle when both
@@ -382,20 +384,30 @@ begin
 
 
 	-- Add user logic here
-
+    -- PWM for LED & buzzer
      process( S_AXI_ACLK ) is
         begin
-            if counter_pwm < PWM_SIZE then
+            if counter_pwm < PWM_LEDs_PERIOD_COUNTER then
                 temp <= counter_pwm + 1;
                 counter_pwm <= temp;
             else
                 counter_pwm <= 0;
-        end if;   
+            end if; 
+            
+            if counter_pwm_buzzer < to_integer(unsigned(slv_reg3)) then
+                temp_pwm_buzzer <= counter_pwm_buzzer + 1;
+                counter_pwm_buzzer <= temp_pwm_buzzer;
+            else
+                counter_pwm_buzzer <= 0;
+            end if;  
     end process;
     
+    -- Set PWM signals for LEDs
     PWM_RED <= '1' when (counter_pwm < to_integer(unsigned(slv_reg0))) else '0';
 	PWM_GREEN <= '1' when (counter_pwm < to_integer(unsigned(slv_reg1))) else '0';
 	PWM_BLUE <= '1' when (counter_pwm < to_integer(unsigned(slv_reg2))) else '0';
+	-- Set PWM signal for buzzer with 50% duty cycle
+	PWM_BUZZER <= '1' when (counter_pwm_buzzer < to_integer(unsigned(slv_reg3))) else '0';
 	-- User logic ends
 
 end arch_imp;
