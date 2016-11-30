@@ -1,0 +1,123 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Nov 30 23:28:03 2016
+# Process ID: 9643
+# Current directory: /opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.runs/impl_1
+# Command line: vivado -log Peripherals_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Peripherals_wrapper.tcl -notrace
+# Log file: /opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.runs/impl_1/Peripherals_wrapper.vdi
+# Journal file: /opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Peripherals_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.srcs/sources_1/bd/Peripherals/ip/Peripherals_processing_system7_0_0/Peripherals_processing_system7_0_0.xdc] for cell 'Peripherals_i/processing_system7_0/inst'
+Finished Parsing XDC File [/opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.srcs/sources_1/bd/Peripherals/ip/Peripherals_processing_system7_0_0/Peripherals_processing_system7_0_0.xdc] for cell 'Peripherals_i/processing_system7_0/inst'
+Parsing XDC File [/opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.srcs/sources_1/bd/Peripherals/ip/Peripherals_rst_ps7_0_100M_0/Peripherals_rst_ps7_0_100M_0_board.xdc] for cell 'Peripherals_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.srcs/sources_1/bd/Peripherals/ip/Peripherals_rst_ps7_0_100M_0/Peripherals_rst_ps7_0_100M_0_board.xdc] for cell 'Peripherals_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.srcs/sources_1/bd/Peripherals/ip/Peripherals_rst_ps7_0_100M_0/Peripherals_rst_ps7_0_100M_0.xdc] for cell 'Peripherals_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.srcs/sources_1/bd/Peripherals/ip/Peripherals_rst_ps7_0_100M_0/Peripherals_rst_ps7_0_100M_0.xdc] for cell 'Peripherals_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [/opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1284.496 ; gain = 276.652 ; free physical = 4923 ; free virtual = 8386
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1304.504 ; gain = 20.008 ; free physical = 4914 ; free virtual = 8377
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 106a7111b
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 16a0246ce
+
+Time (s): cpu = 00:00:00.52 ; elapsed = 00:00:00.65 . Memory (MB): peak = 1718.996 ; gain = 0.000 ; free physical = 4550 ; free virtual = 8014
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 13 cells.
+Phase 2 Constant propagation | Checksum: 194b2d9ad
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1718.996 ; gain = 0.000 ; free physical = 4550 ; free virtual = 8014
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 397 unconnected nets.
+INFO: [Opt 31-11] Eliminated 392 unconnected cells.
+Phase 3 Sweep | Checksum: 16af0956c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1718.996 ; gain = 0.000 ; free physical = 4550 ; free virtual = 8014
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: e02030c1
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1718.996 ; gain = 0.000 ; free physical = 4550 ; free virtual = 8014
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1718.996 ; gain = 0.000 ; free physical = 4550 ; free virtual = 8014
+Ending Logic Optimization Task | Checksum: e02030c1
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1718.996 ; gain = 0.000 ; free physical = 4550 ; free virtual = 8014
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: e02030c1
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1718.996 ; gain = 0.000 ; free physical = 4550 ; free virtual = 8014
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1718.996 ; gain = 434.500 ; free physical = 4550 ; free virtual = 8014
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1743.008 ; gain = 0.000 ; free physical = 4548 ; free virtual = 8013
+INFO: [Common 17-1381] The checkpoint '/opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.runs/impl_1/Peripherals_wrapper_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /opt/Xilinx/Vivado/CERN_projects/Peripherals/Peripherals.runs/impl_1/Peripherals_wrapper_drc_opted.rpt.
+report_drc: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1743.008 ; gain = 0.000 ; free physical = 4549 ; free virtual = 8013
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC 23-20] Rule violation (BIVC-1) Bank IO standard Vcc - Conflicting Vcc voltages in bank 34. For example, the following two ports in this bank have conflicting VCCOs:  
+PWM_RED (LVCMOS18, requiring VCCO=1.800) and PWM_BLUE (LVCMOS33, requiring VCCO=3.300)
+INFO: [Vivado_Tcl 4-198] DRC finished with 1 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+INFO: [Common 17-83] Releasing license: Implementation
+34 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 30 23:29:23 2016...

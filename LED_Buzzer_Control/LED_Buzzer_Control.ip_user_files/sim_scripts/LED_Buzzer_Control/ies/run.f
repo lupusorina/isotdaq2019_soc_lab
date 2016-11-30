@@ -18,10 +18,10 @@
 -endlib
 -makelib ies/xil_defaultlib \
   "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_rst_ps7_0_100M_0/sim/LED_Buzzer_Control_rst_ps7_0_100M_0.vhd" \
-  "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/hdl/LED_Buzzer_Control.vhd" \
-  "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/9137/hdl/PWM_v1_0_S00_AXI.vhd" \
-  "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/9137/hdl/PWM_v1_0.vhd" \
+  "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd" \
+  "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0.vhd" \
   "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_PWM_0_2/sim/LED_Buzzer_Control_PWM_0_2.vhd" \
+  "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/hdl/LED_Buzzer_Control.vhd" \
 -endlib
 -makelib ies/generic_baseblocks_v2_1_0 \
   "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v" \

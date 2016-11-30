@@ -15,21 +15,23 @@ int main(){
     int red_pwm = 0;
     int blue_pwm = 0;
     int green_pwm = 0;
-
+    int buzzer_pwm = 0;
+    char buzzer_buffer[10];
     int led_duty_cycle_max = 50000;
+    //int buzzer_pwm_value =  led_duty_cycle_max;
     int rand_choose_color;
     int i;
-
+    int contor = 0;
     while(1){
-
-
     	rand_choose_color = (rand() % 3) + 1;
     	print("Generated random color: ");
+    	contor = 0;
     	switch (rand_choose_color){
     			case 1:
     				red_pwm = 0;
     				blue_pwm = led_duty_cycle_max;
        				green_pwm = led_duty_cycle_max;
+       				buzzer_pwm = contor;
        				print("RED");
        				print("\n");
        			break;
@@ -38,6 +40,8 @@ int main(){
     				red_pwm = led_duty_cycle_max;
     				blue_pwm = 0;
     				green_pwm = led_duty_cycle_max;
+       				buzzer_pwm = 0;
+
     				print("BLUE");
     				print("\n");
     			break;
@@ -52,22 +56,26 @@ int main(){
     				red_pwm = led_duty_cycle_max;
     				blue_pwm = led_duty_cycle_max;
     				green_pwm = 0;
+       				buzzer_pwm = 0;
+
     	}
 
 
         Xil_Out32(MY_PWM_MEMORY_MAP, red_pwm);
         Xil_Out32((MY_PWM_MEMORY_MAP + MY_PWM_MEMORY_MAP_OFFSET), blue_pwm);
         Xil_Out32((MY_PWM_MEMORY_MAP + 2 * MY_PWM_MEMORY_MAP_OFFSET), green_pwm);
-
-
-        print_memory_mapped_registers();
+        Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), contor);
+        itoa_fcn(contor, buzzer_buffer);
+        //print_memory_mapped_registers();
 
         // wait 3 seconds
         for(i=0;i < 3 * FREQUENCY_FPGA; i++){
         	print("");
+        	/*if (i == FREQUENCY_FPGA)
+                Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), 0);*/
         }
-
-
+        print(buzzer_buffer);
+        print("\n");
 
     }
 }

@@ -1,6 +1,70 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
+| Date         : Wed Nov 30 11:28:39 2016
+| Host         : sorina running 64-bit Ubuntu 16.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'LED_Buzzer_Control_PWM_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of LED_Buzzer_Control_PWM_0_2 from user.org:user:PWM:1.2 (Rev. 4) to user.org:user:PWM:1.3 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'LED_Buzzer_Control_PWM_0_2'. These changes may impact your design.
+
+
+-Upgrade has added port 'PWM_BUZZER'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'PWM_SIZE' is no longer present on the upgraded IP 'LED_Buzzer_Control_PWM_0_2', and cannot be set to '50000'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:PWM:1.3 -user_name LED_Buzzer_Control_PWM_0_2
+set_property -dict "\
+  CONFIG.C_S00_AXI_ADDR_WIDTH {4} \
+  CONFIG.C_S00_AXI_BASEADDR {0xFFFFFFFF} \
+  CONFIG.C_S00_AXI_DATA_WIDTH {32} \
+  CONFIG.C_S00_AXI_HIGHADDR {0x00000000} \
+  CONFIG.Component_Name {LED_Buzzer_Control_PWM_0_2} \
+  CONFIG.S00_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S00_AXI.WIZ_DATA_WIDTH {32} \
+  CONFIG.S00_AXI.WIZ_NUM_REG {4} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_BUSIF {S00_AXI} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_RESET {s00_axi_aresetn} \
+  CONFIG.S00_AXI_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.s00_axi_aclk.ASSOCIATED_RESET {s00_axi_aresetn} \
+  CONFIG.s00_axi_aresetn.POLARITY {ACTIVE_LOW} " [get_ips LED_Buzzer_Control_PWM_0_2]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
 | Date         : Mon Nov 28 18:06:55 2016
 | Host         : sorina running 64-bit Ubuntu 16.04.1 LTS
 | Command      : upgrade_ip

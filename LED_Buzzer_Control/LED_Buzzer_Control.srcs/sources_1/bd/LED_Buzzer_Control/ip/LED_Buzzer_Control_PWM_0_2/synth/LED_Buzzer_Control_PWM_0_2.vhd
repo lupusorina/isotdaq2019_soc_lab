@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: user.org:user:PWM:1.2
--- IP Revision: 4
+-- IP VLNV: user.org:user:PWM:1.3
+-- IP Revision: 1
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -58,6 +58,7 @@ ENTITY LED_Buzzer_Control_PWM_0_2 IS
     PWM_RED : OUT STD_LOGIC;
     PWM_GREEN : OUT STD_LOGIC;
     PWM_BLUE : OUT STD_LOGIC;
+    PWM_BUZZER : OUT STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s00_axi_awvalid : IN STD_LOGIC;
@@ -89,12 +90,13 @@ ARCHITECTURE LED_Buzzer_Control_PWM_0_2_arch OF LED_Buzzer_Control_PWM_0_2 IS
     GENERIC (
       C_S00_AXI_DATA_WIDTH : INTEGER; -- Width of S_AXI data bus
       C_S00_AXI_ADDR_WIDTH : INTEGER; -- Width of S_AXI address bus
-      PWM_SIZE : INTEGER
+      PWM_LEDs_PERIOD_COUNTER : INTEGER
     );
     PORT (
       PWM_RED : OUT STD_LOGIC;
       PWM_GREEN : OUT STD_LOGIC;
       PWM_BLUE : OUT STD_LOGIC;
+      PWM_BUZZER : OUT STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       s00_axi_awvalid : IN STD_LOGIC;
@@ -149,12 +151,13 @@ BEGIN
     GENERIC MAP (
       C_S00_AXI_DATA_WIDTH => 32,
       C_S00_AXI_ADDR_WIDTH => 4,
-      PWM_SIZE => 50000
+      PWM_LEDs_PERIOD_COUNTER => 50000
     )
     PORT MAP (
       PWM_RED => PWM_RED,
       PWM_GREEN => PWM_GREEN,
       PWM_BLUE => PWM_BLUE,
+      PWM_BUZZER => PWM_BUZZER,
       s00_axi_awaddr => s00_axi_awaddr,
       s00_axi_awprot => s00_axi_awprot,
       s00_axi_awvalid => s00_axi_awvalid,

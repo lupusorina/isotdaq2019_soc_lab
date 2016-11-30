@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
---Date        : Tue Nov 29 15:40:10 2016
+--Date        : Wed Nov 30 11:34:43 2016
 --Host        : sorina running 64-bit Ubuntu 16.04.1 LTS
 --Command     : generate_target LED_Buzzer_Control.bd
 --Design      : LED_Buzzer_Control
@@ -595,6 +595,7 @@ entity LED_Buzzer_Control is
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     PWM_BLUE : out STD_LOGIC;
+    PWM_BUZZER : out STD_LOGIC;
     PWM_GREEN : out STD_LOGIC;
     PWM_RED : out STD_LOGIC
   );
@@ -673,6 +674,7 @@ architecture STRUCTURE of LED_Buzzer_Control is
     PWM_RED : out STD_LOGIC;
     PWM_GREEN : out STD_LOGIC;
     PWM_BLUE : out STD_LOGIC;
+    PWM_BUZZER : out STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s00_axi_awvalid : in STD_LOGIC;
@@ -697,6 +699,7 @@ architecture STRUCTURE of LED_Buzzer_Control is
   );
   end component LED_Buzzer_Control_PWM_0_2;
   signal PWM_0_PWM_BLUE : STD_LOGIC;
+  signal PWM_0_PWM_BUZZER : STD_LOGIC;
   signal PWM_0_PWM_GREEN : STD_LOGIC;
   signal PWM_0_PWM_RED : STD_LOGIC;
   signal processing_system7_0_FCLK_CLK2 : STD_LOGIC;
@@ -769,11 +772,13 @@ architecture STRUCTURE of LED_Buzzer_Control is
   signal NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
 begin
   PWM_BLUE <= PWM_0_PWM_BLUE;
+  PWM_BUZZER <= PWM_0_PWM_BUZZER;
   PWM_GREEN <= PWM_0_PWM_GREEN;
   PWM_RED <= PWM_0_PWM_RED;
 PWM_0: component LED_Buzzer_Control_PWM_0_2
      port map (
       PWM_BLUE => PWM_0_PWM_BLUE,
+      PWM_BUZZER => PWM_0_PWM_BUZZER,
       PWM_GREEN => PWM_0_PWM_GREEN,
       PWM_RED => PWM_0_PWM_RED,
       s00_axi_aclk => processing_system7_0_FCLK_CLK2,

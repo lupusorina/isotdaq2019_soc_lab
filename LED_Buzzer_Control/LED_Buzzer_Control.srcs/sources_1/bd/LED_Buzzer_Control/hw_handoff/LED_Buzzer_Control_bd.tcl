@@ -159,14 +159,12 @@ proc create_root_design { parentCell } {
 
   # Create ports
   set PWM_BLUE [ create_bd_port -dir O PWM_BLUE ]
+  set PWM_BUZZER [ create_bd_port -dir O PWM_BUZZER ]
   set PWM_GREEN [ create_bd_port -dir O PWM_GREEN ]
   set PWM_RED [ create_bd_port -dir O PWM_RED ]
 
   # Create instance: PWM_0, and set properties
-  set PWM_0 [ create_bd_cell -type ip -vlnv user.org:user:PWM:1.2 PWM_0 ]
-  set_property -dict [ list \
-CONFIG.PWM_SIZE {50000} \
- ] $PWM_0
+  set PWM_0 [ create_bd_cell -type ip -vlnv user.org:user:PWM:1.3 PWM_0 ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
@@ -1245,6 +1243,7 @@ CONFIG.NUM_MI {1} \
 
   # Create port connections
   connect_bd_net -net PWM_0_PWM_BLUE [get_bd_ports PWM_BLUE] [get_bd_pins PWM_0/PWM_BLUE]
+  connect_bd_net -net PWM_0_PWM_BUZZER [get_bd_ports PWM_BUZZER] [get_bd_pins PWM_0/PWM_BUZZER]
   connect_bd_net -net PWM_0_PWM_GREEN [get_bd_ports PWM_GREEN] [get_bd_pins PWM_0/PWM_GREEN]
   connect_bd_net -net PWM_0_PWM_RED [get_bd_ports PWM_RED] [get_bd_pins PWM_0/PWM_RED]
   connect_bd_net -net processing_system7_0_FCLK_CLK2 [get_bd_pins PWM_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
@@ -1259,22 +1258,24 @@ CONFIG.NUM_MI {1} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port PWM_GREEN -pg 1 -y 140 -defaultsOSRD
-preplace port PWM_RED -pg 1 -y 50 -defaultsOSRD
+preplace port PWM_GREEN -pg 1 -y 130 -defaultsOSRD
+preplace port PWM_BUZZER -pg 1 -y 200 -defaultsOSRD
+preplace port PWM_RED -pg 1 -y 110 -defaultsOSRD
 preplace port rgb_led -pg 1 -y -170 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y 240 -defaultsOSRD
-preplace port PWM_BLUE -pg 1 -y 160 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 250 -defaultsOSRD
+preplace port PWM_BLUE -pg 1 -y 150 -defaultsOSRD
 preplace inst PWM_0 -pg 1 -lvl 3 -y 140 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 120 -defaultsOSRD
 preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 100 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -y 280 -defaultsOSRD
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 440
+preplace netloc PWM_0_PWM_BUZZER 1 3 1 1010
 preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 450 240 750J
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 20 -10 410
-preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 250 NJ 250 1010J
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 250 NJ 250 NJ
 preplace netloc PWM_0_PWM_BLUE 1 3 1 N
 preplace netloc PWM_0_PWM_GREEN 1 3 1 N
-preplace netloc PWM_0_PWM_RED 1 3 1 1010
+preplace netloc PWM_0_PWM_RED 1 3 1 N
 preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N
 preplace netloc processing_system7_0_FCLK_CLK2 1 0 3 30 10 430 290 740J
 preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 420

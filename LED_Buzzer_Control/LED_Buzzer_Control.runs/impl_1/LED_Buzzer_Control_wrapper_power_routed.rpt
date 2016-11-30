@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
-| Date             : Tue Nov 29 15:52:13 2016
+| Date             : Wed Nov 30 12:10:41 2016
 | Host             : sorina running 64-bit Ubuntu 16.04.1 LTS
 | Command          : report_power -file LED_Buzzer_Control_wrapper_power_routed.rpt -pb LED_Buzzer_Control_wrapper_power_summary_routed.pb -rpx LED_Buzzer_Control_wrapper_power_routed.rpx
 | Design           : LED_Buzzer_Control_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.763  |
-| Dynamic (W)              | 0.647  |
+| Total On-Chip Power (W)  | 0.764  |
+| Dynamic (W)              | 0.648  |
 | Device Static (W)        | 0.116  |
 | Effective TJA (C/W)      | 11.5   |
 | Max Ambient (C)          | 76.2   |
@@ -49,19 +49,19 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.001 |        3 |       --- |             --- |
-| Slice Logic             |    <0.001 |     1537 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |      440 |     17600 |            2.50 |
-|   Register              |    <0.001 |      666 |     35200 |            1.89 |
-|   CARRY4                |    <0.001 |       30 |      4400 |            0.68 |
-|   BUFG                  |    <0.001 |        1 |        32 |            3.13 |
+| Clocks                  |     0.002 |        3 |       --- |             --- |
+| Slice Logic             |    <0.001 |     1647 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |      489 |     17600 |            2.78 |
+|   Register              |    <0.001 |      698 |     35200 |            1.98 |
+|   CARRY4                |    <0.001 |       42 |      4400 |            0.95 |
+|   BUFG                  |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Shift Register |    <0.001 |       68 |      6000 |            1.13 |
 |   Others                |     0.000 |      185 |       --- |             --- |
-| Signals                 |     0.001 |     1023 |       --- |             --- |
-| I/O                     |    <0.001 |        3 |       100 |            3.00 |
+| Signals                 |     0.001 |     1067 |       --- |             --- |
+| I/O                     |    <0.001 |        4 |       100 |            4.00 |
 | PS7                     |     0.643 |        1 |       --- |             --- |
 | Static Power            |     0.116 |          |           |                 |
-| Total                   |     0.763 |          |           |                 |
+| Total                   |     0.764 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -97,17 +97,17 @@ Table of Contents
 1.3 Confidence Level
 --------------------
 
-+-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| User Input Data             | Confidence | Details                                        | Action                                                                                                     |
-+-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Design implementation state | High       | Design is routed                               |                                                                                                            |
-| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
-| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
-| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
-| Device models               | High       | Device models are Production                   |                                                                                                            |
-|                             |            |                                                |                                                                                                            |
-| Overall confidence level    | Medium     |                                                |                                                                                                            |
-+-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
++-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                               | Action                                                                                                             |
++-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                      |                                                                                                                    |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | High       | User specified more than 95% of inputs                |                                                                                                                    |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                          |                                                                                                                    |
+|                             |            |                                                       |                                                                                                                    |
+| Overall confidence level    | Medium     |                                                       |                                                                                                                    |
++-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
 
 2. Settings
@@ -147,7 +147,7 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| LED_Buzzer_Control_wrapper                       |     0.647 |
+| LED_Buzzer_Control_wrapper                       |     0.648 |
 |   LED_Buzzer_Control_i                           |     0.647 |
 |     PWM_0                                        |    <0.001 |
 |       U0                                         |    <0.001 |

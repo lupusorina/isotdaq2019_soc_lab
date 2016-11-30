@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 29 15:41:14 2016" VIVADOVERSION="2016.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov 30 11:34:45 2016" VIVADOVERSION="2016.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="myir.com:mys-7z010:part0:2.1" DEVICE="7z010" NAME="LED_Buzzer_Control" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -23,6 +23,11 @@
         <CONNECTION INSTANCE="PWM_0" PORT="PWM_BLUE"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="O" NAME="PWM_BUZZER" SIGIS="undef" SIGNAME="PWM_0_PWM_BUZZER">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PWM_0" PORT="PWM_BUZZER"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -40,7 +45,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE FULLNAME="/PWM_0" HWVERSION="1.2" INSTANCE="PWM_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PWM" VLNV="user.org:user:PWM:1.2">
+    <MODULE FULLNAME="/PWM_0" HWVERSION="1.3" INSTANCE="PWM_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PWM" VLNV="user.org:user:PWM:1.3">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -48,7 +53,7 @@
       <PARAMETERS>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="PWM_SIZE" VALUE="50000"/>
+        <PARAMETER NAME="PWM_LEDs_PERIOD_COUNTER" VALUE="50000"/>
         <PARAMETER NAME="Component_Name" VALUE="LED_Buzzer_Control_PWM_0_2"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_S00_AXI_BASEADDR" VALUE="0x43C00000"/>
@@ -68,6 +73,11 @@
         <PORT DIR="O" NAME="PWM_BLUE" SIGIS="undef" SIGNAME="PWM_0_PWM_BLUE">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="PWM_BLUE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PWM_BUZZER" SIGIS="undef" SIGNAME="PWM_0_PWM_BUZZER">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PWM_BUZZER"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="s00_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="PWM_0_s00_axi_awaddr">
@@ -1371,10 +1381,10 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
-            <CONNECTION INSTANCE="PWM_0" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="ACLK"/>
+            <CONNECTION INSTANCE="PWM_0" PORT="s00_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -2226,9 +2236,9 @@
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PWM_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_ARESETN"/>
+            <CONNECTION INSTANCE="PWM_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

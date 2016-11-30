@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
---Date        : Mon Nov 28 18:07:04 2016
+--Date        : Wed Nov 30 11:28:49 2016
 --Host        : sorina running 64-bit Ubuntu 16.04.1 LTS
 --Command     : generate_target LED_Buzzer_Control.bd
 --Design      : LED_Buzzer_Control
@@ -594,6 +594,8 @@ entity LED_Buzzer_Control is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    PWM_BLUE : out STD_LOGIC;
+    PWM_GREEN : out STD_LOGIC;
     PWM_RED : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
@@ -645,8 +647,6 @@ architecture STRUCTURE of LED_Buzzer_Control is
     M_AXI_GP0_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
     FCLK_CLK0 : out STD_LOGIC;
-    FCLK_CLK1 : out STD_LOGIC;
-    FCLK_CLK2 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     PS_SRSTB : inout STD_LOGIC;
@@ -673,6 +673,7 @@ architecture STRUCTURE of LED_Buzzer_Control is
     PWM_RED : out STD_LOGIC;
     PWM_GREEN : out STD_LOGIC;
     PWM_BLUE : out STD_LOGIC;
+    PWM_BUZZER : out STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s00_axi_awvalid : in STD_LOGIC;
@@ -696,6 +697,8 @@ architecture STRUCTURE of LED_Buzzer_Control is
     s00_axi_aresetn : in STD_LOGIC
   );
   end component LED_Buzzer_Control_PWM_0_2;
+  signal PWM_0_PWM_BLUE : STD_LOGIC;
+  signal PWM_0_PWM_GREEN : STD_LOGIC;
   signal PWM_0_PWM_RED : STD_LOGIC;
   signal processing_system7_0_FCLK_CLK2 : STD_LOGIC;
   signal processing_system7_0_FCLK_RESET0_N : STD_LOGIC;
@@ -762,19 +765,19 @@ architecture STRUCTURE of LED_Buzzer_Control is
   signal ps7_0_axi_periph_M00_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_PWM_0_PWM_BLUE_UNCONNECTED : STD_LOGIC;
-  signal NLW_PWM_0_PWM_GREEN_UNCONNECTED : STD_LOGIC;
-  signal NLW_processing_system7_0_FCLK_CLK0_UNCONNECTED : STD_LOGIC;
-  signal NLW_processing_system7_0_FCLK_CLK1_UNCONNECTED : STD_LOGIC;
+  signal NLW_PWM_0_PWM_BUZZER_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
 begin
+  PWM_BLUE <= PWM_0_PWM_BLUE;
+  PWM_GREEN <= PWM_0_PWM_GREEN;
   PWM_RED <= PWM_0_PWM_RED;
 PWM_0: component LED_Buzzer_Control_PWM_0_2
      port map (
-      PWM_BLUE => NLW_PWM_0_PWM_BLUE_UNCONNECTED,
-      PWM_GREEN => NLW_PWM_0_PWM_GREEN_UNCONNECTED,
+      PWM_BLUE => PWM_0_PWM_BLUE,
+      PWM_BUZZER => NLW_PWM_0_PWM_BUZZER_UNCONNECTED,
+      PWM_GREEN => PWM_0_PWM_GREEN,
       PWM_RED => PWM_0_PWM_RED,
       s00_axi_aclk => processing_system7_0_FCLK_CLK2,
       s00_axi_araddr(3 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(3 downto 0),
@@ -800,9 +803,7 @@ PWM_0: component LED_Buzzer_Control_PWM_0_2
     );
 processing_system7_0: component LED_Buzzer_Control_processing_system7_0_0
      port map (
-      FCLK_CLK0 => NLW_processing_system7_0_FCLK_CLK0_UNCONNECTED,
-      FCLK_CLK1 => NLW_processing_system7_0_FCLK_CLK1_UNCONNECTED,
-      FCLK_CLK2 => processing_system7_0_FCLK_CLK2,
+      FCLK_CLK0 => processing_system7_0_FCLK_CLK2,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK2,
