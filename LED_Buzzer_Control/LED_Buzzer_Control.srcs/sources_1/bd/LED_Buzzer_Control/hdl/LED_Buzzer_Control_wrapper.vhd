@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
---Date        : Wed Nov 30 11:34:43 2016
+--Date        : Thu Dec  1 07:51:31 2016
 --Host        : sorina running 64-bit Ubuntu 16.04.1 LTS
 --Command     : generate_target LED_Buzzer_Control_wrapper.bd
 --Design      : LED_Buzzer_Control_wrapper

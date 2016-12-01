@@ -1,6 +1,27 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
+| Date         : Thu Dec  1 07:51:24 2016
+| Host         : sorina running 64-bit Ubuntu 16.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'LED_Buzzer_Control_PWM_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of LED_Buzzer_Control_PWM_0_2 (user.org:user:PWM:1.3) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
 | Date         : Wed Nov 30 11:28:39 2016
 | Host         : sorina running 64-bit Ubuntu 16.04.1 LTS
 | Command      : upgrade_ip

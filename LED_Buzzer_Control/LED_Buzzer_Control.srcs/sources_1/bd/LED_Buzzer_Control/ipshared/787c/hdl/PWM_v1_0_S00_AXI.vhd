@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity PWM_v1_0_S00_AXI is
 	generic (
 		-- Users to add parameters here
-        PWM_LEDs_PERIOD_COUNTER : integer   :=50000;
+        PWM_LEDs_PERIOD_COUNTER : integer   :=25000;
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line
 		-- Width of S_AXI data bus
@@ -122,6 +122,7 @@ architecture arch_imp of PWM_v1_0_S00_AXI is
     signal temp             : integer;
     signal counter_pwm_buzzer  : integer;
     signal temp_pwm_buzzer     : integer;
+    signal duty_cycle_buzzer   : integer;
 begin
 	-- I/O Connections assignments
 
@@ -407,7 +408,8 @@ begin
 	PWM_GREEN <= '1' when (counter_pwm < to_integer(unsigned(slv_reg1))) else '0';
 	PWM_BLUE <= '1' when (counter_pwm < to_integer(unsigned(slv_reg2))) else '0';
 	-- Set PWM signal for buzzer with 50% duty cycle
-	PWM_BUZZER <= '1' when (counter_pwm_buzzer < to_integer(unsigned(slv_reg3))) else '0';
+	duty_cycle_buzzer <= to_integer(unsigned(slv_reg3)) / 2;
+	PWM_BUZZER <= '1' when (counter_pwm_buzzer < duty_cycle_buzzer) else '0';
 	-- User logic ends
 
 end arch_imp;

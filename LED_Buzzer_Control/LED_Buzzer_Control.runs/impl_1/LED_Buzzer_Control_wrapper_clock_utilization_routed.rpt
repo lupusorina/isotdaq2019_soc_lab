@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
-| Date         : Wed Nov 30 12:10:42 2016
+| Date         : Thu Dec  1 08:07:12 2016
 | Host         : sorina running 64-bit Ubuntu 16.04.1 LTS
 | Command      : report_clock_utilization -file LED_Buzzer_Control_wrapper_clock_utilization_routed.rpt
 | Design       : LED_Buzzer_Control_wrapper
@@ -19,10 +19,8 @@ Table of Contents
 4. Clock Regions: Key Resource Utilization
 5. Clock Regions : Global Clock Summary
 6. Cell Type Counts per Global Clock: Region X0Y0
-7. Cell Type Counts per Global Clock: Region X1Y0
-8. Cell Type Counts per Global Clock: Region X0Y1
-9. Load Cell Placement Summary for Global Clock g0
-10. Load Cell Placement Summary for Global Clock g1
+7. Load Cell Placement Summary for Global Clock g0
+8. Load Cell Placement Summary for Global Clock g1
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -43,12 +41,12 @@ Table of Contents
 2. Global Clock Resources
 -------------------------
 
-+-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+-------+---------------------------------------------------+-------------------------------------------------+
-| Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Root | Clock Delay Group | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                                        | Net                                             |
-+-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+-------+---------------------------------------------------+-------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |      |                   |                 3 |          32 |               1 |              |       | LED_Buzzer_Control_i/PWM_0/PWM_BUZZER_BUFG_inst/O | LED_Buzzer_Control_i/PWM_0/PWM_BUZZER           |
-| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |      |                   |                 1 |          32 |               0 |              |       | LED_Buzzer_Control_i/PWM_0/temp_reg[31]_i_2/O     | LED_Buzzer_Control_i/PWM_0/temp_reg[31]_i_2_n_0 |
-+-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+-------+---------------------------------------------------+-------------------------------------------------+
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+-------+----------------------------------------------------------+------------------------------------------------------------+
+| Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Root | Clock Delay Group | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                                               | Net                                                        |
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+-------+----------------------------------------------------------+------------------------------------------------------------+
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |      |                   |                 1 |          32 |               0 |              |       | LED_Buzzer_Control_i/PWM_0/temp_pwm_buzzer_reg[31]_i_2/O | LED_Buzzer_Control_i/PWM_0/temp_pwm_buzzer_reg[31]_i_2_n_0 |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |      |                   |                 1 |          32 |               0 |              |       | LED_Buzzer_Control_i/PWM_0/temp_reg[31]_i_2/O            | LED_Buzzer_Control_i/PWM_0/temp_reg[31]_i_2_n_0            |
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+-------+----------------------------------------------------------+------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 
@@ -56,12 +54,12 @@ Table of Contents
 3. Global Clock Source Details
 ------------------------------
 
-+-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------+
-| Source Id | Global Id | Driver Type/Pin | Constraint | Site         | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin                                                                             | Net                                                            |
-+-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------+
-| src0      | g0        | CARRY4/CO[3]    | None       | SLICE_X15Y47 | X0Y0         |           1 |              65 |                     |              | LED_Buzzer_Control_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2/CO[3] | LED_Buzzer_Control_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/PWM_BUZZER |
-| src1      | g1        | CARRY4/CO[1]    | None       | SLICE_X10Y50 | X0Y1         |           1 |             148 |                     |              | LED_Buzzer_Control_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2/CO[1]        | LED_Buzzer_Control_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/E[0]       |
-+-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------+
++-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+----------------------------------------------------------------------------------------+------------------------------------------------------------+
+| Source Id | Global Id | Driver Type/Pin | Constraint | Site         | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin                                                                             | Net                                                        |
++-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+----------------------------------------------------------------------------------------+------------------------------------------------------------+
+| src0      | g0        | CARRY4/CO[3]    | None       | SLICE_X14Y46 | X0Y0         |           1 |              97 |                     |              | LED_Buzzer_Control_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2/CO[3] | LED_Buzzer_Control_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/O48[0] |
+| src1      | g1        | CARRY4/CO[1]    | None       | SLICE_X11Y48 | X0Y0         |           1 |             148 |                     |              | LED_Buzzer_Control_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2/CO[1]        | LED_Buzzer_Control_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/E[0]   |
++-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+----------------------------------------------------------------------------------------+------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 
@@ -74,9 +72,9 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  1100 |   31 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1100 |    0 |   350 |    0 |    40 |    0 |    20 |    0 |    20 |
-| X0Y1              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  1100 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X0Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  1100 |   32 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1100 |    0 |   350 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y1              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  1100 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1100 |    0 |   350 |    0 |    40 |    0 |    20 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
@@ -88,59 +86,33 @@ Table of Contents
 +----+----+----+
 |    | X0 | X1 |
 +----+----+----+
-| Y1 |  1 |  0 |
-| Y0 |  2 |  1 |
+| Y1 |  0 |  0 |
+| Y0 |  2 |  0 |
 +----+----+----+
 
 
 6. Cell Type Counts per Global Clock: Region X0Y0
 -------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                             |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          29 |               0 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | LED_Buzzer_Control_i/PWM_0/PWM_BUZZER           |
-| g1        | n/a   | BUFG/O          | None       |          32 |               0 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | LED_Buzzer_Control_i/PWM_0/temp_reg[31]_i_2_n_0 |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                        |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |          32 |               0 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | LED_Buzzer_Control_i/PWM_0/temp_pwm_buzzer_reg[31]_i_2_n_0 |
+| g1        | n/a   | BUFG/O          | None       |          32 |               0 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | LED_Buzzer_Control_i/PWM_0/temp_reg[31]_i_2_n_0            |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-7. Cell Type Counts per Global Clock: Region X1Y0
--------------------------------------------------
-
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                   |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |           0 |               1 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | LED_Buzzer_Control_i/PWM_0/PWM_BUZZER |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------------------------------+
-* Clock Loads column represents the clock pin loads (pin count)
-** Non-Clock Loads column represents the non-clock pin loads (pin count)
-*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
-
-
-8. Cell Type Counts per Global Clock: Region X0Y1
--------------------------------------------------
-
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                   |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |           3 |               0 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | LED_Buzzer_Control_i/PWM_0/PWM_BUZZER |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------------------------------+
-* Clock Loads column represents the clock pin loads (pin count)
-** Non-Clock Loads column represents the non-clock pin loads (pin count)
-*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
-
-
-9. Load Cell Placement Summary for Global Clock g0
+7. Load Cell Placement Summary for Global Clock g0
 --------------------------------------------------
 
-+-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------+
-| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                   |
-+-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------+
-| g0        | BUFG/O          | n/a               |       |             |               |          |          32 |        1 |              0 |        0 | LED_Buzzer_Control_i/PWM_0/PWM_BUZZER |
-+-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                        |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------+
+| g0        | BUFG/O          | n/a               |       |             |               |          |          32 |        0 |              0 |        0 | LED_Buzzer_Control_i/PWM_0/temp_pwm_buzzer_reg[31]_i_2_n_0 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
 *** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
@@ -150,13 +122,13 @@ Table of Contents
 +----+-----+----+
 |    | X0  | X1 |
 +----+-----+----+
-| Y1 |   3 |  0 |
-| Y0 |  29 |  1 |
+| Y1 |   0 |  0 |
+| Y0 |  32 |  0 |
 +----+-----+----+
 
 
-10. Load Cell Placement Summary for Global Clock g1
----------------------------------------------------
+8. Load Cell Placement Summary for Global Clock g1
+--------------------------------------------------
 
 +-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                             |
@@ -180,10 +152,9 @@ Table of Contents
 
 # Location of BUFG Primitives 
 set_property LOC BUFGCTRL_X0Y1 [get_cells LED_Buzzer_Control_i/PWM_0/temp_reg[31]_i_2]
-set_property LOC BUFGCTRL_X0Y0 [get_cells LED_Buzzer_Control_i/PWM_0/PWM_BUZZER_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y0 [get_cells LED_Buzzer_Control_i/PWM_0/temp_pwm_buzzer_reg[31]_i_2]
 
 # Location of IO Primitives which is load of clock spine
-set_property LOC IOB_X0Y3 [get_cells PWM_BUZZER_OBUF_inst]
 
 # Location of clock ports
 
@@ -194,9 +165,9 @@ add_cells_to_pblock [get_pblocks  {CLKAG_LED_Buzzer_Control_i/PWM_0/temp_reg[31]
 resize_pblock [get_pblocks {CLKAG_LED_Buzzer_Control_i/PWM_0/temp_reg[31]_i_2_n_0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
 #endgroup
 
-# Clock net "LED_Buzzer_Control_i/PWM_0/PWM_BUZZER" driven by instance "LED_Buzzer_Control_i/PWM_0/PWM_BUZZER_BUFG_inst" located at site "BUFGCTRL_X0Y0"
+# Clock net "LED_Buzzer_Control_i/PWM_0/temp_pwm_buzzer_reg[31]_i_2_n_0" driven by instance "LED_Buzzer_Control_i/PWM_0/temp_pwm_buzzer_reg[31]_i_2" located at site "BUFGCTRL_X0Y0"
 #startgroup
-create_pblock {CLKAG_LED_Buzzer_Control_i/PWM_0/PWM_BUZZER}
-add_cells_to_pblock [get_pblocks  {CLKAG_LED_Buzzer_Control_i/PWM_0/PWM_BUZZER}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=PWM_BUZZER_OBUF_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="LED_Buzzer_Control_i/PWM_0/PWM_BUZZER"}]]]
-resize_pblock [get_pblocks {CLKAG_LED_Buzzer_Control_i/PWM_0/PWM_BUZZER}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+create_pblock {CLKAG_LED_Buzzer_Control_i/PWM_0/temp_pwm_buzzer_reg[31]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_LED_Buzzer_Control_i/PWM_0/temp_pwm_buzzer_reg[31]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="LED_Buzzer_Control_i/PWM_0/temp_pwm_buzzer_reg[31]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_LED_Buzzer_Control_i/PWM_0/temp_pwm_buzzer_reg[31]_i_2_n_0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
 #endgroup

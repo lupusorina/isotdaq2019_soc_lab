@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov 30 11:34:45 2016" VIVADOVERSION="2016.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Dec  1 07:51:32 2016" VIVADOVERSION="2016.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="myir.com:mys-7z010:part0:2.1" DEVICE="7z010" NAME="LED_Buzzer_Control" PACKAGE="clg400" SPEEDGRADE="-1"/>
 

@@ -39,13 +39,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="6"/>
-    <Option Name="WTModelSimExportSim" Val="6"/>
-    <Option Name="WTQuestaExportSim" Val="6"/>
-    <Option Name="WTIesExportSim" Val="6"/>
-    <Option Name="WTVcsExportSim" Val="6"/>
-    <Option Name="WTRivieraExportSim" Val="6"/>
-    <Option Name="WTActivehdlExportSim" Val="6"/>
+    <Option Name="WTXSimExportSim" Val="7"/>
+    <Option Name="WTModelSimExportSim" Val="7"/>
+    <Option Name="WTQuestaExportSim" Val="7"/>
+    <Option Name="WTIesExportSim" Val="7"/>
+    <Option Name="WTVcsExportSim" Val="7"/>
+    <Option Name="WTRivieraExportSim" Val="7"/>
+    <Option Name="WTActivehdlExportSim" Val="7"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -61,16 +61,16 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="ip/LED_Buzzer_Control_rst_ps7_0_100M_0/LED_Buzzer_Control_rst_ps7_0_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="hdl/LED_Buzzer_Control.vhd"/>
-        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="ip/LED_Buzzer_Control_ps7_0_axi_periph_0/LED_Buzzer_Control_ps7_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="ip/LED_Buzzer_Control_PWM_0_2/LED_Buzzer_Control_PWM_0_2.xci"/>
         <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="LED_Buzzer_Control_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="ip/LED_Buzzer_Control_processing_system7_0_0/LED_Buzzer_Control_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="ip/LED_Buzzer_Control_auto_pc_0/LED_Buzzer_Control_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="hw_handoff/LED_Buzzer_Control_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="hw_handoff/LED_Buzzer_Control.hwh"/>
         <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="hdl/LED_Buzzer_Control.hwdef"/>
+        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="ip/LED_Buzzer_Control_PWM_0_2/LED_Buzzer_Control_PWM_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="ip/LED_Buzzer_Control_processing_system7_0_0/LED_Buzzer_Control_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="ip/LED_Buzzer_Control_ps7_0_axi_periph_0/LED_Buzzer_Control_ps7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="ip/LED_Buzzer_Control_auto_pc_0/LED_Buzzer_Control_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="hw_handoff/LED_Buzzer_Control.hwh"/>
+        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="hdl/LED_Buzzer_Control.vhd"/>
+        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="ip/LED_Buzzer_Control_rst_ps7_0_100M_0/LED_Buzzer_Control_rst_ps7_0_100M_0.xci"/>
+        <CompFileExtendedInfo CompFileName="LED_Buzzer_Control.bd" FileRelPathName="hw_handoff/LED_Buzzer_Control_bd.tcl"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/LED_Buzzer_Control/hdl/LED_Buzzer_Control_wrapper.vhd">
         <FileInfo>

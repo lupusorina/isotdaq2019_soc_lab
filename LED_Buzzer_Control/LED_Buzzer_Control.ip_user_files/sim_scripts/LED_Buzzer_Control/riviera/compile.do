@@ -45,8 +45,8 @@ vcom -work proc_sys_reset_v5_0_10 -93 \
 
 vcom -work xil_defaultlib -93 \
 "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_rst_ps7_0_100M_0/sim/LED_Buzzer_Control_rst_ps7_0_100M_0.vhd" \
-"../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd" \
-"../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0.vhd" \
+"../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd" \
+"../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0.vhd" \
 "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_PWM_0_2/sim/LED_Buzzer_Control_PWM_0_2.vhd" \
 "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/hdl/LED_Buzzer_Control.vhd" \
 

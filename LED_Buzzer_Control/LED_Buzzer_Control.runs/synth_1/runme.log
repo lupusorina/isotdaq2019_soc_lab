@@ -17,9 +17,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 28144 
+INFO: Helper process launched with PID 12636 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1127.168 ; gain = 216.035 ; free physical = 4987 ; free virtual = 8333
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1127.168 ; gain = 216.035 ; free physical = 4559 ; free virtual = 8287
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'LED_Buzzer_Control_wrapper' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/hdl/LED_Buzzer_Control_wrapper.vhd:27]
 INFO: [Synth 8-3491] module 'LED_Buzzer_Control' declared at '/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/hdl/LED_Buzzer_Control.vhd:591' bound to instance 'LED_Buzzer_Control_i' of component 'LED_Buzzer_Control' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/hdl/LED_Buzzer_Control_wrapper.vhd:41]
@@ -29,28 +29,28 @@ INFO: [Synth 8-638] synthesizing module 'LED_Buzzer_Control_PWM_0_2' [/opt/Xilin
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter PWM_LEDs_PERIOD_COUNTER bound to: 50000 - type: integer 
-INFO: [Synth 8-3491] module 'PWM_v1_0' declared at '/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0.vhd:5' bound to instance 'U0' of component 'PWM_v1_0' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_PWM_0_2/synth/LED_Buzzer_Control_PWM_0_2.vhd:150]
-INFO: [Synth 8-638] synthesizing module 'PWM_v1_0' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0.vhd:52]
+INFO: [Synth 8-3491] module 'PWM_v1_0' declared at '/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0.vhd:5' bound to instance 'U0' of component 'PWM_v1_0' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_PWM_0_2/synth/LED_Buzzer_Control_PWM_0_2.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'PWM_v1_0' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0.vhd:52]
 	Parameter PWM_LEDs_PERIOD_COUNTER bound to: 50000 - type: integer 
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter PWM_LEDs_PERIOD_COUNTER bound to: 50000 - type: integer 
-INFO: [Synth 8-3491] module 'PWM_v1_0_S00_AXI' declared at '/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:5' bound to instance 'PWM_v1_0_S00_AXI_inst' of component 'PWM_v1_0_S00_AXI' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'PWM_v1_0_S00_AXI' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-3491] module 'PWM_v1_0_S00_AXI' declared at '/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:5' bound to instance 'PWM_v1_0_S00_AXI_inst' of component 'PWM_v1_0_S00_AXI' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'PWM_v1_0_S00_AXI' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:88]
 	Parameter PWM_LEDs_PERIOD_COUNTER bound to: 50000 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:223]
-INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
-WARNING: [Synth 8-614] signal 'counter_pwm' is read in the process but is not in the sensitivity list [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:388]
-WARNING: [Synth 8-614] signal 'temp' is read in the process but is not in the sensitivity list [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:388]
-WARNING: [Synth 8-614] signal 'counter_pwm_buzzer' is read in the process but is not in the sensitivity list [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:388]
-WARNING: [Synth 8-614] signal 'slv_reg3' is read in the process but is not in the sensitivity list [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:388]
-WARNING: [Synth 8-614] signal 'temp_pwm_buzzer' is read in the process but is not in the sensitivity list [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:388]
-INFO: [Synth 8-256] done synthesizing module 'PWM_v1_0_S00_AXI' (1#1) [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'PWM_v1_0' (2#1) [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0.vhd:52]
+INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:224]
+INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
+WARNING: [Synth 8-614] signal 'counter_pwm' is read in the process but is not in the sensitivity list [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:389]
+WARNING: [Synth 8-614] signal 'temp' is read in the process but is not in the sensitivity list [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:389]
+WARNING: [Synth 8-614] signal 'counter_pwm_buzzer' is read in the process but is not in the sensitivity list [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:389]
+WARNING: [Synth 8-614] signal 'slv_reg3' is read in the process but is not in the sensitivity list [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:389]
+WARNING: [Synth 8-614] signal 'temp_pwm_buzzer' is read in the process but is not in the sensitivity list [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:389]
+INFO: [Synth 8-256] done synthesizing module 'PWM_v1_0_S00_AXI' (1#1) [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'PWM_v1_0' (2#1) [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0.vhd:52]
 INFO: [Synth 8-256] done synthesizing module 'LED_Buzzer_Control_PWM_0_2' (3#1) [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_PWM_0_2/synth/LED_Buzzer_Control_PWM_0_2.vhd:86]
 INFO: [Synth 8-3491] module 'LED_Buzzer_Control_processing_system7_0_0' declared at '/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_processing_system7_0_0/synth/LED_Buzzer_Control_processing_system7_0_0.v:60' bound to instance 'processing_system7_0' of component 'LED_Buzzer_Control_processing_system7_0_0' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/hdl/LED_Buzzer_Control.vhd:806]
 INFO: [Synth 8-638] synthesizing module 'LED_Buzzer_Control_processing_system7_0_0' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_processing_system7_0_0/synth/LED_Buzzer_Control_processing_system7_0_0.v:60]
@@ -1025,7 +1025,7 @@ WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_10_b2s_rd_cmd_fsm has
 WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_10_b2s_rd_cmd_fsm has unconnected port s_arlen[2]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:22 ; elapsed = 00:01:33 . Memory (MB): peak = 1255.637 ; gain = 344.504 ; free physical = 4856 ; free virtual = 8204
+Finished RTL Elaboration : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1255.637 ; gain = 344.504 ; free physical = 4426 ; free virtual = 8155
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1035,7 +1035,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:22 ; elapsed = 00:01:34 . Memory (MB): peak = 1255.637 ; gain = 344.504 ; free physical = 4856 ; free virtual = 8203
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1255.637 ; gain = 344.504 ; free physical = 4426 ; free virtual = 8155
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1067,16 +1067,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1469.906 ; gain = 0.000 ; free physical = 4746 ; free virtual = 8094
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1469.906 ; gain = 0.000 ; free physical = 4328 ; free virtual = 8057
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:48 ; elapsed = 00:02:03 . Memory (MB): peak = 1469.906 ; gain = 558.773 ; free physical = 4745 ; free virtual = 8093
+Finished Constraint Validation : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1469.906 ; gain = 558.773 ; free physical = 4328 ; free virtual = 8057
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:48 ; elapsed = 00:02:03 . Memory (MB): peak = 1469.906 ; gain = 558.773 ; free physical = 4745 ; free virtual = 8093
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1469.906 ; gain = 558.773 ; free physical = 4328 ; free virtual = 8057
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1090,13 +1090,13 @@ Applied set_property DONT_TOUCH = true for LED_Buzzer_Control_i/ps7_0_axi_periph
 Applied set_property DONT_TOUCH = true for LED_Buzzer_Control_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for LED_Buzzer_Control_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:48 ; elapsed = 00:02:04 . Memory (MB): peak = 1469.906 ; gain = 558.773 ; free physical = 4745 ; free virtual = 8093
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1469.906 ; gain = 558.773 ; free physical = 4328 ; free virtual = 8057
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
-WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:391]
-WARNING: [Synth 8-327] inferring latch for variable 'temp_pwm_buzzer_reg' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:398]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:392]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_pwm_buzzer_reg' [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:399]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:51 ; elapsed = 00:02:08 . Memory (MB): peak = 1469.906 ; gain = 558.773 ; free physical = 4740 ; free virtual = 8088
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1469.906 ; gain = 558.773 ; free physical = 4321 ; free virtual = 8050
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1400,7 +1400,7 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GE
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:59 ; elapsed = 00:02:16 . Memory (MB): peak = 1469.906 ; gain = 558.773 ; free physical = 4701 ; free virtual = 8049
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1469.906 ; gain = 558.773 ; free physical = 4281 ; free virtual = 8010
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1415,7 +1415,7 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:19 ; elapsed = 00:02:39 . Memory (MB): peak = 1618.906 ; gain = 707.773 ; free physical = 4537 ; free virtual = 7885
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 1618.906 ; gain = 707.773 ; free physical = 4111 ; free virtual = 7840
 ---------------------------------------------------------------------------------
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
@@ -1424,15 +1424,15 @@ Found timing loop:
      3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1__34 /I0 (GATE_2_8_AND)
      4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/i_2/O (INV)
      5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/i_2/I (INV)
-     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_60 /O (GATE_2_8_AND)
-     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_60 /I0 (GATE_2_8_AND)
+     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_90 /O (GATE_2_8_AND)
+     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_90 /I0 (GATE_2_8_AND)
      8: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Inferred a: "set_disable_timing -from S[0] -to CO[1] LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 "
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /S[1] (CARRY4)
@@ -1440,18 +1440,18 @@ Found timing loop:
      3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1__35 /I0 (GATE_2_8_AND)
      4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/i_0/O (INV)
      5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/i_0/I (INV)
-     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_62 /O (GATE_2_8_AND)
-     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_62 /I0 (GATE_2_8_AND)
+     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_92 /O (GATE_2_8_AND)
+     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_92 /I0 (GATE_2_8_AND)
      8: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Inferred a: "set_disable_timing -from S[1] -to CO[1] LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 "
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /DI[1] (CARRY4)
-     2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_63 /O (GATE_2_8_AND)
-     3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_63 /I0 (GATE_2_8_AND)
+     2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_93 /O (GATE_2_8_AND)
+     3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_93 /I0 (GATE_2_8_AND)
      4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Inferred a: "set_disable_timing -from DI[1] -to CO[1] LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 "
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
@@ -1462,284 +1462,284 @@ Found timing loop:
      5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1__30 /I0 (GATE_2_8_AND)
      6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/i_10/O (INV)
      7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/i_10/I (INV)
-     8: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_52 /O (GATE_2_8_AND)
-     9: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_52 /I0 (GATE_2_8_AND)
+     8: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_82 /O (GATE_2_8_AND)
+     9: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_82 /I0 (GATE_2_8_AND)
     10: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Inferred a: "set_disable_timing -from CI -to CO[1] LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 "
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry__2 /CO[1] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /S[0] (CARRY4)
-     2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__130 /O (GATE_2_8_AND)
-     3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__130 /I0 (GATE_2_8_AND)
-     4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__124 /O (GATE_2_9_XNOR)
-     5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__124 /I0 (GATE_2_9_XNOR)
-     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_88 /O (GATE_2_8_AND)
-     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_88 /I0 (GATE_2_8_AND)
+     2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__105 /O (GATE_2_8_AND)
+     3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__105 /I0 (GATE_2_8_AND)
+     4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__100 /O (GATE_2_9_XNOR)
+     5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__100 /I0 (GATE_2_9_XNOR)
+     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_118 /O (GATE_2_8_AND)
+     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_118 /I0 (GATE_2_8_AND)
      8: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Inferred a: "set_disable_timing -from S[0] -to CO[3] LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 "
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /S[1] (CARRY4)
-     2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__139 /O (GATE_2_8_AND)
-     3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__139 /I0 (GATE_2_8_AND)
-     4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__133 /O (GATE_2_9_XNOR)
-     5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__133 /I0 (GATE_2_9_XNOR)
-     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_90 /O (GATE_2_8_AND)
-     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_90 /I0 (GATE_2_8_AND)
+     2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__112 /O (GATE_2_8_AND)
+     3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__112 /I0 (GATE_2_8_AND)
+     4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__107 /O (GATE_2_9_XNOR)
+     5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__107 /I0 (GATE_2_9_XNOR)
+     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_120 /O (GATE_2_8_AND)
+     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_120 /I0 (GATE_2_8_AND)
      8: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Inferred a: "set_disable_timing -from S[1] -to CO[3] LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 "
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /S[2] (CARRY4)
-     2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__148 /O (GATE_2_8_AND)
-     3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__148 /I0 (GATE_2_8_AND)
-     4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__142 /O (GATE_2_9_XNOR)
-     5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__142 /I0 (GATE_2_9_XNOR)
-     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_92 /O (GATE_2_8_AND)
-     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_92 /I0 (GATE_2_8_AND)
+     2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__119 /O (GATE_2_8_AND)
+     3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__119 /I0 (GATE_2_8_AND)
+     4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__114 /O (GATE_2_9_XNOR)
+     5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__114 /I0 (GATE_2_9_XNOR)
+     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_122 /O (GATE_2_8_AND)
+     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_122 /I0 (GATE_2_8_AND)
      8: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Inferred a: "set_disable_timing -from S[2] -to CO[3] LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 "
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /S[3] (CARRY4)
-     2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__157 /O (GATE_2_8_AND)
-     3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__157 /I0 (GATE_2_8_AND)
-     4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__151 /O (GATE_2_9_XNOR)
-     5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__151 /I0 (GATE_2_9_XNOR)
-     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_94 /O (GATE_2_8_AND)
-     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_94 /I0 (GATE_2_8_AND)
+     2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__127 /O (GATE_2_8_AND)
+     3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__127 /I0 (GATE_2_8_AND)
+     4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__121 /O (GATE_2_9_XNOR)
+     5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__121 /I0 (GATE_2_9_XNOR)
+     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_124 /O (GATE_2_8_AND)
+     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_124 /I0 (GATE_2_8_AND)
      8: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Inferred a: "set_disable_timing -from S[3] -to CO[3] LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 "
 Found timing loop:
-     0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_95 /O (GATE_2_8_AND)
-     1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_95 /I0 (GATE_2_8_AND)
+     0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_125 /O (GATE_2_8_AND)
+     1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_125 /I0 (GATE_2_8_AND)
      2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
-Inferred a: "set_disable_timing -from I0 -to O LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_95 "
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
+Inferred a: "set_disable_timing -from I0 -to O LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_125 "
 Found timing loop:
-     0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_95 /O (GATE_2_8_AND)
-     1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_95 /O (GATE_2_8_AND)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+     0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_125 /O (GATE_2_8_AND)
+     1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_125 /O (GATE_2_8_AND)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CI (CARRY4)
      2: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__1 /CO[3] (CARRY4)
      3: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__1 /S[0] (CARRY4)
-     4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__94 /O (GATE_2_8_AND)
-     5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__94 /I0 (GATE_2_8_AND)
-     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__88 /O (GATE_2_9_XNOR)
-     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__88 /I0 (GATE_2_9_XNOR)
-     8: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_80 /O (GATE_2_8_AND)
-     9: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_80 /I0 (GATE_2_8_AND)
+     4: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__77 /O (GATE_2_8_AND)
+     5: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__77 /I0 (GATE_2_8_AND)
+     6: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__72 /O (GATE_2_9_XNOR)
+     7: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1__72 /I0 (GATE_2_9_XNOR)
+     8: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_110 /O (GATE_2_8_AND)
+     9: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/i_110 /I0 (GATE_2_8_AND)
     10: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Inferred a: "set_disable_timing -from CI -to CO[3] LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 "
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 Found timing loop:
      0: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
      1: LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3] (CARRY4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/082b/hdl/PWM_v1_0_S00_AXI.vhd:353]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd:354]
 WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3]'
 WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through LED_Buzzer_Control_i/PWM_0/PWM_v1_0_S00_AXI_insti_3/\U0/PWM_v1_0_S00_AXI_inst/counter_pwm_buzzer1_carry__2 /CO[3]'
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:02:45 . Memory (MB): peak = 1669.523 ; gain = 758.391 ; free physical = 4487 ; free virtual = 7834
+Finished Timing Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:01:51 . Memory (MB): peak = 1669.523 ; gain = 758.391 ; free physical = 4060 ; free virtual = 7789
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1755,7 +1755,7 @@ INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b
 INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module LED_Buzzer_Control_auto_pc_0.
 INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/wrap_cmd_0/axlen_cnt_reg[4]) is unused and will be removed from module LED_Buzzer_Control_auto_pc_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:31 ; elapsed = 00:02:52 . Memory (MB): peak = 1679.539 ; gain = 768.406 ; free physical = 4477 ; free virtual = 7825
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:57 . Memory (MB): peak = 1679.531 ; gain = 768.398 ; free physical = 4051 ; free virtual = 7780
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1794,7 +1794,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 20 on net \inst/gen_axili
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:36 ; elapsed = 00:02:58 . Memory (MB): peak = 1679.539 ; gain = 768.406 ; free physical = 4476 ; free virtual = 7824
+Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:02:00 . Memory (MB): peak = 1679.531 ; gain = 768.398 ; free physical = 4051 ; free virtual = 7780
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1807,7 +1807,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:36 ; elapsed = 00:02:58 . Memory (MB): peak = 1679.539 ; gain = 768.406 ; free physical = 4476 ; free virtual = 7824
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:02:00 . Memory (MB): peak = 1679.531 ; gain = 768.398 ; free physical = 4051 ; free virtual = 7780
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1819,25 +1819,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:37 ; elapsed = 00:02:59 . Memory (MB): peak = 1679.539 ; gain = 768.406 ; free physical = 4476 ; free virtual = 7824
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:02:01 . Memory (MB): peak = 1679.531 ; gain = 768.398 ; free physical = 4051 ; free virtual = 7780
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:37 ; elapsed = 00:02:59 . Memory (MB): peak = 1679.539 ; gain = 768.406 ; free physical = 4476 ; free virtual = 7824
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:53 ; elapsed = 00:02:01 . Memory (MB): peak = 1679.531 ; gain = 768.398 ; free physical = 4051 ; free virtual = 7780
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:37 ; elapsed = 00:02:59 . Memory (MB): peak = 1679.539 ; gain = 768.406 ; free physical = 4476 ; free virtual = 7824
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:54 ; elapsed = 00:02:01 . Memory (MB): peak = 1679.531 ; gain = 768.398 ; free physical = 4051 ; free virtual = 7780
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:37 ; elapsed = 00:02:59 . Memory (MB): peak = 1679.539 ; gain = 768.406 ; free physical = 4476 ; free virtual = 7824
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:54 ; elapsed = 00:02:02 . Memory (MB): peak = 1679.531 ; gain = 768.398 ; free physical = 4051 ; free virtual = 7780
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1874,12 +1874,12 @@ Report Cell Usage:
 +------+--------+------+
 |1     |BIBUF   |   130|
 |2     |BUFG    |     2|
-|3     |CARRY4  |    54|
+|3     |CARRY4  |    58|
 |4     |LUT1    |   155|
 |5     |LUT2    |    94|
 |6     |LUT3    |   256|
-|7     |LUT4    |    66|
-|8     |LUT5    |   205|
+|7     |LUT4    |    68|
+|8     |LUT5    |   235|
 |9     |LUT6    |   141|
 |10    |PS7     |     1|
 |11    |SRL16   |     1|
@@ -1896,11 +1896,11 @@ Report Instance Areas:
 +------+---------------------------------------------------+---------------------------------------------------------------+------+
 |      |Instance                                           |Module                                                         |Cells |
 +------+---------------------------------------------------+---------------------------------------------------------------+------+
-|1     |top                                                |                                                               |  2051|
-|2     |  LED_Buzzer_Control_i                             |LED_Buzzer_Control                                             |  2047|
-|3     |    PWM_0                                          |LED_Buzzer_Control_PWM_0_2                                     |   544|
-|4     |      U0                                           |PWM_v1_0                                                       |   542|
-|5     |        PWM_v1_0_S00_AXI_inst                      |PWM_v1_0_S00_AXI                                               |   542|
+|1     |top                                                |                                                               |  2087|
+|2     |  LED_Buzzer_Control_i                             |LED_Buzzer_Control                                             |  2083|
+|3     |    PWM_0                                          |LED_Buzzer_Control_PWM_0_2                                     |   580|
+|4     |      U0                                           |PWM_v1_0                                                       |   578|
+|5     |        PWM_v1_0_S00_AXI_inst                      |PWM_v1_0_S00_AXI                                               |   578|
 |6     |    processing_system7_0                           |LED_Buzzer_Control_processing_system7_0_0                      |   243|
 |7     |      inst                                         |processing_system7_v5_5_processing_system7                     |   243|
 |8     |    ps7_0_axi_periph                               |LED_Buzzer_Control_ps7_0_axi_periph_0                          |  1194|
@@ -1938,13 +1938,13 @@ Report Instance Areas:
 |40    |          SEQ_COUNTER                              |upcnt_n                                                        |    13|
 +------+---------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:37 ; elapsed = 00:02:59 . Memory (MB): peak = 1679.539 ; gain = 768.406 ; free physical = 4476 ; free virtual = 7824
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:54 ; elapsed = 00:02:02 . Memory (MB): peak = 1679.531 ; gain = 768.398 ; free physical = 4050 ; free virtual = 7780
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 61 critical warnings and 130 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:08 ; elapsed = 00:02:25 . Memory (MB): peak = 1679.539 ; gain = 413.102 ; free physical = 4476 ; free virtual = 7824
-Synthesis Optimization Complete : Time (s): cpu = 00:02:38 ; elapsed = 00:03:00 . Memory (MB): peak = 1679.547 ; gain = 768.414 ; free physical = 4478 ; free virtual = 7826
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:40 ; elapsed = 00:01:47 . Memory (MB): peak = 1679.531 ; gain = 413.094 ; free physical = 4050 ; free virtual = 7779
+Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:02:02 . Memory (MB): peak = 1679.539 ; gain = 768.406 ; free physical = 4050 ; free virtual = 7779
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 127 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -1957,7 +1957,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 217 Infos, 114 Warnings, 61 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:30 ; elapsed = 00:02:50 . Memory (MB): peak = 1679.547 ; gain = 643.961 ; free physical = 4478 ; free virtual = 7826
+synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:01:59 . Memory (MB): peak = 1679.539 ; gain = 643.953 ; free physical = 4052 ; free virtual = 7781
 INFO: [Common 17-1381] The checkpoint '/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.runs/synth_1/LED_Buzzer_Control_wrapper.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.39 . Memory (MB): peak = 1703.551 ; gain = 0.000 ; free physical = 4478 ; free virtual = 7826
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 30 12:03:08 2016...
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1703.543 ; gain = 0.000 ; free physical = 4051 ; free virtual = 7781
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  1 07:54:45 2016...

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
-| Date             : Wed Nov 30 12:10:41 2016
+| Date             : Thu Dec  1 08:07:11 2016
 | Host             : sorina running 64-bit Ubuntu 16.04.1 LTS
 | Command          : report_power -file LED_Buzzer_Control_wrapper_power_routed.rpt -pb LED_Buzzer_Control_wrapper_power_summary_routed.pb -rpx LED_Buzzer_Control_wrapper_power_routed.rpx
 | Design           : LED_Buzzer_Control_wrapper
@@ -31,7 +31,7 @@ Table of Contents
 
 +--------------------------+--------+
 | Total On-Chip Power (W)  | 0.764  |
-| Dynamic (W)              | 0.648  |
+| Dynamic (W)              | 0.647  |
 | Device Static (W)        | 0.116  |
 | Effective TJA (C/W)      | 11.5   |
 | Max Ambient (C)          | 76.2   |
@@ -50,14 +50,14 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.002 |        3 |       --- |             --- |
-| Slice Logic             |    <0.001 |     1647 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |      489 |     17600 |            2.78 |
+| Slice Logic             |    <0.001 |     1683 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |      505 |     17600 |            2.87 |
 |   Register              |    <0.001 |      698 |     35200 |            1.98 |
-|   CARRY4                |    <0.001 |       42 |      4400 |            0.95 |
+|   CARRY4                |    <0.001 |       46 |      4400 |            1.05 |
 |   BUFG                  |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Shift Register |    <0.001 |       68 |      6000 |            1.13 |
 |   Others                |     0.000 |      185 |       --- |             --- |
-| Signals                 |     0.001 |     1067 |       --- |             --- |
+| Signals                 |     0.001 |     1072 |       --- |             --- |
 | I/O                     |    <0.001 |        4 |       100 |            4.00 |
 | PS7                     |     0.643 |        1 |       --- |             --- |
 | Static Power            |     0.116 |          |           |                 |
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.008 |       0.003 |      0.005 |
+| Vccint    |       1.000 |     0.008 |       0.004 |      0.005 |
 | Vccaux    |       1.800 |     0.011 |       0.000 |      0.011 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -147,7 +147,7 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| LED_Buzzer_Control_wrapper                       |     0.648 |
+| LED_Buzzer_Control_wrapper                       |     0.647 |
 |   LED_Buzzer_Control_i                           |     0.647 |
 |     PWM_0                                        |    <0.001 |
 |       U0                                         |    <0.001 |
