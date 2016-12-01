@@ -12,13 +12,14 @@ void print_memory_mapped_registers();
 // Generate a random number between 1 and 3 (1 - red; 2 - green;  3 - blue)
 // Every time the red color is showed, activate the buzzer for 1 seconds
 int main(){
+
     int red_pwm = 0;
     int blue_pwm = 0;
     int green_pwm = 0;
     int buzzer_pwm = 0;
 
 
-    int led_duty_cycle_max = 50000;
+    int led_duty_cycle_max = 12000;
     int buzzer_pwm_value =  led_duty_cycle_max;
 
     int rand_choose_color;
