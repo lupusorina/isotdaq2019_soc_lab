@@ -1,2 +1,9 @@
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.pyg
+*.toc
+
 # metadata
 *.log
