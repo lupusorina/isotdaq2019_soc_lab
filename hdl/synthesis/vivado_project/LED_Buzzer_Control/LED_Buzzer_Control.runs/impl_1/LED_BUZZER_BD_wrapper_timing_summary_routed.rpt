@@ -1,0 +1,1277 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
+| Date         : Sun Jan 15 19:29:20 2017
+| Host         : cern running 64-bit Ubuntu 16.04.1 LTS
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file LED_BUZZER_BD_wrapper_timing_summary_routed.rpt -rpx LED_BUZZER_BD_wrapper_timing_summary_routed.rpx
+| Design       : LED_BUZZER_BD_wrapper
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 32 register/latch pins with no clock driven by root clock pin: LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/counter_pwm1_carry/CO[3] (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3_reg[9]/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 64 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 4 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 44 combinational loops in the design. (HIGH)
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 2 combinational latch loops in the design through latch input (HIGH)
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     13.523        0.000                      0                 1543        0.056        0.000                      0                 1543        9.020        0.000                       0                   705  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_fpga_0  {0.000 10.000}     20.000          50.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0         13.523        0.000                      0                 1543        0.056        0.000                      0                 1543        9.020        0.000                       0                   705  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       13.523ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.056ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             13.523ns  (required time - arrival time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[30]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.864ns  (logic 0.966ns (16.473%)  route 4.898ns (83.527%))
+  Logic Levels:           3  (LUT2=1 LUT4=2)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.701ns = ( 22.701 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.037ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.729     3.037    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/aclk
+    SLICE_X5Y49          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y49          FDRE (Prop_fdre_C_Q)         0.419     3.456 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/Q
+                         net (fo=19, routed)          1.216     4.672    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/Q[0]
+    SLICE_X5Y48          LUT2 (Prop_lut2_I0_O)        0.299     4.971 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awvalid_INST_0/O
+                         net (fo=6, routed)           0.953     5.924    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_awvalid
+    SLICE_X6Y48          LUT4 (Prop_lut4_I3_O)        0.124     6.048 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_2/O
+                         net (fo=16, routed)          1.890     7.938    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X17Y49         LUT4 (Prop_lut4_I1_O)        0.124     8.062 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1[31]_i_1/O
+                         net (fo=8, routed)           0.839     8.901    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1[31]_i_1_n_0
+    SLICE_X13Y49         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[30]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    21.192 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.508    22.701    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X13Y49         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[30]/C
+                         clock pessimism              0.230    22.931    
+                         clock uncertainty           -0.302    22.629    
+    SLICE_X13Y49         FDRE (Setup_fdre_C_CE)      -0.205    22.424    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[30]
+  -------------------------------------------------------------------
+                         required time                         22.424    
+                         arrival time                          -8.901    
+  -------------------------------------------------------------------
+                         slack                                 13.523    
+
+Slack (MET) :             13.523ns  (required time - arrival time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[31]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.739ns  (logic 0.966ns (16.833%)  route 4.773ns (83.167%))
+  Logic Levels:           3  (LUT2=1 LUT4=2)
+  Clock Path Skew:        -0.231ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.690ns = ( 22.690 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.037ns
+    Clock Pessimism Removal (CPR):    0.116ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.729     3.037    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/aclk
+    SLICE_X5Y49          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y49          FDRE (Prop_fdre_C_Q)         0.419     3.456 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/Q
+                         net (fo=19, routed)          1.216     4.672    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/Q[0]
+    SLICE_X5Y48          LUT2 (Prop_lut2_I0_O)        0.299     4.971 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awvalid_INST_0/O
+                         net (fo=6, routed)           0.953     5.924    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_awvalid
+    SLICE_X6Y48          LUT4 (Prop_lut4_I3_O)        0.124     6.048 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_2/O
+                         net (fo=16, routed)          1.885     7.933    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X17Y49         LUT4 (Prop_lut4_I0_O)        0.124     8.057 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_1/O
+                         net (fo=8, routed)           0.719     8.776    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/p_1_in[31]
+    SLICE_X13Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[31]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    21.192 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.498    22.690    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X13Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[31]/C
+                         clock pessimism              0.116    22.806    
+                         clock uncertainty           -0.302    22.504    
+    SLICE_X13Y50         FDRE (Setup_fdre_C_CE)      -0.205    22.299    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[31]
+  -------------------------------------------------------------------
+                         required time                         22.299    
+                         arrival time                          -8.776    
+  -------------------------------------------------------------------
+                         slack                                 13.523    
+
+Slack (MET) :             13.556ns  (required time - arrival time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3_reg[29]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.699ns  (logic 0.966ns (16.951%)  route 4.733ns (83.049%))
+  Logic Levels:           3  (LUT2=1 LUT4=2)
+  Clock Path Skew:        -0.238ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.683ns = ( 22.683 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.037ns
+    Clock Pessimism Removal (CPR):    0.116ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.729     3.037    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/aclk
+    SLICE_X5Y49          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y49          FDRE (Prop_fdre_C_Q)         0.419     3.456 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/Q
+                         net (fo=19, routed)          1.216     4.672    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/Q[0]
+    SLICE_X5Y48          LUT2 (Prop_lut2_I0_O)        0.299     4.971 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awvalid_INST_0/O
+                         net (fo=6, routed)           0.953     5.924    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_awvalid
+    SLICE_X6Y48          LUT4 (Prop_lut4_I3_O)        0.124     6.048 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_2/O
+                         net (fo=16, routed)          1.914     7.961    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X17Y49         LUT4 (Prop_lut4_I0_O)        0.124     8.085 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3[31]_i_1/O
+                         net (fo=8, routed)           0.650     8.736    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3[31]_i_1_n_0
+    SLICE_X17Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3_reg[29]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    21.192 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.491    22.683    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X17Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3_reg[29]/C
+                         clock pessimism              0.116    22.799    
+                         clock uncertainty           -0.302    22.497    
+    SLICE_X17Y50         FDRE (Setup_fdre_C_CE)      -0.205    22.292    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3_reg[29]
+  -------------------------------------------------------------------
+                         required time                         22.292    
+                         arrival time                          -8.736    
+  -------------------------------------------------------------------
+                         slack                                 13.556    
+
+Slack (MET) :             13.556ns  (required time - arrival time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3_reg[31]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.699ns  (logic 0.966ns (16.951%)  route 4.733ns (83.049%))
+  Logic Levels:           3  (LUT2=1 LUT4=2)
+  Clock Path Skew:        -0.238ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.683ns = ( 22.683 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.037ns
+    Clock Pessimism Removal (CPR):    0.116ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.729     3.037    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/aclk
+    SLICE_X5Y49          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y49          FDRE (Prop_fdre_C_Q)         0.419     3.456 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/Q
+                         net (fo=19, routed)          1.216     4.672    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/Q[0]
+    SLICE_X5Y48          LUT2 (Prop_lut2_I0_O)        0.299     4.971 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awvalid_INST_0/O
+                         net (fo=6, routed)           0.953     5.924    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_awvalid
+    SLICE_X6Y48          LUT4 (Prop_lut4_I3_O)        0.124     6.048 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_2/O
+                         net (fo=16, routed)          1.914     7.961    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X17Y49         LUT4 (Prop_lut4_I0_O)        0.124     8.085 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3[31]_i_1/O
+                         net (fo=8, routed)           0.650     8.736    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3[31]_i_1_n_0
+    SLICE_X17Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3_reg[31]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    21.192 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.491    22.683    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X17Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3_reg[31]/C
+                         clock pessimism              0.116    22.799    
+                         clock uncertainty           -0.302    22.497    
+    SLICE_X17Y50         FDRE (Setup_fdre_C_CE)      -0.205    22.292    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg3_reg[31]
+  -------------------------------------------------------------------
+                         required time                         22.292    
+                         arrival time                          -8.736    
+  -------------------------------------------------------------------
+                         slack                                 13.556    
+
+Slack (MET) :             13.617ns  (required time - arrival time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[27]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.673ns  (logic 0.966ns (17.027%)  route 4.707ns (82.973%))
+  Logic Levels:           3  (LUT2=1 LUT4=2)
+  Clock Path Skew:        -0.238ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.683ns = ( 22.683 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.037ns
+    Clock Pessimism Removal (CPR):    0.116ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.729     3.037    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/aclk
+    SLICE_X5Y49          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y49          FDRE (Prop_fdre_C_Q)         0.419     3.456 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/Q
+                         net (fo=19, routed)          1.216     4.672    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/Q[0]
+    SLICE_X5Y48          LUT2 (Prop_lut2_I0_O)        0.299     4.971 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awvalid_INST_0/O
+                         net (fo=6, routed)           0.953     5.924    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_awvalid
+    SLICE_X6Y48          LUT4 (Prop_lut4_I3_O)        0.124     6.048 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_2/O
+                         net (fo=16, routed)          1.885     7.933    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X17Y49         LUT4 (Prop_lut4_I0_O)        0.124     8.057 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_1/O
+                         net (fo=8, routed)           0.654     8.710    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/p_1_in[31]
+    SLICE_X16Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[27]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    21.192 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.491    22.683    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X16Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[27]/C
+                         clock pessimism              0.116    22.799    
+                         clock uncertainty           -0.302    22.497    
+    SLICE_X16Y50         FDRE (Setup_fdre_C_CE)      -0.169    22.328    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[27]
+  -------------------------------------------------------------------
+                         required time                         22.328    
+                         arrival time                          -8.710    
+  -------------------------------------------------------------------
+                         slack                                 13.617    
+
+Slack (MET) :             13.617ns  (required time - arrival time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[29]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.673ns  (logic 0.966ns (17.027%)  route 4.707ns (82.973%))
+  Logic Levels:           3  (LUT2=1 LUT4=2)
+  Clock Path Skew:        -0.238ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.683ns = ( 22.683 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.037ns
+    Clock Pessimism Removal (CPR):    0.116ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.729     3.037    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/aclk
+    SLICE_X5Y49          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y49          FDRE (Prop_fdre_C_Q)         0.419     3.456 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/Q
+                         net (fo=19, routed)          1.216     4.672    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/Q[0]
+    SLICE_X5Y48          LUT2 (Prop_lut2_I0_O)        0.299     4.971 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awvalid_INST_0/O
+                         net (fo=6, routed)           0.953     5.924    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_awvalid
+    SLICE_X6Y48          LUT4 (Prop_lut4_I3_O)        0.124     6.048 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_2/O
+                         net (fo=16, routed)          1.885     7.933    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X17Y49         LUT4 (Prop_lut4_I0_O)        0.124     8.057 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_1/O
+                         net (fo=8, routed)           0.654     8.710    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/p_1_in[31]
+    SLICE_X16Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[29]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    21.192 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.491    22.683    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X16Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[29]/C
+                         clock pessimism              0.116    22.799    
+                         clock uncertainty           -0.302    22.497    
+    SLICE_X16Y50         FDRE (Setup_fdre_C_CE)      -0.169    22.328    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[29]
+  -------------------------------------------------------------------
+                         required time                         22.328    
+                         arrival time                          -8.710    
+  -------------------------------------------------------------------
+                         slack                                 13.617    
+
+Slack (MET) :             13.617ns  (required time - arrival time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[30]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.673ns  (logic 0.966ns (17.027%)  route 4.707ns (82.973%))
+  Logic Levels:           3  (LUT2=1 LUT4=2)
+  Clock Path Skew:        -0.238ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.683ns = ( 22.683 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.037ns
+    Clock Pessimism Removal (CPR):    0.116ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.729     3.037    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/aclk
+    SLICE_X5Y49          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y49          FDRE (Prop_fdre_C_Q)         0.419     3.456 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/Q
+                         net (fo=19, routed)          1.216     4.672    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/Q[0]
+    SLICE_X5Y48          LUT2 (Prop_lut2_I0_O)        0.299     4.971 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awvalid_INST_0/O
+                         net (fo=6, routed)           0.953     5.924    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_awvalid
+    SLICE_X6Y48          LUT4 (Prop_lut4_I3_O)        0.124     6.048 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_2/O
+                         net (fo=16, routed)          1.885     7.933    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X17Y49         LUT4 (Prop_lut4_I0_O)        0.124     8.057 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_1/O
+                         net (fo=8, routed)           0.654     8.710    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/p_1_in[31]
+    SLICE_X16Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[30]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    21.192 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.491    22.683    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X16Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[30]/C
+                         clock pessimism              0.116    22.799    
+                         clock uncertainty           -0.302    22.497    
+    SLICE_X16Y50         FDRE (Setup_fdre_C_CE)      -0.169    22.328    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[30]
+  -------------------------------------------------------------------
+                         required time                         22.328    
+                         arrival time                          -8.710    
+  -------------------------------------------------------------------
+                         slack                                 13.617    
+
+Slack (MET) :             13.708ns  (required time - arrival time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[29]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.679ns  (logic 0.966ns (17.010%)  route 4.713ns (82.990%))
+  Logic Levels:           3  (LUT2=1 LUT4=2)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.701ns = ( 22.701 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.037ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.729     3.037    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/aclk
+    SLICE_X5Y49          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y49          FDRE (Prop_fdre_C_Q)         0.419     3.456 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/Q
+                         net (fo=19, routed)          1.216     4.672    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/Q[0]
+    SLICE_X5Y48          LUT2 (Prop_lut2_I0_O)        0.299     4.971 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awvalid_INST_0/O
+                         net (fo=6, routed)           0.953     5.924    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_awvalid
+    SLICE_X6Y48          LUT4 (Prop_lut4_I3_O)        0.124     6.048 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_2/O
+                         net (fo=16, routed)          1.890     7.938    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X17Y49         LUT4 (Prop_lut4_I1_O)        0.124     8.062 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1[31]_i_1/O
+                         net (fo=8, routed)           0.654     8.716    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1[31]_i_1_n_0
+    SLICE_X11Y49         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[29]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    21.192 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.508    22.701    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X11Y49         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[29]/C
+                         clock pessimism              0.230    22.931    
+                         clock uncertainty           -0.302    22.629    
+    SLICE_X11Y49         FDRE (Setup_fdre_C_CE)      -0.205    22.424    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[29]
+  -------------------------------------------------------------------
+                         required time                         22.424    
+                         arrival time                          -8.716    
+  -------------------------------------------------------------------
+                         slack                                 13.708    
+
+Slack (MET) :             13.708ns  (required time - arrival time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[31]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.679ns  (logic 0.966ns (17.010%)  route 4.713ns (82.990%))
+  Logic Levels:           3  (LUT2=1 LUT4=2)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.701ns = ( 22.701 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.037ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.729     3.037    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/aclk
+    SLICE_X5Y49          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y49          FDRE (Prop_fdre_C_Q)         0.419     3.456 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/Q
+                         net (fo=19, routed)          1.216     4.672    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/Q[0]
+    SLICE_X5Y48          LUT2 (Prop_lut2_I0_O)        0.299     4.971 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awvalid_INST_0/O
+                         net (fo=6, routed)           0.953     5.924    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_awvalid
+    SLICE_X6Y48          LUT4 (Prop_lut4_I3_O)        0.124     6.048 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_2/O
+                         net (fo=16, routed)          1.890     7.938    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X17Y49         LUT4 (Prop_lut4_I1_O)        0.124     8.062 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1[31]_i_1/O
+                         net (fo=8, routed)           0.654     8.716    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1[31]_i_1_n_0
+    SLICE_X11Y49         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[31]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    21.192 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.508    22.701    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X11Y49         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[31]/C
+                         clock pessimism              0.230    22.931    
+                         clock uncertainty           -0.302    22.629    
+    SLICE_X11Y49         FDRE (Setup_fdre_C_CE)      -0.205    22.424    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[31]
+  -------------------------------------------------------------------
+                         required time                         22.424    
+                         arrival time                          -8.716    
+  -------------------------------------------------------------------
+                         slack                                 13.708    
+
+Slack (MET) :             13.709ns  (required time - arrival time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[25]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.678ns  (logic 0.966ns (17.012%)  route 4.712ns (82.988%))
+  Logic Levels:           3  (LUT2=1 LUT4=2)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.701ns = ( 22.701 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.037ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.729     3.037    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/aclk
+    SLICE_X5Y49          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y49          FDRE (Prop_fdre_C_Q)         0.419     3.456 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state_reg[0]/Q
+                         net (fo=19, routed)          1.216     4.672    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/Q[0]
+    SLICE_X5Y48          LUT2 (Prop_lut2_I0_O)        0.299     4.971 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awvalid_INST_0/O
+                         net (fo=6, routed)           0.953     5.924    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_awvalid
+    SLICE_X6Y48          LUT4 (Prop_lut4_I3_O)        0.124     6.048 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[31]_i_2/O
+                         net (fo=16, routed)          1.890     7.938    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X17Y49         LUT4 (Prop_lut4_I1_O)        0.124     8.062 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1[31]_i_1/O
+                         net (fo=8, routed)           0.654     8.715    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1[31]_i_1_n_0
+    SLICE_X13Y48         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[25]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    21.192 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         1.508    22.701    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X13Y48         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[25]/C
+                         clock pessimism              0.230    22.931    
+                         clock uncertainty           -0.302    22.629    
+    SLICE_X13Y48         FDRE (Setup_fdre_C_CE)      -0.205    22.424    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg1_reg[25]
+  -------------------------------------------------------------------
+                         required time                         22.424    
+                         arrival time                          -8.715    
+  -------------------------------------------------------------------
+                         slack                                 13.709    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.056ns  (arrival time - required time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[54]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.141ns (37.935%)  route 0.231ns (62.065%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.269ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.223ns
+    Source Clock Delay      (SCD):    0.925ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.584     0.925    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/aclk
+    SLICE_X1Y48          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[54]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y48          FDRE (Prop_fdre_C_Q)         0.141     1.066 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[54]/Q
+                         net (fo=1, routed)           0.231     1.296    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/Q[23]
+    SLICE_X2Y50          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.853     1.223    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aclk
+    SLICE_X2Y50          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[4]/C
+                         clock pessimism             -0.029     1.194    
+    SLICE_X2Y50          FDRE (Hold_fdre_C_D)         0.046     1.240    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.240    
+                         arrival time                           1.296    
+  -------------------------------------------------------------------
+                         slack                                  0.056    
+
+Slack (MET) :             0.103ns  (arrival time - required time)
+  Source:                 LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg2_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.494ns  (logic 0.226ns (45.716%)  route 0.268ns (54.284%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.204ns
+    Source Clock Delay      (SCD):    0.905ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.564     0.905    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X17Y49         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg2_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y49         FDRE (Prop_fdre_C_Q)         0.128     1.033 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg2_reg[31]/Q
+                         net (fo=3, routed)           0.268     1.301    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg2[31]
+    SLICE_X12Y50         LUT6 (Prop_lut6_I2_O)        0.098     1.399 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata[31]_i_2/O
+                         net (fo=1, routed)           0.000     1.399    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/reg_data_out[31]
+    SLICE_X12Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.834     1.204    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X12Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[31]/C
+                         clock pessimism             -0.029     1.175    
+    SLICE_X12Y50         FDRE (Hold_fdre_C_D)         0.121     1.296    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[31]
+  -------------------------------------------------------------------
+                         required time                         -1.296    
+                         arrival time                           1.399    
+  -------------------------------------------------------------------
+                         slack                                  0.103    
+
+Slack (MET) :             0.104ns  (arrival time - required time)
+  Source:                 LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[27]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.467ns  (logic 0.209ns (44.789%)  route 0.258ns (55.211%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.202ns
+    Source Clock Delay      (SCD):    0.903ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.562     0.903    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X16Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y50         FDRE (Prop_fdre_C_Q)         0.164     1.067 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[27]/Q
+                         net (fo=3, routed)           0.258     1.324    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[27]
+    SLICE_X17Y48         LUT6 (Prop_lut6_I4_O)        0.045     1.369 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata[27]_i_1/O
+                         net (fo=1, routed)           0.000     1.369    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/reg_data_out[27]
+    SLICE_X17Y48         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.832     1.202    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X17Y48         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[27]/C
+                         clock pessimism             -0.029     1.173    
+    SLICE_X17Y48         FDRE (Hold_fdre_C_D)         0.092     1.265    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[27]
+  -------------------------------------------------------------------
+                         required time                         -1.265    
+                         arrival time                           1.369    
+  -------------------------------------------------------------------
+                         slack                                  0.104    
+
+Slack (MET) :             0.106ns  (arrival time - required time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[35]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[35]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.240ns  (logic 0.186ns (77.466%)  route 0.054ns (22.534%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.217ns
+    Source Clock Delay      (SCD):    0.921ns
+    Clock Pessimism Removal (CPR):    0.283ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.580     0.921    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/aclk
+    SLICE_X1Y37          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[35]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y37          FDRE (Prop_fdre_C_Q)         0.141     1.062 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[35]/Q
+                         net (fo=1, routed)           0.054     1.116    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg_n_0_[35]
+    SLICE_X0Y37          LUT3 (Prop_lut3_I2_O)        0.045     1.161 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i[35]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.161    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i[35]_i_1__0_n_0
+    SLICE_X0Y37          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[35]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.847     1.217    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/aclk
+    SLICE_X0Y37          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[35]/C
+                         clock pessimism             -0.283     0.934    
+    SLICE_X0Y37          FDRE (Hold_fdre_C_D)         0.121     1.055    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[35]
+  -------------------------------------------------------------------
+                         required time                         -1.054    
+                         arrival time                           1.161    
+  -------------------------------------------------------------------
+                         slack                                  0.106    
+
+Slack (MET) :             0.106ns  (arrival time - required time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[52]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[52]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.240ns  (logic 0.186ns (77.466%)  route 0.054ns (22.534%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.219ns
+    Source Clock Delay      (SCD):    0.922ns
+    Clock Pessimism Removal (CPR):    0.284ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.581     0.922    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/aclk
+    SLICE_X1Y39          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[52]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y39          FDRE (Prop_fdre_C_Q)         0.141     1.062 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[52]/Q
+                         net (fo=1, routed)           0.054     1.117    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg_n_0_[52]
+    SLICE_X0Y39          LUT3 (Prop_lut3_I2_O)        0.045     1.162 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i[52]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.162    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i[52]_i_1__0_n_0
+    SLICE_X0Y39          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[52]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.849     1.219    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/aclk
+    SLICE_X0Y39          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[52]/C
+                         clock pessimism             -0.284     0.935    
+    SLICE_X0Y39          FDRE (Hold_fdre_C_D)         0.121     1.056    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[52]
+  -------------------------------------------------------------------
+                         required time                         -1.056    
+                         arrival time                           1.162    
+  -------------------------------------------------------------------
+                         slack                                  0.106    
+
+Slack (MET) :             0.118ns  (arrival time - required time)
+  Source:                 LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.252ns  (logic 0.186ns (73.740%)  route 0.066ns (26.260%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.204ns
+    Source Clock Delay      (SCD):    0.907ns
+    Clock Pessimism Removal (CPR):    0.284ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.566     0.907    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X13Y45         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y45         FDRE (Prop_fdre_C_Q)         0.141     1.048 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0_reg[4]/Q
+                         net (fo=3, routed)           0.066     1.114    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg0[4]
+    SLICE_X12Y45         LUT6 (Prop_lut6_I4_O)        0.045     1.159 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata[4]_i_1/O
+                         net (fo=1, routed)           0.000     1.159    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/reg_data_out[4]
+    SLICE_X12Y45         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.834     1.204    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X12Y45         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[4]/C
+                         clock pessimism             -0.284     0.920    
+    SLICE_X12Y45         FDRE (Hold_fdre_C_D)         0.121     1.041    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.041    
+                         arrival time                           1.159    
+  -------------------------------------------------------------------
+                         slack                                  0.118    
+
+Slack (MET) :             0.119ns  (arrival time - required time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.220ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.297ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.582     0.923    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/aclk
+    SLICE_X1Y41          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y41          FDRE (Prop_fdre_C_Q)         0.141     1.064 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[9]/Q
+                         net (fo=1, routed)           0.056     1.119    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/D[9]
+    SLICE_X1Y41          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.850     1.220    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/aclk
+    SLICE_X1Y41          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[9]/C
+                         clock pessimism             -0.297     0.923    
+    SLICE_X1Y41          FDRE (Hold_fdre_C_D)         0.078     1.001    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -1.001    
+                         arrival time                           1.119    
+  -------------------------------------------------------------------
+                         slack                                  0.119    
+
+Slack (MET) :             0.121ns  (arrival time - required time)
+  Source:                 LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg2_reg[29]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.511ns  (logic 0.226ns (44.204%)  route 0.285ns (55.796%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.204ns
+    Source Clock Delay      (SCD):    0.905ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.564     0.905    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X17Y49         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg2_reg[29]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y49         FDRE (Prop_fdre_C_Q)         0.128     1.033 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg2_reg[29]/Q
+                         net (fo=3, routed)           0.285     1.318    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/slv_reg2[29]
+    SLICE_X12Y50         LUT6 (Prop_lut6_I2_O)        0.098     1.416 r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata[29]_i_1/O
+                         net (fo=1, routed)           0.000     1.416    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/reg_data_out[29]
+    SLICE_X12Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.834     1.204    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X12Y50         FDRE                                         r  LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[29]/C
+                         clock pessimism             -0.029     1.175    
+    SLICE_X12Y50         FDRE (Hold_fdre_C_D)         0.120     1.295    LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[29]
+  -------------------------------------------------------------------
+                         required time                         -1.295    
+                         arrival time                           1.416    
+  -------------------------------------------------------------------
+                         slack                                  0.121    
+
+Slack (MET) :             0.121ns  (arrival time - required time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.220ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.297ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.582     0.923    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/aclk
+    SLICE_X1Y41          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y41          FDRE (Prop_fdre_C_Q)         0.141     1.064 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[8]/Q
+                         net (fo=1, routed)           0.056     1.119    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/D[8]
+    SLICE_X1Y41          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.850     1.220    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/aclk
+    SLICE_X1Y41          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[8]/C
+                         clock pessimism             -0.297     0.923    
+    SLICE_X1Y41          FDRE (Hold_fdre_C_D)         0.076     0.999    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[8]
+  -------------------------------------------------------------------
+                         required time                         -0.999    
+                         arrival time                           1.119    
+  -------------------------------------------------------------------
+                         slack                                  0.121    
+
+Slack (MET) :             0.122ns  (arrival time - required time)
+  Source:                 LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.220ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.297ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.582     0.923    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/aclk
+    SLICE_X1Y41          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y41          FDRE (Prop_fdre_C_Q)         0.141     1.064 r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[6]/Q
+                         net (fo=1, routed)           0.056     1.119    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/D[6]
+    SLICE_X1Y41          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    LED_BUZZER_BD_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=705, routed)         0.850     1.220    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/aclk
+    SLICE_X1Y41          FDRE                                         r  LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[6]/C
+                         clock pessimism             -0.297     0.923    
+    SLICE_X1Y41          FDRE (Hold_fdre_C_D)         0.075     0.998    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -0.998    
+                         arrival time                           1.119    
+  -------------------------------------------------------------------
+                         slack                                  0.122    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { LED_BUZZER_BD_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I       n/a            2.155         20.000      17.845     BUFGCTRL_X0Y0  LED_BUZZER_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/I
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X12Y50   LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[30]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X12Y50   LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[31]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X11Y44   LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[3]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X12Y45   LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[4]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X11Y44   LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[5]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X14Y44   LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[6]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X12Y45   LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[7]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X19Y46   LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[8]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X19Y44   LED_BUZZER_BD_i/PWM_0/U0/PWM_v1_0_S00_AXI_inst/axi_rdata_reg[9]/C
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X8Y42    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X8Y42    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X8Y42    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X8Y42    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X10Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X10Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X12Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X12Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X12Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X12Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X8Y42    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X8Y42    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X8Y42    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X8Y42    LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X10Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X10Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X12Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X12Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X12Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X12Y42   LED_BUZZER_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+
+
+
