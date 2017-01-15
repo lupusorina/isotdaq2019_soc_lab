@@ -1,7 +1,0 @@
-Running: xsim.dir/LED_Buzzer_Control_wrapper_behav/xsimk -simmode gui -wdb LED_Buzzer_Control_wrapper_behav.wdb -simrunnum 0 -socket 59551
-Design successfully loaded
-Design Loading Memory Usage: 56048 KB (Peak: 58528 KB)
-Design Loading CPU Usage: 100 ms
-Simulation completed
-Simulation Memory Usage: 195904 KB (Peak: 208376 KB)
-Simulation CPU Usage: 140 ms

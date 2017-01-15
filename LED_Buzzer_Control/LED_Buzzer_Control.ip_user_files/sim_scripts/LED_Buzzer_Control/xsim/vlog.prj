@@ -1,6 +1,0 @@
-verilog xil_defaultlib "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_processing_system7_0_0/sim/LED_Buzzer_Control_processing_system7_0_0.v" --include "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/2527/hdl" --include "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/7e3a/hdl"
-verilog xil_defaultlib "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_auto_pc_0/sim/LED_Buzzer_Control_auto_pc_0.v" --include "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/2527/hdl" --include "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/7e3a/hdl"
-
-verilog xil_defaultlib "glbl.v"
-
-nosort

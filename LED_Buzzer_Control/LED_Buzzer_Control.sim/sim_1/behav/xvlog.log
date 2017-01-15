@@ -1,7 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_processing_system7_0_0/sim/LED_Buzzer_Control_processing_system7_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LED_Buzzer_Control_processing_system7_0_0
-INFO: [VRFC 10-2458] undeclared symbol IRQ_F2P, assumed default net type wire [/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_processing_system7_0_0/sim/LED_Buzzer_Control_processing_system7_0_0.v:539]
-INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_auto_pc_0/sim/LED_Buzzer_Control_auto_pc_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LED_Buzzer_Control_auto_pc_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
