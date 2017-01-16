@@ -1,9 +1,14 @@
 
-\PassOptionsToPackage{svgnames}{xcolor}
-\documentclass[11pt]{article}
-\usepackage[letterpaper, portrait, margin=0.8in]{geometry}
+\documentclass[letterpaper, portrait, margin=0.8in]{article}
+
+\usepackage{geometry}
 \usepackage{minted}
-\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage{graphicx}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{booktabs}
 \usepackage[T1]{fontenc}
 \usepackage[font=small, labelfont=bf]{caption}
 \usepackage[protrusion=true, expansion=true]{microtype}
@@ -12,12 +17,6 @@
 \usepackage{url, lipsum}
 \usepackage{tcolorbox}
 \usepackage{lipsum}
-\tcbuselibrary{skins,breakable}
-\usetikzlibrary{shadings,shadows}
-\usepackage{hyperref}
-
-
-
 
 \newenvironment{myexampleblock}[1]{%
     \tcolorbox[beamer,%
@@ -44,24 +43,6 @@
     {\endtcolorbox}
 
 
-%\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
-%\onehalfspacing
-%\setcounter{tocdepth}{5}
-%\setcounter{secnumdepth}{5}
-
-%-------------------------------------------------------------------------------
-% HEADER & FOOTER
-%-------------------------------------------------------------------------------
-%\pagestyle{fancy}
-%\fancyhf{}
-%\setlength\headheight{15pt}
-%\fancyhead[L]{}
-%\fancyhead[R]{}
-%\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
-%-------------------------------------------------------------------------------
-% TITLE PAGE
-%-------------------------------------------------------------------------------
-
 \newenvironment{myitemize}
 { \begin{itemize}
     \setlength{\itemsep}{0pt}
@@ -79,11 +60,8 @@
 
 \begin{document}
 
-\title{ \normalsize \textsc{The International School of Trigger and Data Acquisition \\ 2017}
-		\\ [2.0cm]
-		\HRule{0.5pt} \\
-		\LARGE \textbf{\uppercase{System on Chip - FPGA}}
-		\HRule{2pt} \\ [0.5cm]
+\title{ \LARGE \normalsize {The International School of Trigger and Data Acquisition 2017} \vspace{10cm} \\
+		\LARGE \textbf{\uppercase{System on Chip - FPGA}} \\ 
 		\normalsize \today \vspace*{5\baselineskip}}
 
 \date{}
@@ -238,7 +216,7 @@ In order to start our implementation, the next steps should be followed:
 \begin{minted}{c}
 vivado &
 \end{minted}
-
+   x
 Vivado Design Suite is launched and a Getting Started Page is displayed.
 
 \item Create a new project and set the project name to \textbf{Peripherals}. 
@@ -280,11 +258,11 @@ Now, we need to choose the platform where we implement our design. The developme
 \centering
 \begin{minipage}{.425\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{img/diag_processor.png}
+  \includegraphics[width=0.8\linewidth]{img/diag_processor.png}
 \end{minipage}%
 \begin{minipage}{.425\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{img/diagram_pwm.png}
+  \includegraphics[width=0.8\linewidth]{img/diagram_pwm.png}
 \end{minipage}
 \caption{IP Blocks for Master and Slave}
 \label{fig:diagram}
