@@ -1,0 +1,41 @@
+\subsection{First Interaction with LINUX on System on Chip}
+
+Now, we will move on with running an operating system on the System on Chip. For this, we will do the following steps:
+\begin{myitemize}
+\item you disconnected the JTAG cable used previously to programme the board
+\item the mini SD Card is inserted in its socket
+\item find Jumper 1 and Jumper 2 (JP1 and JP2) and make sure they are in the following order:
+\begin{minted}{c}
+JP1 OFF 
+JP2 ON
+\end{minted}
+\end{myitemize}
+
+
+When previously steps are done, you will see the RGB LED blinking on the board. It is very
+important to make these configurations before moving on to the next section of the lab.
+
+\subsection{Further configurations}
+
+The SD card contains the image of Ubuntu 12.04 and will boot on the board at every 
+restart.
+
+\subsubsection{Screen}
+
+\subsubsection{File transfer between host computer and the board}
+
+% Connect a screen to see that it works
+
+% Open a terminal and communicate 
+
+% Send a file through SSH
+
+\subsection{Run the first application}
+
+In this part, we will do all the procedures to blink the RGB LED that is available 
+on the board, as well as to read the accelerometer values.
+
+\subsection{Webserver}
+Now, we will learn how to display the accelerometer values on an webserver running
+on the host computer.
+
