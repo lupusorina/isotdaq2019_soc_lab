@@ -94,6 +94,7 @@ This laboratory will familiarize you with the \textbf{All Programmable System on
 
 \subsection{Block diagram of the study case}
 
+
 {\color{red} put picture FPGA \\ put picture block diagram}
 
 We are going to introduce all the concepts of the block diagram throughout the next pages of the laboratory.
@@ -425,7 +426,26 @@ Open the next design file of the board and check Table 1-2 (page 5). Match the D
 \item Generate the bitstream
 
 
+Now, the project needs to be synthesized, implemented and finally the bitstream must 
+be generated.
+The bitstream is, as the name says, a binary sequence which indicates which connections inside the FPGA must be activated. That's why it is politically corect to call "configure an FPGA" and not "programme an FPGA".
 
+To generate the bitstream, look into the Flow Manager (Figure X) and press \textbf{Generate Bitstream}. You will need to wait a bit longer until the bitstream is created. Check for errors in the process. 
+
+
+ \begin{figure}[h!]
+\centering
+\begin{minipage}{.425\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{img/export_hardware.png}
+\end{minipage}%
+\begin{minipage}{.425\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{img/generate_bitstream.png}
+\end{minipage}
+\caption{a) Export Hardware Window b) Generate Bitstream in Flow Manager}
+\label{fig:export_hardware_generate_bitstream}
+\end{figure}
 
 
  \item Let's write some C code
@@ -455,13 +475,11 @@ Open the next design file of the board and check Table 1-2 (page 5). Match the D
 
 \clearpage
 
-\section{IMPLEMENTATION using LINUX OS on FPGAs}
+\section{LINUX OS on System on Chip}
 
 
-\color{red} Write the theory needed to run an OS on SoC
+\input{linux}
 
-
-\color{red} Present advantages
 
 \subsection{Booting LINUX with System on Chip}
 
