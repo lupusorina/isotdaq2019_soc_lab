@@ -389,7 +389,7 @@ Open it and write the following code that will define the nets and their dedicat
 
 \begin{minted}{vhdl}
 ## LED RED
-set_property IOSTANDARD LVCMOS33 [get_ports PWM_BLUE]
+set_property IOSTANDARD LVCMOS33 [get_ports PWM_RED]
 set_property PACKAGE_PIN XX [get_ports PWM_RED]
 
 ## LED BLUE
@@ -432,7 +432,7 @@ The bitstream is, as the name says, a binary sequence which indicates which conn
 
 To generate the bitstream, look into the Flow Manager on the left of the screen and press \textbf{Generate Bitstream (Figure \ref{fig:export_hardware_generate_bitstream})}. You will need to wait a bit longer until the bitstream is created. Check for errors in the process and solve them. Now, that the bitstream was successfully created, we need to export the hardware such as we can interact with it using the ARM dual-core microcontroller. 
 
-To export the hardware, press File $->$ Edit $->$ Export $->$ Export Hardware. Thick \textit{Include bitstream} like in Figure \ref{fig:export_hardware_generate_bitstream}.
+To export the hardware, press \textbf{File $>$ Edit $>$ Export $>$ Export Hardware}. Tick \textit{Include bitstream} like in Figure \ref{fig:export_hardware_generate_bitstream}.
 
 
  \begin{figure}[h!]
@@ -450,12 +450,14 @@ To export the hardware, press File $->$ Edit $->$ Export $->$ Export Hardware. T
 \end{figure}
 
 
- \item Let's write some C code
+ \item Let's write some C code 
 
 From now on, we will create the link between the fabric and the dual-core ARM microcontroller. For this, we will use \textbf{Xilinx Software Development Kit (XSDK)} which is the Integrated Design Environment for creating embedded applications. If you worked in Eclipse before, XSDK shall be a piece-of-cake, as it is build on the standard Eclipse IDE, with plugins and Xilinx-dedicated tools. 
 
-To open it, press File $->$ Launch SDK. Now, the hardware shall be automatically 
-imported in XSDK.
+To open it, press \textbf{File $>$ Launch SDK}. Now, the hardware shall be automatically imported in XSDK.
+
+ \item Our first "Hello World Application"
+
 
 
 
