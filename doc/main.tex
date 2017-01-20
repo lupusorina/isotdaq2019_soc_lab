@@ -450,19 +450,57 @@ To export the hardware, press \textbf{File $>$ Edit $>$ Export $>$ Export Hardwa
 \end{figure}
 
 
+\newpage
  \item Let's write some C code 
 
 From now on, we will create the link between the fabric and the dual-core ARM microcontroller. For this, we will use \textbf{Xilinx Software Development Kit (XSDK)} which is the Integrated Design Environment for creating embedded applications. If you worked in Eclipse before, XSDK shall be a piece-of-cake, as it is build on the standard Eclipse IDE, with plugins and Xilinx-dedicated tools. 
 
-To open it, press \textbf{File $>$ Launch SDK}. Now, the hardware shall be automatically imported in XSDK.
+To open it, press \textbf{File $>$ Launch SDK}. Now, the hardware shall be automatically imported in XSDK and now you can create a software application (Figure \ref{fig:sdk_first_page}).
+
+
+
+ 
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{img/xsdk_first_page.png}
+    \caption{XSDK First Page after bitstream was exported}
+    \label{fig:sdk_first_page}
+\end{figure}
+
+
 
  \item Our first "Hello World Application"
 
+Select \textbf{File $>$ New $>$ Application Project}.
+
+The New Project dialog box opens. As Project Name, type the name desired, for example
+\textit{LED\_Buzzer\_Controller}. Press \textbf{Next}. From the Available Templates, choose \textit{"Hello World"}. Click \textbf{Finish}. (Figure \ref{fig:start_proj_xsdk})
+
+
+ \begin{figure}[h!]
+\centering
+\begin{minipage}{.425\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{img/app_project.png}
+\end{minipage}%
+\begin{minipage}{.425\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{img/hello_world.png}
+\end{minipage}
+\caption{Starting a project in XSDK}
+\label{fig:start_proj_xsdk}
+\end{figure}
 
 
 
 
+\item Run the first application
 
+To run the first application, you need to do the following simple steps:
+\begin{myitemize}
+\item Ensure that your board is powered on by connecting the Mini-USB to USB cable from computer to the USB\_UART mini-usb socket. This connectivity will also allow us transmit and receive data through serial communication.
+\item 
+\end{myitemize}
 
 \end{enumerate}
 
