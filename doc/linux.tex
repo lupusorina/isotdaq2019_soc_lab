@@ -1,11 +1,81 @@
 \subsection{Introduction}
 
 The current kit comes with Ubuntu 12.04 installed on a MicroSD card. Using this 
-operating system, we will read the accelerometer data from the ADXL346 accelerometer
-already mounted on board. This data will be feed into \textbf{bokeh}, which is a Python interactive visualization library which will also act as a server. In addition,
-a control system will be added such as when the acceleration exceeds a certain treashold, a buzzer will start buzzering and an LED will turn red.
+operating system, we will learn to implement the following steps:
+\begin{myitemize}
+\item we will communicate with the devkit through UART
+\item we will transfer of files between the host computer and the devkit through Ethernet
+\item we will control the LEDs and the buzzer mounted on the devkit
+\item we will read accelerometer data from the ADXL346 accelerometer mounted on the board
+\item we will display the data using \textbf{bokeh}, which is a Python interactive visualization library
+\item we will implement a webserver to visualize the accelerometer data, using as well \textbf{bokeh}
+\end{myitemize}
 
-In real life, you can use this type of application to detect the high accelerations the astronauts are exposed during training and trigger a warning sound and light when certain threashold is exceeded.
+
+
+\subsection{Let's get started!}
+
+Now, we will move on with running an operating system on the System on Chip. For this, we will do the following steps:
+\begin{myitemize}
+\item you disconnected the JTAG cable used previously to programme the board
+\item the mini SD Card is inserted in its socket
+\item find Jumper 1 and Jumper 2 (JP1 and JP2) and make sure they are in the following order:
+\begin{minted}{c}
+JP1 OFF 
+JP2 ON
+\end{minted}
+\end{myitemize}
+
+
+\subsection{Communication with the devkit through UART}
+
+\begin{enumerate}
+    \item Take the development kit and plug the microUSB into the USB\_UART socket (J6).  
+
+    This connection enables serial communication between the host computer and the board, as well as power to the board.
+    
+    \item Open a terminal by pressing CTRL+ALT+T
+    \item To communicate with the board, we will use \textbf{picocom} which is a very simple and straightforward terminal emulator. In your console, type:
+        \begin{tcolorbox}
+            picocom -b 115200 /dev/ttyUSB0
+        \end{tcolorbox}
+
+    Now, what you will see (Figure \ref{fig:picocom}) is an emulator of the terminal of Ubuntu 12.04 running on the board.
+    Type \textbf{reboot} and the system will re-start. You will see in real time the system power-up.
+
+    \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/picocom.png}
+    \caption{Picocom Terminal Emulator}
+    \label{fig:picocom}
+\end{figure}
+
+
+    \item You shall see  \cref{appendix:graph} for other settings and installation process.
+\end{enumerate}
+
+{\color{red} \textbf{Optional:}} If you have a screen with an HDMI port, you can connect it to the board (Figure \ref{fig:hdmi}). You can also connect a mouse and a keyboard, but you will need a USB-OTG cable (miniUSB - to - standard USB).
+
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/hdmi.JPG}
+    \caption{Screen connected to the board}
+    \label{fig:hdmi}
+\end{figure}
+
+
+\clearpage
+\subsection{Transfer of files between the host computer and the devkit}
+
+In the current lab, we will develop source code on the host computer that needs to be transfered to the board
+
+
+
+
+
+
 
 
 \subsubsection{How is LINUX OS interacting with both the accelerometer and the buzzer?}
