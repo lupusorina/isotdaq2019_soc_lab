@@ -1,0 +1,29 @@
+\begin{myitemize}
+    \item Install Picocom:
+
+    \begin{tcolorbox}
+        sudo apt-get install picocom
+    \end{tcolorbox}
+
+    \item Find the device dev path for the board:
+
+    \begin{tcolorbox}
+        dmesg | grep tty
+    \end{tcolorbox}
+
+    \item Give permission to users to write and read, presuming that the device dev path is ttyUSB0
+
+    \begin{tcolorbox}
+        sudo chmod 666 /dev/ttyUSB0
+    \end{tcolorbox}
+
+    \item Start picocom with a baudrate of 115200 
+
+    \begin{tcolorbox}
+        picocom -b 115200 /dev/ttyUSB0
+    \end{tcolorbox}
+
+    \item To exit Picocom: CTRL-A and CTRL-X
+
+
+\end{myitemize}
