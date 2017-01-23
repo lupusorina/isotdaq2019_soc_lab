@@ -1,6 +1,8 @@
 
 \documentclass[portrait, margin=0.3in]{article}
 
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
+\usepackage{cleveref}
 \usepackage{geometry}
 \usepackage{minted}
 \usepackage{graphicx}
@@ -17,6 +19,10 @@
 \usepackage{url, lipsum}   
 \usepackage{tcolorbox}  
 \usepackage{lipsum}
+\usepackage[toc,page]{appendix}
+
+\crefname{appsec}{Appendix}{Appendices}
+
 
 \newenvironment{myexampleblock}[1]{%
     \tcolorbox[beamer,%
@@ -536,12 +542,22 @@ To run the first application, you need to do the following simple steps:
 \subsection{Interfacing the accelerometer + webserver}
  
  
+\clearpage
+
+\begin{appendices}
+\crefalias{section}{appsec}
+\section{Setting up the picocom terminal}
+\label{appendix:graph}
+\input{appendixA}
+\end{appendices}
 %-------------------------------------------------------------------------------
 % REFERENCES
 %-------------------------------------------------------------------------------
 \newpage
 \section*{Reading List}
 \addcontentsline{toc}{section}{Reading List}
+
+
 
 
   
