@@ -18,13 +18,14 @@ operating system, we will learn to implement the following steps:
 Now, we will move on with running an operating system on the System on Chip. For this, we will do the following steps:
 \begin{myitemize}
 \item you disconnected the JTAG cable used previously to programme the board
-\item the mini SD Card is inserted in its socket
+\item the mini SD Card is inserted in its socket (the filesystems are resided on a 4GB miniSD memory card where the board also boots from.)
 \item find Jumper 1 and Jumper 2 (JP1 and JP2) and make sure they are in the following order:
 \begin{minted}{c}
 JP1 OFF 
 JP2 ON
 \end{minted}
 \end{myitemize}
+
 
 
 \subsection{Communication with the devkit through UART}
@@ -41,7 +42,8 @@ JP2 ON
         \end{tcolorbox}
 
     Now, what you will see (Figure \ref{fig:picocom}) is an emulator of the terminal of Ubuntu 12.04 running on the board.
-    Type \textbf{reboot} and the system will re-start. You will see in real time the system power-up.
+    Type \textbf{reboot} and the system will re-start. After booting the board it gives you directly a bash shell as user root.
+
 
     \begin{figure}[h!]
     \centering
@@ -69,7 +71,24 @@ JP2 ON
 \clearpage
 \subsection{Transfer of files between the host computer and the devkit}
 
-In the current lab, we will develop source code on the host computer that needs to be transfered to the board
+In the current lab, we will develop source code on the host computer that needs to be transfered to the board.
+
+There are three methods to transfer files:
+\begin{myitemize}
+\item Through UART serial protocol
+\item Using SCP (Secure CoPy) - a simple transfer tool used to copy one or more files, often with known names, from host A (the computer) to host B (the board) or viceversa
+\item Using SFTP (SSH File Transfer Protocol) - which is also a transfer tool used to copy files, but in addition it allows directory listings, remote directories and files removal, creation of files etc.
+\end{myitemize}
+
+To simplify life, we will use SCP. Never use UART unless you have a passion to encode/decode data or if other options are not available.
+
+The SSH is already installed on the board. The settings can be seen in  , in case you want to try this home.
+
+
+
+
+
+
 
 
 
@@ -85,21 +104,11 @@ The I/O subsystem is the part of the Linux kernel that manages the various devic
 
 
 
+
+
 \subsubsection{How is LINUX OS interacting with the LEDs?}
 
 
-\subsection{Let's get started!}
-
-Now, we will move on with running an operating system on the System on Chip. For this, we will do the following steps:
-\begin{myitemize}
-\item you disconnected the JTAG cable used previously to programme the board
-\item the mini SD Card is inserted in its socket
-\item find Jumper 1 and Jumper 2 (JP1 and JP2) and make sure they are in the following order:
-\begin{minted}{c}
-JP1 OFF 
-JP2 ON
-\end{minted}
-\end{myitemize}
 
 
 When previously steps are done, you will see the RGB LED blinking on the board. It is very
