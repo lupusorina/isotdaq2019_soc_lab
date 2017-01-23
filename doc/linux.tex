@@ -38,7 +38,9 @@ JP2 ON
     \item Open a terminal by pressing CTRL+ALT+T
     \item To communicate with the board, we will use \textbf{picocom} which is a very simple and straightforward terminal emulator. In your console, type:
         \begin{tcolorbox}
-            picocom -b 115200 /dev/ttyUSB0
+        \begin{minted}{c}
+picocom -b 115200 /dev/ttyUSB0
+        \end{minted}
         \end{tcolorbox}
 
     Now, what you will see (Figure \ref{fig:picocom}) is an emulator of the terminal of Ubuntu 12.04 running on the board.
@@ -52,6 +54,8 @@ JP2 ON
     \label{fig:picocom}
 \end{figure}
 
+
+    \item Close the communication by pressing CTRL-A and then CTRL-X
 
     \item You shall see  \cref{appendix:graph} for other settings and installation process.
 \end{enumerate}
@@ -82,8 +86,30 @@ There are three methods to transfer files:
 
 To simplify life, we will use SCP. Never use UART unless you have a passion to encode/decode data or if other options are not available.
 
-The SSH is already installed on the board. The settings can be seen in  , in case you want to try this home.
+The SSH is already installed on the board. The settings can be seen in \cref{appendix:b}.
 
+The following steps shall be performed: 
+\begin{enumerate}
+    \item Type in a new terminal the following command to connect to the board through SSH protocol.
+    \begin{tcolorbox}
+        \begin{minted}{c}
+ssh root@192.168.2.2
+        \end{minted}
+    \end{tcolorbox}
+    You will see basically the same emulator as before.
+
+    \item Next, we will transfer a file to the board.
+
+    On the Desktop, in folder \textit{Laboratory}, you will find a file entitled \textit{lab.py}. This part will contain the skeleton used to develop the next steps. Right now, we will just take this skeleton file and send it to the board.
+
+    For this, \textbf{open a new terminal window} and type the following command. The two points ":" at the end of the next command will place the file in the User folder.
+    \begin{tcolorbox}
+     \begin{minted}{c}
+scp -r ~/Desktop/Laboratory/lab.py root@192.168.2.2:
+    \end{minted}
+    \end{tcolorbox}
+
+\end{enumerate}
 
 
 
