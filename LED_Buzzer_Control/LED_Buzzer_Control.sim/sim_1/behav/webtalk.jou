@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Nov 28 22:27:38 2016
+# Process ID: 9220
+# Current directory: /opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.sim/sim_1/behav
+# Command line: wbtcv -mode batch -source /opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.sim/sim_1/behav/xsim.dir/LED_Buzzer_Control_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.sim/sim_1/behav/webtalk.log
+# Journal file: /opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.sim/sim_1/behav/webtalk.jou
+#-----------------------------------------------------------
+source /opt/Xilinx/Vivado/CERN_projects/LED_Buzzer_Control/LED_Buzzer_Control.sim/sim_1/behav/xsim.dir/LED_Buzzer_Control_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
