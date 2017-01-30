@@ -1,7 +1,10 @@
 
-\documentclass[letterpaper, portrait, margin=0.8in]{article}
+\documentclass{article}
 
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
+\usepackage{cleveref}
 \usepackage{geometry}
+\geometry{legalpaper, margin=0.8in}
 \usepackage{minted}
 \usepackage{graphicx}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
@@ -14,9 +17,16 @@
 \usepackage[protrusion=true, expansion=true]{microtype}
 \usepackage[english]{babel}
 \usepackage{sectsty}
-\usepackage{url, lipsum}   
+\usepackage{url, lipsum}
 \usepackage{tcolorbox}
 \usepackage{lipsum}
+\usepackage[toc,page]{appendix}
+\usepackage{charter}
+\setlength{\parindent}{1em}
+\renewcommand{\baselinestretch}{1.2}
+
+\crefname{appsec}{Appendix}{Appendices}
+
 
 \newenvironment{myexampleblock}[1]{%
     \tcolorbox[beamer,%
@@ -93,6 +103,7 @@ This laboratory will familiarize you with the \textbf{All Programmable System on
 \section{IMPLEMENTATION IN HARDWARE}
 
 \subsection{Block diagram of the study case}
+
 
 {\color{red} put picture FPGA \\ put picture block diagram}
 
@@ -388,7 +399,7 @@ Open it and write the following code that will define the nets and their dedicat
 
 \begin{minted}{vhdl}
 ## LED RED
-set_property IOSTANDARD LVCMOS33 [get_ports PWM_BLUE]
+set_property IOSTANDARD LVCMOS33 [get_ports PWM_RED]
 set_property PACKAGE_PIN XX [get_ports PWM_RED]
 
 ## LED BLUE
@@ -422,18 +433,87 @@ Open the next design file of the board and check Table 1-2 (page 5). Match the D
 \noindent\rule{16.5cm}{1pt}
 
 
-\item Generate the bitstream
+\item Generate the bitstream and export the hardware
+
+
+Now, the project needs to be synthesized, implemented and finally the bitstream must 
+be generated.
+The bitstream is, as the name says, a binary sequence which indicates which connections inside the FPGA must be activated. That's why it is politically corect to call "configure an FPGA" and not "programme an FPGA".
+
+To generate the bitstream, look into the Flow Manager on the left of the screen and press \textbf{Generate Bitstream (Figure \ref{fig:export_hardware_generate_bitstream})}. You will need to wait a bit longer until the bitstream is created. Check for errors in the process and solve them. Now, that the bitstream was successfully created, we need to export the hardware such as we can interact with it using the ARM dual-core microcontroller. 
+
+To export the hardware, press \textbf{File $>$ Edit $>$ Export $>$ Export Hardware}. Tick \textit{Include bitstream} like in Figure \ref{fig:export_hardware_generate_bitstream}.
+
+
+ \begin{figure}[h!]
+\centering
+\begin{minipage}{.425\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{img/export_hardware.png}
+\end{minipage}%
+\begin{minipage}{.425\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{img/generate_bitstream.png}
+\end{minipage}
+\caption{a) Export Hardware Window b) Generate Bitstream in Flow Manager}
+\label{fig:export_hardware_generate_bitstream}
+\end{figure}
+
+
+\newpage
+ \item Let's write some C code 
+
+From now on, we will create the link between the fabric and the dual-core ARM microcontroller. For this, we will use \textbf{Xilinx Software Development Kit (XSDK)} which is the Integrated Design Environment for creating embedded applications. If you worked in Eclipse before, XSDK shall be a piece-of-cake, as it is build on the standard Eclipse IDE, with plugins and Xilinx-dedicated tools. 
+
+To open it, press \textbf{File $>$ Launch SDK}. Now, the hardware shall be automatically imported in XSDK and now you can create a software application (Figure \ref{fig:sdk_first_page}).
 
 
 
-
-
- \item Let's write some C code
  
- ! Get stuck? Ask your assistant for some help.
- 
- 
- TO BE ADDED AFTER the talk
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{img/xsdk_first_page.png}
+    \caption{XSDK First Page after bitstream was exported}
+    \label{fig:sdk_first_page}
+\end{figure}
+
+
+
+ \item Our first "Hello World Application"
+
+Select \textbf{File $>$ New $>$ Application Project}.
+
+The New Project dialog box opens. As Project Name, type the name desired, for example
+\textit{LED\_Buzzer\_Controller} (Figure \ref{fig:start_proj_xsdk}). Press \textbf{Next}. From the Available Templates, choose \textit{"Hello World"}. 
+
+Click \textbf{Finish}. 
+
+
+ \begin{figure}[h!]
+\centering
+\begin{minipage}{.425\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{img/app_project.png}
+\end{minipage}%
+\begin{minipage}{.425\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{img/hello_world.png}
+\end{minipage}
+\caption{Starting a project in XSDK}
+\label{fig:start_proj_xsdk}
+\end{figure}
+
+
+
+
+\item Run the first application
+
+To run the first application, you need to do the following simple steps:
+\begin{myitemize}
+\item Ensure that your board is powered on by connecting the Mini-USB to USB cable from computer to the USB\_UART mini-usb socket. This connectivity will also allow us transmit and receive data through serial communication.
+\item 
+\end{myitemize}
+
 \end{enumerate}
 
 
@@ -455,25 +535,38 @@ Open the next design file of the board and check Table 1-2 (page 5). Match the D
 
 \clearpage
 
-\section{IMPLEMENTATION using LINUX OS on FPGAs}
+\section{LINUX OS on System on Chip}
 
 
-\color{red} Write the theory needed to run an OS on SoC
+\input{linux}
 
-
-\color{red} Present advantages
 
 \subsection{Booting LINUX with System on Chip}
 
 \subsection{Interfacing the accelerometer + webserver}
  
  
+\clearpage
+
+\begin{appendices}
+\crefalias{section}{appsec}
+\section{Setting up the picocom terminal}
+\label{appendix:graph}
+\input{appendixA}
+
+\clearpage
+\section{Connecting the board to a network}
+\label{appendix:b}
+\input{appendixB}
+\end{appendices}
 %-------------------------------------------------------------------------------
 % REFERENCES
 %-------------------------------------------------------------------------------
 \newpage
 \section*{Reading List}
 \addcontentsline{toc}{section}{Reading List}
+
+
 
 
   

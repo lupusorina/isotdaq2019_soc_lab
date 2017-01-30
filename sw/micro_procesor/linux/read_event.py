@@ -1,5 +1,5 @@
 # Accelerometer
-from evdev import InputDevice, ecodes, categorize
+from evdev import InputDevice, ecodes
 import time
 import math
 from bokeh.plotting import figure, curdoc
@@ -85,6 +85,7 @@ except (KeyboardInterrupt, SystemExit):
 def run_acc_readout():
     global G_acc
     dev = InputDevice('/dev/input/event1')
+    buzzer = InputDevice('/dev/input/event0')
     print(dev)
     x = 0
     y = 0
@@ -108,10 +109,12 @@ def run_acc_readout():
 
                         print('x :' + str(x) + ' y = ' + str(y) + ' z = ' + str(z))
                         G_acc = resultant_acc(x, y, z)
-                        if (G_acc > 2):
+                        if (G_acc > 1.5):
                             ledRedOn()
+                            buzzer.write(ecodes.EV_SND, ecodes.SND_BELL, 1)
                         else:
                             ledRGBoff()
+                            buzzer.write(ecodes.EV_SND, ecodes.SND_BELL, 0)
         except IOError as e:
             time.sleep(0.01)
 
