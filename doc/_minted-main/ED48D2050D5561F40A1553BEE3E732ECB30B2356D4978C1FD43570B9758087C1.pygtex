@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{auto} \PYG{n}{eth0}
+    \PYG{n}{iface} \PYG{n}{eth0} \PYG{n}{inet} \PYG{k}{static}
+    \PYG{n}{address} \PYG{l+m+mf}{192.168.2.2}
+    \PYG{n}{netmask} \PYG{l+m+mf}{255.255.255.0} \PYG{n}{gateway} \PYG{l+m+mf}{192.168.2.1} \PYG{n}{dns}\PYG{o}{\PYGZhy{}}\PYG{n}{nameservers} \PYG{l+m+mf}{192.168.2.1}
+\end{Verbatim}

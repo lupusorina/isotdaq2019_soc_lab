@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{apt}\PYG{o}{\PYGZhy{}}\PYG{n}{get} \PYG{n}{update}
+    \PYG{n}{ping} \PYG{l+m+mf}{8.8.8.8}
+\end{Verbatim}

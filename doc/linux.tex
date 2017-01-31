@@ -100,14 +100,24 @@ ssh root@192.168.2.2
 
     \item Next, we will transfer a file to the board.
 
-    On the Desktop, in folder \textit{Laboratory}, you will find a file entitled \textit{lab.py}. This part will contain the skeleton used to develop the next steps. Right now, we will just take this skeleton file and send it to the board.
+    On the Desktop, in folder \textit{Laboratory}, you will find a file entitled \textit{lab.py}. This part will contain the skeleton used to develop the next steps. Right now, we will just take this skeleton file and transfer it to the board.
 
-    For this, \textbf{open a new terminal window} and type the following command. The two points ":" at the end of the next command will place the file in the User folder.
+    For this, \textbf{open a new terminal window} and type the next command in the box. The two points ":" at the end of the next command will place the file in the User folder.
     \begin{tcolorbox}
      \begin{minted}{c}
 scp -r ~/Desktop/Laboratory/lab.py root@192.168.2.2:
     \end{minted}
     \end{tcolorbox}
+
+\item Run lab.py
+
+    \begin{tcolorbox}
+     \begin{minted}{c}
+python lab.py
+    \end{minted}
+    \end{tcolorbox}
+
+
 
 \end{enumerate}
 
@@ -140,7 +150,6 @@ The I/O subsystem is the part of the Linux kernel that manages the various devic
 When previously steps are done, you will see the RGB LED blinking on the board. It is very
 important to make these configurations before moving on to the next section of the lab.
 
-\subsection{Further configurations}
 
 The SD card contains the image of Ubuntu 12.04 and will boot it on the board at every restart.
 

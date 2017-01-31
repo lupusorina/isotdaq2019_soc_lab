@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{n}{dmesg} \PYG{o}{|} \PYG{n}{grep} \PYG{n}{tty}
+\end{Verbatim}

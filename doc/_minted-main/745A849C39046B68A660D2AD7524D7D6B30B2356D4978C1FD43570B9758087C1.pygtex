@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{n}{sudo} \PYG{n}{chmod} \PYG{l+m+mi}{666} \PYG{o}{/}\PYG{n}{dev}\PYG{o}{/}\PYG{n}{ttyUSB0}
+\end{Verbatim}

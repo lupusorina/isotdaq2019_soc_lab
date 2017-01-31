@@ -90,9 +90,18 @@
 % BODY
 %-------------------------------------------------------------------------------
 
-\section{INTRODUCTION}
+\section{OVERVIEW}
 
-This laboratory will familiarize you with the \textbf{All Programmable System on Chip (AP SoC)} processor-centric platform which offers software, hardware and I/O programmability in one single chip.
+
+
+System on Chip are getting more and more popular, exceeding the capabilities of a simple microcontroller. They are used mostly in smartphones and tablets due to their low power consumption, much shorter wiring and high level of integration.
+
+This laboratory will thus aim to familiarize you with the \textbf{All Programmable System on Chip (AP SoC)} processor-centric platform which offers software, hardware and I/O programmability in one single chip.
+
+You are going to programme two applications and understand the workflow and the challanges that a system on chip requires.
+
+
+
 
 
 
@@ -144,6 +153,8 @@ As we have talked about customization per application, you can use two types of 
 \textbf{INTRODUCTION}
 
 In Figure \ref{fig:pwm_waveform}, you can see a basic PWM waveform.  There are two important parameters that characterize the PWM waveform: \textbf{the duty cycle} and the \textbf{PWM period}. The PWM  period is set by "waiting/counting" a number of clock cycles,  while the duty cycle  tells us, in one period, how many clock cycles the PWM signal is low . 
+
+
 
 \begin{figure}[h!]
     \centering
@@ -224,9 +235,11 @@ In order to start our implementation, the next steps should be followed:
 
 \begin{enumerate}
 \item Open an Ubuntu terminal and type 
+\begin{tcolorbox}
 \begin{minted}{c}
 vivado &
 \end{minted}
+\end{tcolorbox}
 
 Vivado Design Suite is launched and a Getting Started Page is displayed.
 
@@ -463,7 +476,7 @@ To export the hardware, press \textbf{File $>$ Edit $>$ Export $>$ Export Hardwa
 \newpage
  \item Let's write some C code 
 
-From now on, we will create the link between the fabric and the dual-core ARM microcontroller. For this, we will use \textbf{Xilinx Software Development Kit (XSDK)} which is the Integrated Design Environment for creating embedded applications. If you worked in Eclipse before, XSDK shall be a piece-of-cake, as it is build on the standard Eclipse IDE, with plugins and Xilinx-dedicated tools. 
+From now on, we will create the link between the fabric and the dual-core ARM microcontroller. For this, we will use \textbf{Xilinx Software Development Kit (XSDK)} which is the Integrated Design Environment for creating embedded applications. If you worked in Eclipse before, XSDK shall be a piece-of-cake, as it is build on the standard Eclipse IDE, with plug-ins and Xilinx-dedicated tools. 
 
 To open it, press \textbf{File $>$ Launch SDK}. Now, the hardware shall be automatically imported in XSDK and now you can create a software application (Figure \ref{fig:sdk_first_page}).
 
@@ -506,13 +519,49 @@ Click \textbf{Finish}.
 
 
 
-\item Run the first application
+\item Connect the board
 
-To run the first application, you need to do the following simple steps:
+To run the first application, you need to do the following simple steps on the hardware site:
 \begin{myitemize}
 \item Ensure that your board is powered on by connecting the Mini-USB to USB cable from computer to the USB\_UART mini-usb socket. This connectivity will also allow us transmit and receive data through serial communication.
-\item 
+\item Connect the programmer on the JTAG port. Make sure the connector matches the pinout from Figure \ref{fig:board_pinout}.
+
+ 
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/boardpinout.png}
+    \caption{JTAG Pinout}
+    \label{fig:board_pinout}
+\end{figure}
+
+
 \end{myitemize}
+
+\item Run the first application
+
+Open the project source files (in the \textbf{src} folder), and double-click on the helloworld.c. 
+In that folder, add the next sequence before the printing line of code. In this way, you will see the output running all the time on the terminal.
+
+\begin{minted}{c}
+while(1)
+\end{minted}
+
+Find the following icon to build the project: and click on the downward arrow. Make sure the Release version is selected and then build it. Make sure the build is successful.
+
+
+Afterwards, we need to setup the programming chain, as firstly the FPGA is programmed (bitstream loaded) and then the application is loaded (.elf file).
+
+Go into \textbf{Run > Run configurations} and do the settings from Figures below:
+
+
+
+\item See the output
+
+Open a terminal \textbf{CTRL+ALT+T} and type:
+
+
+
+\item 
 
 \end{enumerate}
 
@@ -558,7 +607,27 @@ To run the first application, you need to do the following simple steps:
 \section{Connecting the board to a network}
 \label{appendix:b}
 \input{appendixB}
+
+
+\clearpage
+\section{Skeleton of the Code for the LINUX Part}
+\label{appendix:E}
+\input{appendixE}
+
+\clearpage
+\section{Cheating Sheet - Final Code for FPGA PART}
+\label{appendix:C}
+\input{appendixC}
+
+\clearpage
+\section{Cheating Sheet - Final Code for LINUX PART}
+\label{appendix:D}
+\input{appendixD}
+
+
 \end{appendices}
+
+
 %-------------------------------------------------------------------------------
 % REFERENCES
 %-------------------------------------------------------------------------------

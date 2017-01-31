@@ -1,0 +1,98 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Skeleton of the laboratory you will implement in the next 2 hours}
+
+\PYG{c+c1}{\PYGZsh{} DO NOT MODIFY NEXT LINES}
+\PYG{k+kn}{from} \PYG{n+nn}{evdev} \PYG{k+kn}{import} \PYG{n}{InputDevice}\PYG{p}{,} \PYG{n}{ecodes}
+\PYG{k+kn}{import} \PYG{n+nn}{time}
+\PYG{k+kn}{import} \PYG{n+nn}{math}
+\PYG{k+kn}{from} \PYG{n+nn}{bokeh.plotting} \PYG{k+kn}{import} \PYG{n}{figure}\PYG{p}{,} \PYG{n}{curdoc}
+\PYG{k+kn}{from} \PYG{n+nn}{bokeh.driving} \PYG{k+kn}{import} \PYG{n}{linear}
+\PYG{k+kn}{import} \PYG{n+nn}{threading}
+
+
+\PYG{k}{def} \PYG{n+nf}{ledRGBon}\PYG{p}{():}
+    \PYG{c+c1}{\PYGZsh{} PUT YOUR CODE HERE}
+    \PYG{k}{pass}
+
+\PYG{k}{def} \PYG{n+nf}{ledRGBoff}\PYG{p}{():}
+    \PYG{c+c1}{\PYGZsh{} PUT YOUR CODE HERE}
+    \PYG{k}{pass}
+
+\PYG{k}{def} \PYG{n+nf}{ledRedOn}\PYG{p}{():}
+    \PYG{c+c1}{\PYGZsh{} PUT YOUR CODE HERE}
+    \PYG{k}{pass}
+
+\PYG{k}{def} \PYG{n+nf}{buzzerOn}\PYG{p}{():}
+    \PYG{c+c1}{\PYGZsh{} PUT YOUR CODE HERE}
+    \PYG{k}{pass}
+
+\PYG{k}{def} \PYG{n+nf}{buzzerOff}\PYG{p}{():}
+    \PYG{c+c1}{\PYGZsh{} PUT YOUR CODE HERE}
+    \PYG{k}{pass}
+
+\PYG{c+c1}{\PYGZsh{} UTILITY FUNCTION}
+\PYG{c+c1}{\PYGZsh{} DO NOT MODIFY}
+\PYG{k}{def} \PYG{n+nf}{checkEmpty}\PYG{p}{(}\PYG{n}{value}\PYG{p}{):}
+    \PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{value}\PYG{p}{:}
+        \PYG{n}{value} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{k}{return} \PYG{n}{value}
+
+\PYG{c+c1}{\PYGZsh{} UTILITY FUNCTION}
+\PYG{c+c1}{\PYGZsh{} DO NOT MODIFY}
+\PYG{k}{def} \PYG{n+nf}{resultantAcc}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{n}{z}\PYG{p}{):}
+    \PYG{n}{g} \PYG{o}{=} \PYG{n}{math}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{x} \PYG{o}{*} \PYG{n}{x} \PYG{o}{+} \PYG{n}{y} \PYG{o}{*} \PYG{n}{y} \PYG{o}{+} \PYG{n}{z} \PYG{o}{*} \PYG{n}{z}\PYG{p}{)} \PYG{o}{*} \PYG{l+m+mi}{4} \PYG{o}{/} \PYG{l+m+mi}{1000}
+    \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}total acc = \PYGZsq{}} \PYG{o}{+} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{g}\PYG{p}{))}
+    \PYG{k}{return} \PYG{n}{g}
+
+\PYG{k}{global} \PYG{n}{G\PYGZus{}acc}
+\PYG{n}{G\PYGZus{}acc} \PYG{o}{=} \PYG{l+m+mi}{0}
+
+\PYG{k}{def} \PYG{n+nf}{runAccReadout}\PYG{p}{():}
+    \PYG{k}{global} \PYG{n}{G\PYGZus{}acc}
+    \PYG{n}{acc} \PYG{o}{=} \PYG{n}{InputDevice}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}/dev/input/event1\PYGZsq{}}\PYG{p}{)}
+
+    \PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{n}{y} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{n}{z} \PYG{o}{=} \PYG{l+m+mi}{0}
+
+    \PYG{k}{while} \PYG{n+nb+bp}{True}\PYG{p}{:}
+        \PYG{k}{try}\PYG{p}{:}
+            \PYG{c+c1}{\PYGZsh{} PUT YOUR CODE HERE}
+            \PYG{k}{pass}
+        \PYG{k}{except} \PYG{n+ne}{IOError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+            \PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep}\PYG{p}{(}\PYG{l+m+mf}{0.01}\PYG{p}{)}
+
+
+\PYG{c+c1}{\PYGZsh{} PLOTTING AND THREADING PART}
+\PYG{c+c1}{\PYGZsh{} DO NOT MODIFY AFTER THIS PART}
+
+\PYG{n+nd}{@linear}\PYG{p}{()}
+\PYG{k}{def} \PYG{n+nf}{update}\PYG{p}{(}\PYG{n}{step}\PYG{p}{):}
+    \PYG{k}{global} \PYG{n}{G\PYGZus{}acc}
+    \PYG{n}{ds1}\PYG{o}{.}\PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}x\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{step}\PYG{p}{)}
+    \PYG{n}{ds1}\PYG{o}{.}\PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}y\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{G\PYGZus{}acc}\PYG{p}{)}
+    \PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{ds1}\PYG{o}{.}\PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}x\PYGZsq{}}\PYG{p}{])} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{50}\PYG{p}{:}
+        \PYG{n}{ds1}\PYG{o}{.}\PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}x\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{pop}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+        \PYG{n}{ds1}\PYG{o}{.}\PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}y\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{pop}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+    \PYG{n}{ds1}\PYG{o}{.}\PYG{n}{trigger}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}data\PYGZsq{}}\PYG{p}{,} \PYG{n}{ds1}\PYG{o}{.}\PYG{n}{data}\PYG{p}{,} \PYG{n}{ds1}\PYG{o}{.}\PYG{n}{data}\PYG{p}{)}
+
+\PYG{k}{try}\PYG{p}{:}
+    \PYG{k}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Let\PYGZsq{}s kickoff this lab\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{ledRGBoff}\PYG{p}{()}
+    \PYG{n}{ledRGBon}\PYG{p}{()}
+    \PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+    \PYG{n}{p} \PYG{o}{=} \PYG{n}{figure}\PYG{p}{(}\PYG{n}{plot\PYGZus{}width}\PYG{o}{=}\PYG{l+m+mi}{800}\PYG{p}{,} \PYG{n}{plot\PYGZus{}height}\PYG{o}{=}\PYG{l+m+mi}{500}\PYG{p}{,} \PYG{n}{title} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}Accelerometer Data\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{acc\PYGZus{}values} \PYG{o}{=} \PYG{n}{p}\PYG{o}{.}\PYG{n}{line}\PYG{p}{([],} \PYG{p}{[],} \PYG{n}{color} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}firebrick\PYGZdq{}}\PYG{p}{,} \PYG{n}{line\PYGZus{}width} \PYG{o}{=} \PYG{l+m+mi}{3}\PYG{p}{)}
+    \PYG{n}{ds1} \PYG{o}{=} \PYG{n}{acc\PYGZus{}values}\PYG{o}{.}\PYG{n}{data\PYGZus{}source}
+    \PYG{n}{curdoc}\PYG{p}{()}\PYG{o}{.}\PYG{n}{add\PYGZus{}root}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}
+    \PYG{n}{curdoc}\PYG{p}{()}\PYG{o}{.}\PYG{n}{add\PYGZus{}periodic\PYGZus{}callback}\PYG{p}{(}\PYG{n}{update}\PYG{p}{,} \PYG{l+m+mi}{50}\PYG{p}{)}
+\PYG{k}{except} \PYG{p}{(}\PYG{n+ne}{KeyboardInterrupt}\PYG{p}{,} \PYG{n+ne}{SystemExit}\PYG{p}{):}
+    \PYG{k}{print} \PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{! Received keyboard interrupt, quitting threads.}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{k}{try}\PYG{p}{:}
+    \PYG{n}{t} \PYG{o}{=} \PYG{n}{threading}\PYG{o}{.}\PYG{n}{Thread}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{run\PYGZus{}acc\PYGZus{}readout}\PYG{p}{)}
+    \PYG{n}{t}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()}
+
+\PYG{k}{except} \PYG{p}{(}\PYG{n+ne}{KeyboardInterrupt}\PYG{p}{,} \PYG{n+ne}{SystemExit}\PYG{p}{):}
+    \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{! Received keyboard interrupt, quitting threads.}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}
