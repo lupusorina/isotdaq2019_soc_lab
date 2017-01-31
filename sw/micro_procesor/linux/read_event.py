@@ -7,7 +7,6 @@ from bokeh.driving import linear
 import threading
 
 
-
 def ledRGBon():
         red = open("/sys/class/leds/led_r/brightness", "w")
         green = open("/sys/class/leds/led_g/brightness", "w")
@@ -40,6 +39,18 @@ def ledRedOn():
     red.write(str(1))
     red.close()
 
+
+def buzzerOn():
+    buzzer = InputDevice('/dev/input/event0')
+    buzzer.write(ecodes.EV_SND, ecodes.SND_BELL, 1)
+
+def buzzerOff():
+    buzzer = InputDevice('/dev/input/event0')
+    buzzer.write(ecodes.EV_SND, ecodes.SND_BELL, 0)
+
+
+
+
 def check_empty(value):
     if not value:
         value = 0
@@ -67,25 +78,20 @@ def update(step):
 try:
     ledRGBoff()
     ledRGBon()
-    print("led on")
     time.sleep(1)
-
-
-
-
     p = figure(plot_width=800, plot_height=500, title = 'Accelerometer Data')
     acc_values = p.line([], [], color = "firebrick", line_width = 3)
     ds1 = acc_values.data_source
-
+    
     curdoc().add_root(p)
     curdoc().add_periodic_callback(update, 50)
+
 except (KeyboardInterrupt, SystemExit):
     print ('\n! Received keyboard interrupt, quitting threads.\n')
 
 def run_acc_readout():
     global G_acc
     dev = InputDevice('/dev/input/event1')
-    buzzer = InputDevice('/dev/input/event0')
     print(dev)
     x = 0
     y = 0
@@ -111,16 +117,12 @@ def run_acc_readout():
                         G_acc = resultant_acc(x, y, z)
                         if (G_acc > 1.5):
                             ledRedOn()
-                            buzzer.write(ecodes.EV_SND, ecodes.SND_BELL, 1)
+                            buzzerOn()
                         else:
                             ledRGBoff()
-                            buzzer.write(ecodes.EV_SND, ecodes.SND_BELL, 0)
+                            buzzerOff()
         except IOError as e:
             time.sleep(0.01)
-
-
-
-
 
 try:
     t = threading.Thread(target=run_acc_readout)
