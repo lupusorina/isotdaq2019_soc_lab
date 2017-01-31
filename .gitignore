@@ -6,4 +6,5 @@
 *.toc
 
 # metadata
+.metadata
 *.log
