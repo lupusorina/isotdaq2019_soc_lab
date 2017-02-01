@@ -35,17 +35,15 @@ def ledRGBoff():
         blue.close()
 
 def ledRedOn():
-    red = open("/sys/class/leds/led_r/brightness", "w")
+    red = open("/sys/class/leds/led_b/brightness", "w")
     red.write(str(1))
     red.close()
 
 
-def buzzerOn():
-    buzzer = InputDevice('/dev/input/event0')
+def buzzerOn(buzzer):
     buzzer.write(ecodes.EV_SND, ecodes.SND_BELL, 1)
 
-def buzzerOff():
-    buzzer = InputDevice('/dev/input/event0')
+def buzzerOff(buzzer):
     buzzer.write(ecodes.EV_SND, ecodes.SND_BELL, 0)
 
 
@@ -92,6 +90,7 @@ except (KeyboardInterrupt, SystemExit):
 def run_acc_readout():
     global G_acc
     dev = InputDevice('/dev/input/event1')
+    buzzer = InputDevice('/dev/input/event0')
     print(dev)
     x = 0
     y = 0
@@ -117,10 +116,10 @@ def run_acc_readout():
                         G_acc = resultant_acc(x, y, z)
                         if (G_acc > 1.5):
                             ledRedOn()
-                            buzzerOn()
+                            buzzerOn(buzzer)
                         else:
                             ledRGBoff()
-                            buzzerOff()
+                            buzzerOff(buzzer)
         except IOError as e:
             time.sleep(0.01)
 
