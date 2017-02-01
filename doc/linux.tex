@@ -2,23 +2,23 @@
 
 The current kit comes with Ubuntu 12.04 installed on a MicroSD card. Using this 
 operating system, we will learn to implement the following steps:
-\begin{myitemize}
+\begin{enumerate}
 \item we will communicate with the devkit through UART
 \item we will transfer of files between the host computer and the devkit through Ethernet
 \item we will control the LEDs and the buzzer mounted on the devkit
 \item we will read accelerometer data from the ADXL346 accelerometer mounted on the board
-\item we will display the data using \textbf{bokeh}, which is a Python interactive visualization library
-\item we will implement a webserver to visualize the accelerometer data, using as well \textbf{bokeh}
-\end{myitemize}
+\item we will implement a webserver to visualize the accelerometer data, using  \textbf{bokeh}, which is a Python interactive visualization library
+\end{enumerate}
 
+Before getting started, read again Project 2 from Chapter 2.Applications.
 
 
 \subsection{Let's get started!}
 
 Now, we will move on with running an operating system on the System on Chip. For this, we will do the following steps:
 \begin{myitemize}
-\item you disconnected the JTAG cable used previously to programme the board
-\item the mini SD Card is inserted in its socket (the filesystems are resided on a 4GB miniSD memory card where the board also boots from.)
+\item  disconnect the JTAG cable used previously to programme the board
+\item insert the mini SD Card in its socket if it is not there (the filesystems are resided on a 4GB miniSD memory card where the board also boots from.)
 \item find Jumper 1 and Jumper 2 (JP1 and JP2) and make sure they are in the following order:
 \begin{minted}{c}
 JP1 OFF 
@@ -43,7 +43,7 @@ picocom -b 115200 /dev/ttyUSB0
         \end{minted}
         \end{tcolorbox}
 
-    Now, what you will see (Figure \ref{fig:picocom}) is an emulator of the terminal of Ubuntu 12.04 running on the board.
+    Now, what you will see (Figure \ref{fig:picocom}) is the terminal emulator of Ubuntu 12.04 running on the board.
     Type \textbf{reboot} and the system will re-start. After booting the board it gives you directly a bash shell as user root.
 
 
@@ -90,17 +90,19 @@ The SSH is already installed on the board. The settings can be seen in \cref{app
 
 The following steps shall be performed: 
 \begin{enumerate}
+    \item Connect the Ethernet cable between your computer and the board
     \item Type in a new terminal the following command to connect to the board through SSH protocol.
     \begin{tcolorbox}
         \begin{minted}{c}
 ssh root@192.168.2.2
         \end{minted}
     \end{tcolorbox}
-    You will see basically the same emulator as before.
+    You will see basically the same shell as before \ref{fig:picocom}.
+    Don't forget that you also need to configure the IP on your computer. For this lab, this work was already done for you.
 
     \item Next, we will transfer a file to the board.
 
-    On the Desktop, in folder \textit{Laboratory}, you will find a file entitled \textit{lab.py}. This part will contain the skeleton used to develop the next steps. Right now, we will just take this skeleton file and transfer it to the board.
+    On the Desktop, in folder \textit{Laboratory}, you will find a file entitled \textit{lab.py}. This part will contain the final application that you are going to run. Right now, we will just take this file and transfer it to the board, and later on run it.
 
     For this, \textbf{open a new terminal window} and type the next command in the box. The two points ":" at the end of the next command will place the file in the User folder.
     \begin{tcolorbox}
@@ -109,13 +111,8 @@ scp -r ~/Desktop/Laboratory/lab.py root@192.168.2.2:
     \end{minted}
     \end{tcolorbox}
 
-\item Run lab.py
 
-    \begin{tcolorbox}
-     \begin{minted}{c}
-python lab.py
-    \end{minted}
-    \end{tcolorbox}
+
 
 
 
@@ -124,59 +121,165 @@ python lab.py
 
 
 
+\subsection{Control the LEDs and the buzzer mounted on the devkit}
+
+
+\begin{enumerate}
+\item Make sure you have the emulator opened, by typing:
+
+   \begin{tcolorbox}
+        \begin{minted}{c}
+ssh root@192.168.2.2
+        \end{minted}
+    \end{tcolorbox}
+
+
+\item Control the LEDs
+
+In its simplest form, the LED class just allows control of LEDs from userspace. LEDs appear in $/sys/class/leds/$. Let's check them.
+
+Type in the terminal:
+   \begin{tcolorbox}
+        \begin{minted}{c}
+ls /sys/class/leds/
+        \end{minted}
+    \end{tcolorbox}
+
+Right now, you shall see the following options:
+
+   \begin{tcolorbox}
+        \begin{minted}{c}
+led_b  led_g  led_r  mmc0::  usr_led1  usr_led2
+        \end{minted}
+    \end{tcolorbox}
+
+The first three refer to the RGB LED available on the platform, while the last two refer to LED D29 and D30 on the same board. The LED can be turned on and off using the 'brightness' file. The minimum brightness is 0, and the maximum is 255. As there is no variable brightness support, any value greater than 0 will turn the LED on. Now, let's turn on LED D29 and LED D30. For this, you need to type in the emulator:
+
+   \begin{tcolorbox}
+        \begin{minted}{c}
+echo 1 > /sys/class/leds/usr_led1/brightness
+echo 1 > /sys/class/leds/usr_led2/brightness
+        \end{minted}
+    \end{tcolorbox}
+
+Check the result on the board.
+
+{\textbf{\color{red}Optional:}} Implement your own toggle (on and off) of the RGB LED in a python script. In case you get stuck, check the Appendix \cref{appendix:E}.
 
 
 
+\item Control the BUZZER
+
+The buzzer is seen as a device. "In Unix-like operating systems, a device file or special file is an interface for a device driver that appears in a file system as if it were an ordinary file.They allow software to interact with a device driver using standard input/output system calls, which simplifies many tasks and unifies user-space I/O mechanisms. "(Source: Wikipedia). They can be found in $/dev/input/eventX$. Let's see them by typing:
+
+   \begin{tcolorbox}
+        \begin{minted}{c}
+ls /dev/input/
+        \end{minted}
+    \end{tcolorbox}
+
+You can thus see, a list of events. But how do we know which one is applicable to the Buzzer?
+
+Let's write a Python script to access them. We will use the python-evdev library which allows you to read and write input events on Linux.
+
+Open a new file, call it "buzzer.py" and write the following lines of code to get information for event0, event1 and event2
+
+   \begin{tcolorbox}
+        \begin{minted}{python}
+from evdev import InputDevice, ecodes
+import time
+
+device0 = InputDevice('/dev/input/event0')
+device1 = InputDevice('/dev/input/event1')
+device2 = InputDevice('/dev/input/event2')
+
+print(device0)
+print(device1)
+print(device2)
+        \end{minted}
+    \end{tcolorbox}
+
+
+You can  see that the first two are actually the buzzer device and the accelerometer device, the ones that we need to use.
+
+Let's turn the buzzer ON. For this, you need to add the following lines of code to the previous ones:
+
+   \begin{tcolorbox}
+        \begin{minted}{python}
+device0.write(ecodes.EV_SND, ecodes.SND_BELL, 1)
+time.sleep(2)
+device0.write(ecodes.EV_SND, ecodes.SND_BELL, 0)
+print(device0.capabilities(verbose=True))
+        \end{minted}
+    \end{tcolorbox}
+
+
+We understood how InputDevice works, but, what are \textbf{ecodes} and why they are used in the previous lines of code to access the buzzer?
+
+An input event is represented by standard $input\_event$ structure defined in $linux/input.h$ header file. According to this header file,  the structure is: 
+\begin{myitemize}
+\item timestamp
+\item type $->$ EV\_SND (for the buzzer)
+\item code $->$ SND\_BELL (for the buzzer)
+\item value $->$ (1 or 0 for ON and OFF)
+\end{myitemize}
+
+
+\end{enumerate}
 
 
 
+\subsection{Read accelerometer data}
+
+In the previous part, we saw that the accelerometer can be accessed from $/dev/input/event1$. 
 
 
+\noindent\rule{16.5cm}{1pt}
 
-\subsubsection{How is LINUX OS interacting with both the accelerometer and the buzzer?}
+\noindent\begin{minipage}{.1\textwidth}
+  \centering
+  \includegraphics[height=1.5cm]{img/icon.png}
+\end{minipage}
+\begin{minipage}{.8\textwidth}
+Now it's your turn to read the device and display the accelerometer data. To understand how to do this, you need to read the documentation of python-evdev library. 
+\url{http://python-evdev.readthedocs.io/en/latest/}. If you get stuck, check Appendix \cref{appendix:D}.
+\end{minipage}%
 
-The I/O subsystem is the part of the Linux kernel that manages the various devices such as keyboards and mouse, devices usually used by any users. On top of this, it comes the Industrial I/O subsystem (IIO) that are analog to digital or digital to analog convertors, for example \textbf{the accelerometer, gyroscopes, proximity sensors} with the aim to extend the I/O subsystem. A typical device falling into the IIO category would be connected via SPI or I2C.
-
-
-
-
-
-
-\subsubsection{How is LINUX OS interacting with the LEDs?}
-
-
-
-
-When previously steps are done, you will see the RGB LED blinking on the board. It is very
-important to make these configurations before moving on to the next section of the lab.
-
-
-The SD card contains the image of Ubuntu 12.04 and will boot it on the board at every restart.
-
-\subsubsection{Screen}
-
-\subsubsection{File transfer between host computer and the board}
-
-% Connect a screen to see that it works
-
-% Open a terminal and communicate 
-
-% Send a file through SSH
-
-\subsection{Interact with the RGB LED and the Buzzer}
-
+\noindent\rule{16.5cm}{1pt}
 
 
 
 \subsection{Webserver}
-Now, we will learn how to display the accelerometer values on an webserver running
-on the host computer.
+Now, we will see how to display the accelerometer values on an webserver running on the host computer.
+
+For this part, Bokeh was used. Bokeh is a Python interactive visualization library that targets modern web browsers for presentation. Its goal is to provide elegant, concise construction of novel graphics.
+
+To run the webserver, you need to type in the emulator the following:
+
+   \begin{tcolorbox}
+        \begin{minted}{c}
+bokeh serve --host 192.168.2.2:5006 read_event.py
+        \end{minted}
+    \end{tcolorbox}
+
+
+Then, in your host computer, open a webbrowser and type the IP, as seen in Figure \ref{fig:bokeh}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/bokeh.png}
+    \caption{Host address}
+    \label{fig:bokeh}
+\end{figure}
+
+Then, the plot will be displayed interactively! Have fun!
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/acc.png}
+    \caption{Host address}
+    \label{fig:bokeh}
+\end{figure}
 
 
 
- %Each device provides one or more /dev/input/eventN nodes that a process can interact with. For example  reading events from the device.
-
-
- %The events themselves are in the form of struct input_event, defined in linux/input.h and consist of a event type (relative, absolute, key, ...) and an event code specific to the type (x axis, left button, etc.).
-
- %Any event coming from the physical hardware goes into the kernel's input subsystem and is converted to an evdev event that is then available on the event node.
