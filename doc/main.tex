@@ -4,7 +4,7 @@
 \usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
 \usepackage{cleveref}
 \usepackage{geometry}
-\geometry{legalpaper, margin=0.8in}
+\geometry{a4paper, margin=0.6in}
 \usepackage{minted}
 \usepackage{graphicx}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
@@ -26,6 +26,18 @@
 \renewcommand{\baselinestretch}{1.2}
 
 \crefname{appsec}{Appendix}{Appendices}
+
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{lipsum}
+\mdfdefinestyle{MyFrame}{%
+    linecolor=blue,
+    outerlinewidth=2pt,
+    roundcorner=20pt,
+    innertopmargin=\baselineskip,
+    innerbottommargin=\baselineskip,
+    innerrightmargin=20pt,
+    innerleftmargin=20pt,
+    backgroundcolor=red!20!white}
 
 
 \newenvironment{myexampleblock}[1]{%
@@ -70,13 +82,20 @@
 
 \begin{document}
 
-\title{ \LARGE \normalsize {The International School of Trigger and Data Acquisition 2017} \vspace{10cm} \\
-		\LARGE \textbf{\uppercase{System on Chip - FPGA}} \\ 
-		\normalsize \today \vspace*{5\baselineskip}}
+\title{ \LARGE \normalsize {The International School of Trigger and Data Acquisition 2017} \vspace{8cm} \\
+		\LARGE \textbf{\uppercase{System on Chip Laboratory}} \\ 
+		\normalsize \today \vspace*{2\baselineskip}}
 
 \date{}
 
 \maketitle
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/zturn.png}
+\end{figure}
+
+
 \newpage
 \tableofcontents
 \newpage
@@ -94,36 +113,76 @@
 
 
 
-System on Chip are getting more and more popular, exceeding the capabilities of a simple microcontroller. They are used mostly in smartphones and tablets due to their low power consumption, much shorter wiring and high level of integration.
+The System on Chip(SoC) is getting more and more popular, exceeding the capabilities of a simple microcontroller. SOCs are used mostly in smartphones and tablets due to their low power consumption, much shorter wiring and high level of integration.
 
-This laboratory will thus aim to familiarize you with the \textbf{All Programmable System on Chip (AP SoC)} processor-centric platform which offers software, hardware and I/O programmability in one single chip.
-
-You are going to programme two applications and understand the workflow and the challanges that a system on chip requires.
+This laboratory will thus aim to familiarize you with the \textbf{All Programmable System on Chip (AP SoC)}. The board (presented in Figure \ref{fig:zturnboard}) that you are going to use is called Z-TURN, built around the Xilinx Zynq-7010. It contains an FPGA and a dual-core ARM microcontroller.
 
 
 
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{img/zturn_details.jpg}
+    \caption{Z-Turn board capabilities}
+    \label{fig:zturnboard}
+\end{figure}
 
 
-{\color{red}To be added 2-3 paragraphs}
+
+
+
+
+After fulfilling this lab, you are mainly going to learn:
+\begin{itemize}
+\item the workflow of designing an application on FPGA
+\item the interaction between an FPGA and an ARM microcontroller
+\item running and interacting with an operating system on the ARM microcontroller
+\item writing Python scripts for communicating with various pheripherals from the board
+\item getting an overview of the challenges of using this system
+\end{itemize}
+
+
+
 
 \newpage
 
-\section{IMPLEMENTATION IN HARDWARE}
-
-\subsection{Block diagram of the study case}
+\section{Applications}
 
 
-{\color{red} put picture FPGA \\ put picture block diagram}
+In this laboratory, you will implement the workflow for designing two applications.
 
-We are going to introduce all the concepts of the block diagram throughout the next pages of the laboratory.
+\vspace{1cm}
 
+\begin{mdframed}[style=MyFrame]
+\textbf{PROJECT 1. Controller of the LED and the buzzer developed on FPGA}
+
+This part will make use of the FPGA and a microcontroller, as well as the interaction between the two. On the FPGA side, we will develop a controller, for interacting with the on-board buzzer and the RGB LED, while the MCU will take care of the sequencial logic of the application.
+Specifically, the application shall generate a number between 1 and 3 and will control the LED and the buzzer accordingly:
+\begin{myitemize}
+\item 1 - LED RED - ON; BUZZER - ON
+\item 2 - LED GREEN - ON; BUZZER - OFF
+\item 3 - LED BLUE - ON; BUZZER - OFF
+\end{myitemize}
+\end{mdframed}
+
+
+
+
+\vspace{1cm}
+
+\begin{mdframed}[style=MyFrame]
+
+\textbf{PROJECT 2. Accelerations displayed on a Webserver}
+
+The second part of the laboratory consists of reading accelerometer data from the ADXL accelerometer available on the board. This data will be further displayed on a webserver running on the device. When the acceleration will exceed a certain threashold (the system will feel hypergravity), the RED LED and the buzzer will be turned on, similar to a warning system.
+
+\end{mdframed}
 
 \newpage
 
-\subsection{Getting started with the environment}
+\subsection{Getting started}
 
-\textbf{Vivado Design Suite}, along with the \textbf{Xilinx Software Development Kit (XSDK)} are the main applications used in this laboratory. The first one will be mainly used for the hardware development(talking to the FPGA), while XSDK will be used for embedded C development (talking to the ARM processor). Vivado Design Suite has two important modes: \textit{project mode} and \textit{non-project mode}. In project mode, Vivado tool will automatically manage the design flow and directory structure. As you will become more advanced, the non-project mode will allow you to automatize your design flow using Tcl-language commands and scripts. 
+\textbf{Vivado Design Suite}, along with the \textbf{Xilinx Software Development Kit (XSDK)} are the main applications used in this laboratory. The first one will be mainly used for the hardware development(talking to the FPGA), while XSDK will be used for embedded C development (talking to the ARM processor). The Vivado Design Suite has two important modes: \textit{project mode} and \textit{non-project mode}. In project mode, Vivado tool will automatically manage the design flow and directory structure. As you will become more advanced, the non-project mode will allow you to automatize your design flow using Tcl-language commands and scripts. 
 
 \subsubsection{System on Chip Design Flow in Vivado Design Suite}
 
@@ -145,7 +204,7 @@ As we have talked about customization per application, you can use two types of 
     \caption{AXI Memory Mapped and AXI Stream arhitecture}
     \label{fig:axi_mm_stream}
 \end{figure}
-
+  
 \newpage
 
 \subsubsection{Pulse Width Modulation (PWM) Slave Peripheral}
@@ -540,45 +599,77 @@ To run the first application, you need to do the following simple steps on the h
 \item Run the first application
 
 Open the project source files (in the \textbf{src} folder), and double-click on the helloworld.c. 
-In that folder, add the next sequence before the printing line of code. In this way, you will see the output running all the time on the terminal.
+In that file, add the next sequence before the printing line of code. In this way, you will see the output running all the time on the terminal.
 
 \begin{minted}{c}
 while(1)
 \end{minted}
 
-Find the following icon to build the project: and click on the downward arrow. Make sure the Release version is selected and then build it. Make sure the build is successful.
+Find the following icon to build the project \includegraphics[width = 0.6cm]{img/run/build.png} and click on the downward arrow. Make sure the Release version is selected and then build it. Verify that the build is successful.
 
 
-Afterwards, we need to setup the programming chain, as firstly the FPGA is programmed (bitstream loaded) and then the application is loaded (.elf file).
 
-Go into \textbf{Run > Run configurations} and do the settings from Figures below:
+Next, we need to setup the programming chain, as firstly the FPGA is programmed (bitstream loaded) and then the application is loaded (.elf file).
 
 
+
+Go into \textbf{Run > Run configurations} and do the settings from Figures \ref{fig:run_part1} and \ref{fig:run_part2} below:
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/run/run_part1.png}
+    \caption{Target Setup}
+    \label{fig:run_part1}
+\end{figure}
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/run/run_part2.png}
+    \caption{Application Setup}
+    \label{fig:run_part2}
+\end{figure}
+
+Wait until the system is configured and programmed.
 
 \item See the output
 
-Open a terminal \textbf{CTRL+ALT+T} and type:
+Open a terminal \textbf{CTRL+ALT+T} and open the picocom terminal as following: 
+
+\begin{tcolorbox}
+\begin{minted}{c}
+picocom -b 115200 /dev/ttyUSB0
+\end{minted}
+\end{tcolorbox}
+
+Make sure you put the correct serial device "ttyUSBX", according to your system.
+
+Now, you shall see a long list of "Hello World!"
+
+\item Let's run a more complex application.
+
+At the beginning of this laboratory, we presented two applications we are going to implement. For simplicity, we provided you with the source code for this application that can be seen in the Laboratory folder or in Appendix \ref{appendix:C}. You just need to run it and understand the code. 
 
 
+The source code contains two $*.c$ files and two header files.
 
-\item 
+
+$itoa_fcn.c$ - contains utility function used to convert a number to a string to be sent to UART using "print" function
+
+$main.c$ - contains the main logic of the programme
+
+
+To run it, firstly, you need to delete the \textit{helloworld.c}. Then, select the \textit{src} folder, and import the aforementioned code by right click and selecting \textbf{Import > General > File System}. Add the Laboratory folder like in Figure \ref{fig:import}.
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/run/import.png}
+    \caption{Import source files}
+    \label{fig:import}
+\end{figure}
+
+Now, run the application similarly and HAVE FUN! (before moving to the LINUX part)
 
 \end{enumerate}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -590,11 +681,9 @@ Open a terminal \textbf{CTRL+ALT+T} and type:
 \input{linux}
 
 
-\subsection{Booting LINUX with System on Chip}
 
-\subsection{Interfacing the accelerometer + webserver}
- 
- 
+
+
 \clearpage
 
 \begin{appendices}
@@ -609,20 +698,36 @@ Open a terminal \textbf{CTRL+ALT+T} and type:
 \input{appendixB}
 
 
-\clearpage
-\section{Skeleton of the Code for the LINUX Part}
-\label{appendix:E}
-\input{appendixE}
+
+
 
 \clearpage
 \section{Cheating Sheet - Final Code for FPGA PART}
 \label{appendix:C}
 \input{appendixC}
 
+
+
 \clearpage
-\section{Cheating Sheet - Final Code for LINUX PART}
+\section{Cheating Sheet - Toggle LEDs}
+\label{appendix:E}
+\input{appendixE}
+
+\clearpage
+\section{Cheating Sheet - Read Accelerometer Data}
 \label{appendix:D}
 \input{appendixD}
+
+
+
+
+\clearpage
+\section{Cheating Sheet - Run the webserver}
+\label{appendix:F}
+\input{appendixF}
+
+
+
 
 
 \end{appendices}
