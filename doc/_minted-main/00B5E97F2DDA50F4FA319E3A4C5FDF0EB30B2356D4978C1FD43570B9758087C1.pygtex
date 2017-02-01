@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-        \PYG{n}{picocom} \PYG{o}{\PYGZhy{}}\PYG{n}{b} \PYG{l+m+mi}{115200} \PYG{o}{/}\PYG{n}{dev}\PYG{o}{/}\PYG{n}{ttyUSB0}
-\end{Verbatim}
