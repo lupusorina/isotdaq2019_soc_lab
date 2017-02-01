@@ -7,25 +7,47 @@ import math
 from bokeh.plotting import figure, curdoc
 from bokeh.driving import linear
 import threading
+import sys
 
 
 def ledRGBon():
-    # PUT YOUR CODE HERE
+    red = open("/sys/class/leds/led_r/brightness", "w")
+    green = open("/sys/class/leds/led_g/brightness", "w")
+    blue = open("/sys/class/leds/led_b/brightness", "w")
 
+    red.write(str(1))
+    green.write(str(1))
+    blue.write(str(1))
+
+    red.close()
+    green.close()
+    blue.close()
 
 def ledRGBoff():
-    # PUT YOUR CODE HERE
+    red = open("/sys/class/leds/led_r/brightness", "w")
+    green = open("/sys/class/leds/led_g/brightness", "w")
+    blue = open("/sys/class/leds/led_b/brightness", "w")
+
+    red.write(str(0))
+    green.write(str(0))
+    blue.write(str(0))
+
+    red.close()
+    green.close()
+    blue.close()
 
 def ledRedOn():
     # PUT YOUR CODE HERE
+    pass
 
 
 def buzzerOn():
     # PUT YOUR CODE HERE
+    pass
 
 def buzzerOff():
     # PUT YOUR CODE HERE
-
+    pass
 
 # UTILITY FUNCTION
 # DO NOT MODIFY
@@ -57,6 +79,7 @@ def runAccReadout():
     while True:
         try:
             # PUT YOUR CODE HERE
+            pass
         except IOError as e:
             time.sleep(0.01)
 
@@ -75,9 +98,11 @@ def update(step):
     ds1.trigger('data', ds1.data, ds1.data)
 
 try:
+    print("Welcome to the LINUX part of the Lab")
     ledRGBoff()
+    time.sleep(2)
     ledRGBon()
-    time.sleep(1)
+    time.sleep(20)
     p = figure(plot_width=800, plot_height=500, title = 'Accelerometer Data')
     acc_values = p.line([], [], color = "firebrick", line_width = 3)
     ds1 = acc_values.data_source
@@ -87,9 +112,8 @@ except (KeyboardInterrupt, SystemExit):
     print ('\n! Received keyboard interrupt, quitting threads.\n')
 
 try:
-    t = threading.Thread(target=run_acc_readout)
+    t = threading.Thread(target=runAccReadout)
     t.start()
 
 except (KeyboardInterrupt, SystemExit):
     print('\n! Received keyboard interrupt, quitting threads.\n')
-

@@ -1,6 +1,7 @@
 # Accelerometer
 from evdev import UInput, InputDevice
-from evdev import InputDevice, ecodes
+
+
 # from bokeh.plotting import figure, curdoc
 # from bokeh.driving import linear
 # import threading
