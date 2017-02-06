@@ -2,12 +2,13 @@
 #include "xil_io.h"
 #include "stdlib.h"
 #include "itoa_fcn.h"
+#include "main.h"
 
-#define MY_PWM_MEMORY_MAP 0x43C00000 //This value is found in the Address editor tab in Vivado (next to Diagram tab)
-#define MY_PWM_MEMORY_MAP_OFFSET 4
-#define FREQUENCY_FPGA 50000000 // 50 MHz
+
 
 void print_memory_mapped_registers();
+void playsong();
+void delay();
 
 // Generate a random number between 1 and 3 (1 - red; 2 - green;  3 - blue)
 // Every time the red color is showed, activate the buzzer for 1 seconds
@@ -19,20 +20,25 @@ int main(){
     int buzzer_pwm = 0;
 
 
-    int led_duty_cycle_max = 12000;
-    int buzzer_pwm_value =  led_duty_cycle_max;
+    int led_duty_cycle_max = 50000;
+    //int buzzer_pwm_value =  led_duty_cycle_max;
 
     int rand_choose_color;
     int i;
     while(1){
     	rand_choose_color = (rand() % 3) + 1;
+
     	print("Generated random color: ");
+
+
+
     	switch (rand_choose_color){
     			case 1:
     				red_pwm = 0;
     				blue_pwm = led_duty_cycle_max;
        				green_pwm = led_duty_cycle_max;
-       				buzzer_pwm = buzzer_pwm_value;
+       				//playsong();
+       				buzzer_pwm = 0;
        				print("RED");
        				print("\n");
        			break;
@@ -51,15 +57,14 @@ int main(){
     				red_pwm = led_duty_cycle_max;
     				blue_pwm = led_duty_cycle_max;
     				green_pwm = 0;
+    				buzzer_pwm = 0;
     				print("GREEN");
     				print("\n");
-    			default:
-    				red_pwm = led_duty_cycle_max;
-    				blue_pwm = led_duty_cycle_max;
-    				green_pwm = 0;
-       				buzzer_pwm = 0;
+    			break;
 
     	}
+
+
 
 
         Xil_Out32(MY_PWM_MEMORY_MAP, red_pwm);
@@ -69,9 +74,12 @@ int main(){
 
         print_memory_mapped_registers();
 
-        for(i=0;i < 3 * FREQUENCY_FPGA; i++){
-        	if (i == FREQUENCY_FPGA)
-                Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), 0);
+        // wait 3 seconds
+        for(i=0;i <= 2 * FREQUENCY_FPGA; i++){
+        	if (i == FREQUENCY_FPGA && rand_choose_color == 1){
+                Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), DO);
+        	}
+
         }
     }
 }
@@ -85,8 +93,8 @@ void print_memory_mapped_registers(){
     char buffer_green[10];
 
 	register_red_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
-	register_green_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
-	register_blue_pwm = Xil_In32(MY_PWM_MEMORY_MAP);
+	register_green_pwm = Xil_In32(MY_PWM_MEMORY_MAP + MY_PWM_MEMORY_MAP_OFFSET);
+	register_blue_pwm = Xil_In32(MY_PWM_MEMORY_MAP + 2 * MY_PWM_MEMORY_MAP_OFFSET);
 
 	itoa_fcn(register_red_pwm, buffer_red);
 	itoa_fcn(register_green_pwm, buffer_green);
@@ -102,5 +110,34 @@ void print_memory_mapped_registers(){
 	print(buffer_blue);
 	print("\n");
 	print("---------------------------------------------------------");
-
+	print("\n");
 }
+void delay(){
+	int i;
+	for(i=0;i < 2*FREQUENCY_FPGA; i++){
+		//print("");
+		//
+		if (i == FREQUENCY_FPGA)
+			Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), 0);
+	}
+}
+void playsong(){
+
+	Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), DO);
+	delay();
+	Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), RE);
+	delay();
+	Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), MI);
+	delay();
+	Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), FA);
+	delay();
+	Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), SOL);
+	delay();
+	Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), LA);
+	delay();
+	Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), SI);
+	delay();
+	Xil_Out32((MY_PWM_MEMORY_MAP + 3 * MY_PWM_MEMORY_MAP_OFFSET), DO);
+	delay();
+}
+

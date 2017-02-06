@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Feb  3 15:11:44 2017
+# Process ID: 28589
+# Current directory: /home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.runs/bd_pwm_rst_ps7_0_50M_0_synth_1
+# Command line: vivado -log bd_pwm_rst_ps7_0_50M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_pwm_rst_ps7_0_50M_0.tcl
+# Log file: /home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.runs/bd_pwm_rst_ps7_0_50M_0_synth_1/bd_pwm_rst_ps7_0_50M_0.vds
+# Journal file: /home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.runs/bd_pwm_rst_ps7_0_50M_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source bd_pwm_rst_ps7_0_50M_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1067.465 ; gain = 130.086 ; free physical = 1797 ; free virtual = 13026
+INFO: [Synth 8-638] synthesizing module 'bd_pwm_rst_ps7_0_50M_0' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ip/bd_pwm_rst_ps7_0_50M_0/synth/bd_pwm_rst_ps7_0_50M_0.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (1#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (3#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (4#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (5#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (6#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_pwm_rst_ps7_0_50M_0' (7#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ip/bd_pwm_rst_ps7_0_50M_0/synth/bd_pwm_rst_ps7_0_50M_0.vhd:71]
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1108.934 ; gain = 171.555 ; free physical = 1749 ; free virtual = 12979
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1108.934 ; gain = 171.555 ; free physical = 1749 ; free virtual = 12979
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1401.309 ; gain = 0.000 ; free physical = 1431 ; free virtual = 12660
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1315 ; free virtual = 12545
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1315 ; free virtual = 12545
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1315 ; free virtual = 12545
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1310 ; free virtual = 12540
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1309 ; free virtual = 12539
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1306 ; free virtual = 12535
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1306 ; free virtual = 12535
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1306 ; free virtual = 12535
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1305 ; free virtual = 12535
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1305 ; free virtual = 12535
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1305 ; free virtual = 12535
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1305 ; free virtual = 12535
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1305 ; free virtual = 12535
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1305 ; free virtual = 12535
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     5|
+|2     |LUT2  |     9|
+|3     |LUT3  |     1|
+|4     |LUT4  |     6|
+|5     |LUT5  |     3|
+|6     |LUT6  |     1|
+|7     |SRL16 |     1|
+|8     |FDR   |     8|
+|9     |FDRE  |    28|
+|10    |FDSE  |     4|
++------+------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1401.309 ; gain = 463.930 ; free physical = 1305 ; free virtual = 12535
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1401.316 ; gain = 396.434 ; free physical = 1320 ; free virtual = 12550

@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Feb  3 15:11:49 2017
+# Process ID: 28655
+# Current directory: /home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.runs/bd_pwm_auto_pc_0_synth_1
+# Command line: vivado -log bd_pwm_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_pwm_auto_pc_0.tcl
+# Log file: /home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.runs/bd_pwm_auto_pc_0_synth_1/bd_pwm_auto_pc_0.vds
+# Journal file: /home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.runs/bd_pwm_auto_pc_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source bd_pwm_auto_pc_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1074.465 ; gain = 137.086 ; free physical = 1430 ; free virtual = 12660
+INFO: [Synth 8-638] synthesizing module 'bd_pwm_auto_pc_0' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ip/bd_pwm_auto_pc_0/synth/bd_pwm_auto_pc_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_axi_protocol_converter' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4806]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4224]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_aw_channel' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3969]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_cmd_translator' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_incr_cmd' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_incr_cmd' (1#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_wrap_cmd' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_wrap_cmd' (2#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_cmd_translator' (3#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_wr_cmd_fsm' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_wr_cmd_fsm' (4#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_aw_channel' (5#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3969]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_b_channel' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo' (6#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized0' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized0' (6#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_b_channel' (7#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_ar_channel' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4080]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_rd_cmd_fsm' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_rd_cmd_fsm' (8#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_ar_channel' (9#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4080]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_r_channel' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3809]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized1' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized1' (9#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized2' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized2' (9#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_r_channel' (10#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3809]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (11#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' (12#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized0' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized0' (12#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized1' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized1' (12#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized2' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized2' (12#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (13#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice' (14#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice__parameterized0' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (14#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized3' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized3' (14#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized4' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized4' (14#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized5' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized5' (14#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized6' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized6' (14#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized7' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized7' (14#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (14#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice__parameterized0' (14#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s' (15#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4224]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_axi_protocol_converter' (16#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4806]
+INFO: [Synth 8-256] done synthesizing module 'bd_pwm_auto_pc_0' (17#1) [/home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.srcs/sources_1/bd/bd_pwm/ip/bd_pwm_auto_pc_0/synth/bd_pwm_auto_pc_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1195.934 ; gain = 258.555 ; free physical = 1826 ; free virtual = 13057
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1195.934 ; gain = 258.555 ; free physical = 1826 ; free virtual = 13056
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1419.949 ; gain = 1.000 ; free physical = 1729 ; free virtual = 12960
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1419.949 ; gain = 482.570 ; free physical = 1728 ; free virtual = 12958
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1419.949 ; gain = 482.570 ; free physical = 1728 ; free virtual = 12958
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1419.949 ; gain = 482.570 ; free physical = 1728 ; free virtual = 12958
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1419.949 ; gain = 482.570 ; free physical = 1725 ; free virtual = 12956
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1419.949 ; gain = 482.570 ; free physical = 1695 ; free virtual = 12926
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1419.949 ; gain = 482.570 ; free physical = 1652 ; free virtual = 12891
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1435.551 ; gain = 498.172 ; free physical = 1630 ; free virtual = 12861
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1443.559 ; gain = 506.180 ; free physical = 1621 ; free virtual = 12852
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1443.559 ; gain = 506.180 ; free physical = 1621 ; free virtual = 12852
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1443.559 ; gain = 506.180 ; free physical = 1621 ; free virtual = 12852
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1443.559 ; gain = 506.180 ; free physical = 1621 ; free virtual = 12852
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1443.559 ; gain = 506.180 ; free physical = 1621 ; free virtual = 12852
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1443.559 ; gain = 506.180 ; free physical = 1621 ; free virtual = 12852
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1443.559 ; gain = 506.180 ; free physical = 1621 ; free virtual = 12852
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    18|
+|2     |LUT1    |    38|
+|3     |LUT2    |    18|
+|4     |LUT3    |   235|
+|5     |LUT4    |    41|
+|6     |LUT5    |    70|
+|7     |LUT6    |   106|
+|8     |SRL16E  |    18|
+|9     |SRLC32E |    47|
+|10    |FDRE    |   548|
+|11    |FDSE    |    51|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1443.559 ; gain = 506.180 ; free physical = 1621 ; free virtual = 12852
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1443.566 ; gain = 438.684 ; free physical = 1623 ; free virtual = 12854

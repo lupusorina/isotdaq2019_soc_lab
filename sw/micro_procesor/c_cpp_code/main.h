@@ -1,0 +1,17 @@
+#define MY_PWM_MEMORY_MAP 0x43C00000 //This value is found in the Address editor tab in Vivado (next to Diagram tab)
+#define MY_PWM_MEMORY_MAP_OFFSET 4
+#define FREQUENCY_FPGA 50000000 // 50 MHz
+#define PWM_COUNTER_LED 50000
+
+
+#define DO FREQUENCY_FPGA/(5*38167)
+#define RE FREQUENCY_FPGA/(5*34013)
+#define MI FREQUENCY_FPGA/(5*30304)
+#define FA FREQUENCY_FPGA/(5*28901)
+#define SOL FREQUENCY_FPGA/(5*25510)
+#define LA FREQUENCY_FPGA/(5*22727)
+#define SI FREQUENCY_FPGA/(5*20242)
+
+
+
+

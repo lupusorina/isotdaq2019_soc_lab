@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# 
+# Start of session at: Sun Feb  5 14:33:56 2017
+# Process ID: 4302
+# Current directory: /home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.sdk/webtalk/webtalk.log
+# Journal file: /home/isotdaq/lab14/demo/hdl/synthesis/vivado_project/LEDBuzzer.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
