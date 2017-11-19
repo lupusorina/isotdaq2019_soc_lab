@@ -1,0 +1,6 @@
+verilog xil_defaultlib "../../../../Peripherals.srcs/sources_1/bd/Peripherals/ip/Peripherals_processing_system7_0_2/sim/Peripherals_processing_system7_0_2.v" --include "../../../../Peripherals.srcs/sources_1/bd/Peripherals/ipshared/2527/hdl" --include "../../../../Peripherals.srcs/sources_1/bd/Peripherals/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../../Peripherals.srcs/sources_1/bd/Peripherals/ip/Peripherals_auto_pc_0/sim/Peripherals_auto_pc_0.v" --include "../../../../Peripherals.srcs/sources_1/bd/Peripherals/ipshared/2527/hdl" --include "../../../../Peripherals.srcs/sources_1/bd/Peripherals/ipshared/7e3a/hdl"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

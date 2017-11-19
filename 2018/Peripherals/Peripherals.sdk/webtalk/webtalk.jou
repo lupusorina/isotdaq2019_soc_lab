@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# 
+# Start of session at: Sun Nov 19 19:01:59 2017
+# Process ID: 4888
+# Current directory: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/Peripherals/Peripherals.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/Peripherals/Peripherals.sdk/webtalk/webtalk.log
+# Journal file: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/Peripherals/Peripherals.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
