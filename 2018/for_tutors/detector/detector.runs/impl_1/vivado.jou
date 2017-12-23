@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Dec 23 20:56:35 2017
+# Process ID: 7361
+# Current directory: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.runs/impl_1
+# Command line: vivado -log detector_bd_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source detector_bd_wrapper.tcl -notrace
+# Log file: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.runs/impl_1/detector_bd_wrapper.vdi
+# Journal file: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source detector_bd_wrapper.tcl -notrace

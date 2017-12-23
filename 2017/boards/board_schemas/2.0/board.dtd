@@ -1,0 +1,123 @@
+<!ELEMENT address EMPTY ><!ATTLIST address high NMTOKEN #REQUIRED >
+<!ATTLIST address low NMTOKEN #REQUIRED >
+
+<!ELEMENT board ( images | compatible_board_revisions | file_version | description | parameters | jumpers | components | jtag_chains | connections )* ><!ATTLIST board display_name CDATA #REQUIRED >
+<!ATTLIST board name NMTOKEN #REQUIRED >
+<!ATTLIST board preset_file NMTOKEN #IMPLIED >
+<!ATTLIST board schema_version NMTOKEN #REQUIRED >
+<!ATTLIST board url CDATA #IMPLIED >
+<!ATTLIST board vendor NMTOKEN #REQUIRED >
+
+<!ELEMENT compatible_board_revisions ( revision ) >
+<!ELEMENT component ( component_modes | description | drivers | images | interfaces | parameters | pins | positions )* ><!ATTLIST component display_name CDATA #IMPLIED >
+<!ATTLIST component major_group CDATA #IMPLIED >
+<!ATTLIST component name NMTOKEN #REQUIRED >
+<!ATTLIST component part_name NMTOKEN #IMPLIED >
+<!ATTLIST component pin_map_file NMTOKEN #IMPLIED >
+<!ATTLIST component spec_url CDATA #IMPLIED >
+<!ATTLIST component sub_type NMTOKEN #IMPLIED >
+<!ATTLIST component type ( chip | connector | fpga ) #REQUIRED >
+<!ATTLIST component vendor CDATA #IMPLIED >
+
+<!ELEMENT component_mode ( description | interfaces | preferred_ips )* ><!ATTLIST component_mode display_name CDATA #REQUIRED >
+<!ATTLIST component_mode name NMTOKEN #REQUIRED >
+
+<!ELEMENT component_modes ( component_mode+ ) >
+<!ELEMENT components ( component+ ) >
+<!ELEMENT connection ( connection_map+ ) ><!ATTLIST connection component1 ( iic_main | part0 ) #REQUIRED >
+<!ATTLIST connection component2 NMTOKEN #REQUIRED >
+<!ATTLIST connection name NMTOKEN #REQUIRED >
+
+<!ELEMENT connection_map ( enablement_dependencies | nets )* ><!ATTLIST connection_map c1_end_index NMTOKEN #REQUIRED >
+<!ATTLIST connection_map c1_st_index NMTOKEN #REQUIRED >
+<!ATTLIST connection_map c2_end_index NMTOKEN #REQUIRED >
+<!ATTLIST connection_map c2_st_index NMTOKEN #REQUIRED >
+<!ATTLIST connection_map component2 NMTOKEN #IMPLIED >
+<!ATTLIST connection_map max_delay NMTOKEN #IMPLIED >
+<!ATTLIST connection_map min_delay NMTOKEN #IMPLIED >
+<!ATTLIST connection_map name NMTOKEN #REQUIRED >
+<!ATTLIST connection_map typical_delay NMTOKEN #FIXED "5" >
+
+<!ELEMENT connections ( connection+ ) >
+<!ELEMENT description ( #PCDATA ) >
+<!ELEMENT driver ( description, driver_files ) ><!ATTLIST driver OS CDATA #REQUIRED >
+<!ATTLIST driver name NMTOKEN #REQUIRED >
+<!ATTLIST driver platform CDATA #REQUIRED >
+<!ATTLIST driver pre_compiled NMTOKEN #REQUIRED >
+<!ATTLIST driver processor_architecture NMTOKEN #REQUIRED >
+<!ATTLIST driver vendor NMTOKEN #REQUIRED >
+<!ATTLIST driver version NMTOKEN #REQUIRED >
+
+<!ELEMENT driver_files ( file+ ) >
+<!ELEMENT drivers ( driver+ ) >
+<!ELEMENT enablement_dependencies ( jumpers | parameters )* >
+<!ELEMENT file ( #PCDATA ) ><!ATTLIST file type NMTOKEN #REQUIRED >
+
+<!ELEMENT file_version ( #PCDATA ) >
+<!ELEMENT image ( description ) ><!ATTLIST image display_name CDATA #REQUIRED >
+<!ATTLIST image name NMTOKEN #REQUIRED >
+<!ATTLIST image sub_type NMTOKEN #REQUIRED >
+<!ATTLIST image resolution NMTOKEN #IMPLIED >
+
+<!ELEMENT images ( image+ ) >
+<!ELEMENT interface ( description | enablement_dependencies | parameters | port_maps | preferred_ips )* ><!ATTLIST interface mode ( master | slave ) #IMPLIED >
+<!ATTLIST interface name NMTOKEN #REQUIRED >
+<!ATTLIST interface of_component NMTOKEN #IMPLIED >
+<!ATTLIST interface optional ( true ) #IMPLIED >
+<!ATTLIST interface order NMTOKEN #IMPLIED >
+<!ATTLIST interface preset_proc NMTOKEN #IMPLIED >
+<!ATTLIST interface type NMTOKEN #IMPLIED >
+
+<!ELEMENT interfaces ( interface+ ) >
+<!ELEMENT jtag_chain ( position ) ><!ATTLIST jtag_chain name NMTOKEN #REQUIRED >
+
+<!ELEMENT jtag_chains ( jtag_chain ) >
+
+<!ELEMENT jumper ( #PCDATA | description )* ><!ATTLIST jumper default_value NMTOKEN #IMPLIED >
+<!ATTLIST jumper name NMTOKEN #REQUIRED >
+
+<!ELEMENT jumpers ( jumper+ ) >
+<!ELEMENT net EMPTY ><!ATTLIST net index NMTOKEN #REQUIRED >
+<!ATTLIST net max_delay NMTOKEN #REQUIRED >
+<!ATTLIST net min_delay NMTOKEN #REQUIRED >
+<!ATTLIST net typical_delay NMTOKEN #REQUIRED >
+
+<!ELEMENT nets ( net+ ) >
+<!ELEMENT parameter ( #PCDATA ) ><!ATTLIST parameter name NMTOKEN #REQUIRED >
+<!ATTLIST parameter readonly NMTOKEN #IMPLIED >
+<!ATTLIST parameter value CDATA #IMPLIED >
+<!ATTLIST parameter value_max NMTOKEN #IMPLIED >
+<!ATTLIST parameter value_min NMTOKEN #IMPLIED >
+<!ATTLIST parameter value_type NMTOKEN #IMPLIED >
+
+<!ELEMENT parameters ( parameter+ ) >
+<!ELEMENT pin EMPTY ><!ATTLIST pin connector_index NMTOKEN #IMPLIED >
+<!ATTLIST pin index NMTOKEN #REQUIRED >
+<!ATTLIST pin iostandard NMTOKEN #IMPLIED >
+<!ATTLIST pin name NMTOKEN #REQUIRED >
+
+<!ELEMENT pin_map EMPTY ><!ATTLIST pin_map component_pin NMTOKEN #REQUIRED >
+<!ATTLIST pin_map port_index NMTOKEN #REQUIRED >
+
+<!ELEMENT pin_maps ( pin_map+ ) >
+<!ELEMENT pins ( pin+ ) >
+<!ELEMENT port_map ( pin_maps ) ><!ATTLIST port_map dir ( in | inout | out ) #REQUIRED >
+<!ATTLIST port_map left NMTOKEN #IMPLIED >
+<!ATTLIST port_map logical_port NMTOKEN #REQUIRED >
+<!ATTLIST port_map name NMTOKEN #IMPLIED >
+<!ATTLIST port_map physical_port NMTOKEN #REQUIRED >
+<!ATTLIST port_map right NMTOKEN #IMPLIED >
+
+<!ELEMENT port_maps ( port_map+ ) >
+<!ELEMENT position ( address* ) ><!ATTLIST position component NMTOKEN #REQUIRED >
+<!ATTLIST position id NMTOKEN #IMPLIED >
+<!ATTLIST position name NMTOKEN #IMPLIED >
+
+<!ELEMENT positions ( position+ ) >
+<!ELEMENT preferred_ip EMPTY ><!ATTLIST preferred_ip library NMTOKEN #FIXED "ip" >
+<!ATTLIST preferred_ip name NMTOKEN #REQUIRED >
+<!ATTLIST preferred_ip order NMTOKEN #IMPLIED >
+<!ATTLIST preferred_ip vendor NMTOKEN #REQUIRED >
+
+<!ELEMENT preferred_ips ( preferred_ip ) >
+<!ELEMENT revision ( #PCDATA ) ><!ATTLIST revision id NMTOKEN #REQUIRED >

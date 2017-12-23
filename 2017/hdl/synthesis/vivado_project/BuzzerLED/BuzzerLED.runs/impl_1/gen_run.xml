@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1485207420">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="BuzzerLED_block_design_wrapper.drc"/>
+  <File Type="BG-BGN" Name="BuzzerLED_block_design_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="BuzzerLED_block_design_wrapper.sysdef"/>
+  <File Type="BITSTR-MMI" Name="BuzzerLED_block_design_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="BuzzerLED_block_design_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="BuzzerLED_block_design_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="BuzzerLED_block_design_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="BuzzerLED_block_design_wrapper.msk"/>
+  <File Type="BG-BIN" Name="BuzzerLED_block_design_wrapper.bin"/>
+  <File Type="BG-BIT" Name="BuzzerLED_block_design_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="BuzzerLED_block_design_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="BuzzerLED_block_design_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="BuzzerLED_block_design_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="BuzzerLED_block_design_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="BuzzerLED_block_design_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="BuzzerLED_block_design_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="BuzzerLED_block_design_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="BuzzerLED_block_design_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="BuzzerLED_block_design_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="BuzzerLED_block_design_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="BuzzerLED_block_design_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="BuzzerLED_block_design_wrapper_route_status.rpt"/>
+  <File Type="PLACE-CTRL" Name="BuzzerLED_block_design_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-IO" Name="BuzzerLED_block_design_wrapper_io_placed.rpt"/>
+  <File Type="PWROPT-TIMING" Name="BuzzerLED_block_design_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="BuzzerLED_block_design_wrapper_placed.dcp"/>
+  <File Type="PLACE-UTIL-PB" Name="BuzzerLED_block_design_wrapper_utilization_placed.pb"/>
+  <File Type="PHYSOPT-TIMING" Name="BuzzerLED_block_design_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PWROPT-DRC" Name="BuzzerLED_block_design_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="BuzzerLED_block_design_wrapper_pwropt.dcp"/>
+  <File Type="PLACE-UTIL" Name="BuzzerLED_block_design_wrapper_utilization_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="BuzzerLED_block_design_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="BuzzerLED_block_design_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="BuzzerLED_block_design_wrapper.hwdef"/>
+  <File Type="PLACE-CLK" Name="BuzzerLED_block_design_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="RDI-RDI" Name="BuzzerLED_block_design_wrapper.vdi"/>
+  <File Type="PLACE-TIMING" Name="BuzzerLED_block_design_wrapper_timing_summary_placed.rpt"/>
+  <File Type="INIT-TIMING" Name="BuzzerLED_block_design_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="BuzzerLED_block_design_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="BuzzerLED_block_design_wrapper_opt.dcp"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="BuzzerLED_block_design_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="BuzzerLED_block_design_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="BuzzerLED_block_design_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PA-TCL" Name="BuzzerLED_block_design_wrapper.tcl"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="BuzzerLED_block_design_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="BuzzerLED_block_design_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="BuzzerLED_block_design_wrapper_drc_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="BuzzerLED_block_design_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="BuzzerLED_block_design_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="BuzzerLED_block_design_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="BuzzerLED_block_design_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="BuzzerLED_block_design_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="BuzzerLED_block_design_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="BuzzerLED_block_design_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="BuzzerLED_block_design_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR" Name="BuzzerLED_block_design_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="BuzzerLED_block_design_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="BuzzerLED_block_design_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="BuzzerLED_block_design_wrapper_power_routed.rpx"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/BuzzerLED_block_design/BuzzerLED_block_design.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/BuzzerLED_block_design/hdl/BuzzerLED_block_design_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="BuzzerLED_block_design_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../constraints/system.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="BuzzerLED_block_design_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BuzzerLED_block_design_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BuzzerLED_block_design_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BuzzerLED_block_design_PWM_0_0"/>
+</GenRun>

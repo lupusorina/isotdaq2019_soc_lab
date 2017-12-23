@@ -1,0 +1,487 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Jan 23 22:37:01 2017
+# Process ID: 3993
+# Current directory: /home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1
+# Command line: vivado -log BuzzerLED_block_design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source BuzzerLED_block_design_wrapper.tcl -notrace
+# Log file: /home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/BuzzerLED_block_design_wrapper.vdi
+# Journal file: /home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source BuzzerLED_block_design_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_PWM_0_0/BuzzerLED_block_design_PWM_0_0.dcp' for cell 'BuzzerLED_block_design_i/PWM_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_processing_system7_0_0/BuzzerLED_block_design_processing_system7_0_0.dcp' for cell 'BuzzerLED_block_design_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_rst_ps7_0_50M_0/BuzzerLED_block_design_rst_ps7_0_50M_0.dcp' for cell 'BuzzerLED_block_design_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint '/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_auto_pc_0/BuzzerLED_block_design_auto_pc_0.dcp' for cell 'BuzzerLED_block_design_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_processing_system7_0_0/BuzzerLED_block_design_processing_system7_0_0.xdc] for cell 'BuzzerLED_block_design_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_processing_system7_0_0/BuzzerLED_block_design_processing_system7_0_0.xdc] for cell 'BuzzerLED_block_design_i/processing_system7_0/inst'
+Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_rst_ps7_0_50M_0/BuzzerLED_block_design_rst_ps7_0_50M_0_board.xdc] for cell 'BuzzerLED_block_design_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_rst_ps7_0_50M_0/BuzzerLED_block_design_rst_ps7_0_50M_0_board.xdc] for cell 'BuzzerLED_block_design_i/rst_ps7_0_50M/U0'
+Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_rst_ps7_0_50M_0/BuzzerLED_block_design_rst_ps7_0_50M_0.xdc] for cell 'BuzzerLED_block_design_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_rst_ps7_0_50M_0/BuzzerLED_block_design_rst_ps7_0_50M_0.xdc] for cell 'BuzzerLED_block_design_i/rst_ps7_0_50M/U0'
+Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/constraints/system.xdc]
+Finished Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/constraints/system.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_processing_system7_0_0/BuzzerLED_block_design_processing_system7_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_rst_ps7_0_50M_0/BuzzerLED_block_design_rst_ps7_0_50M_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.srcs/sources_1/bd/BuzzerLED_block_design/ip/BuzzerLED_block_design_auto_pc_0/BuzzerLED_block_design_auto_pc_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1286.039 ; gain = 278.191 ; free physical = 7261 ; free virtual = 9598
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1315.047 ; gain = 29.008 ; free physical = 7246 ; free virtual = 9585
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 17845c283
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1843ba99e
+
+Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.56 . Memory (MB): peak = 1730.539 ; gain = 1.000 ; free physical = 6867 ; free virtual = 9220
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 13 cells.
+Phase 2 Constant propagation | Checksum: 133ea61f2
+
+Time (s): cpu = 00:00:00.90 ; elapsed = 00:00:01 . Memory (MB): peak = 1730.539 ; gain = 1.000 ; free physical = 6865 ; free virtual = 9219
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 413 unconnected nets.
+INFO: [Opt 31-11] Eliminated 396 unconnected cells.
+Phase 3 Sweep | Checksum: 137e965c0
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1730.539 ; gain = 1.000 ; free physical = 6865 ; free virtual = 9218
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: d5e531bc
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1730.539 ; gain = 1.000 ; free physical = 6865 ; free virtual = 9218
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1730.539 ; gain = 0.000 ; free physical = 6865 ; free virtual = 9218
+Ending Logic Optimization Task | Checksum: d5e531bc
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1730.539 ; gain = 1.000 ; free physical = 6865 ; free virtual = 9218
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: d5e531bc
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1730.539 ; gain = 0.000 ; free physical = 6865 ; free virtual = 9218
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1730.539 ; gain = 444.500 ; free physical = 6865 ; free virtual = 9218
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1754.551 ; gain = 0.000 ; free physical = 6862 ; free virtual = 9218
+INFO: [Common 17-1381] The checkpoint '/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/BuzzerLED_block_design_wrapper_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/BuzzerLED_block_design_wrapper_drc_opted.rpt.
+report_drc: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1754.551 ; gain = 0.000 ; free physical = 6857 ; free virtual = 9214
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1754.551 ; gain = 0.000 ; free physical = 6854 ; free virtual = 9211
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1754.551 ; gain = 0.000 ; free physical = 6853 ; free virtual = 9211
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 15a9177fa
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1767.551 ; gain = 13.000 ; free physical = 6847 ; free virtual = 9209
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 246dd989a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6835 ; free virtual = 9200
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 246dd989a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6835 ; free virtual = 9200
+Phase 1 Placer Initialization | Checksum: 246dd989a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6835 ; free virtual = 9200
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 18e78ff4b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6830 ; free virtual = 9197
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 18e78ff4b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6830 ; free virtual = 9197
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 12a01b8a4
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6830 ; free virtual = 9197
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1622922b7
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6830 ; free virtual = 9197
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1622922b7
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6830 ; free virtual = 9197
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 19eb47782
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6829 ; free virtual = 9197
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 14ebf3d3a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6827 ; free virtual = 9195
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 2054b85cf
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6827 ; free virtual = 9195
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 2054b85cf
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6827 ; free virtual = 9195
+Phase 3 Detail Placement | Checksum: 2054b85cf
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1776.188 ; gain = 21.637 ; free physical = 6827 ; free virtual = 9195
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=13.544. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 192a22c0c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1777.191 ; gain = 22.641 ; free physical = 6827 ; free virtual = 9196
+Phase 4.1 Post Commit Optimization | Checksum: 192a22c0c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1777.191 ; gain = 22.641 ; free physical = 6827 ; free virtual = 9196
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 192a22c0c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1777.191 ; gain = 22.641 ; free physical = 6827 ; free virtual = 9196
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 192a22c0c
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1777.191 ; gain = 22.641 ; free physical = 6827 ; free virtual = 9196
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1abe16102
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1777.191 ; gain = 22.641 ; free physical = 6827 ; free virtual = 9196
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1abe16102
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1777.191 ; gain = 22.641 ; free physical = 6827 ; free virtual = 9196
+Ending Placer Task | Checksum: 1758f2e4a
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1777.191 ; gain = 22.641 ; free physical = 6826 ; free virtual = 9195
+INFO: [Common 17-83] Releasing license: Implementation
+45 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1777.191 ; gain = 22.641 ; free physical = 6826 ; free virtual = 9195
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.52 . Memory (MB): peak = 1777.191 ; gain = 0.000 ; free physical = 6823 ; free virtual = 9196
+INFO: [Common 17-1381] The checkpoint '/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/BuzzerLED_block_design_wrapper_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.55 . Memory (MB): peak = 1777.191 ; gain = 0.000 ; free physical = 6818 ; free virtual = 9188
+report_utilization: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1777.191 ; gain = 0.000 ; free physical = 6818 ; free virtual = 9188
+report_control_sets: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1777.191 ; gain = 0.000 ; free physical = 6817 ; free virtual = 9188
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: c07a7eae ConstDB: 0 ShapeSum: b514af9c RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 137931b8c
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1822.191 ; gain = 45.000 ; free physical = 6748 ; free virtual = 9120
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 137931b8c
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1822.191 ; gain = 45.000 ; free physical = 6747 ; free virtual = 9120
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 137931b8c
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1822.191 ; gain = 45.000 ; free physical = 6739 ; free virtual = 9113
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 137931b8c
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1822.191 ; gain = 45.000 ; free physical = 6739 ; free virtual = 9113
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1c4feb07a
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6731 ; free virtual = 9106
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=13.556 | TNS=0.000  | WHS=-0.135 | THS=-11.866|
+
+Phase 2 Router Initialization | Checksum: 1e4a4a1e4
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6731 ; free virtual = 9105
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 165c70d0d
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6731 ; free virtual = 9105
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 84
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1515068eb
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=13.782 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2293ac2c1
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: fec3aa7a
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=13.782 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1c7a09bcb
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+Phase 4 Rip-up And Reroute | Checksum: 1c7a09bcb
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 1c7a09bcb
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1c7a09bcb
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+Phase 5 Delay and Skew Optimization | Checksum: 1c7a09bcb
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1e25460eb
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=13.812 | TNS=0.000  | WHS=0.030  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1a69424aa
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+Phase 6 Post Hold Fix | Checksum: 1a69424aa
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.428632 %
+  Global Horizontal Routing Utilization  = 0.65602 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 16c3229fa
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 16c3229fa
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 110b619e6
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=13.812 | TNS=0.000  | WHS=0.030  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 110b619e6
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1823.191 ; gain = 46.000 ; free physical = 6730 ; free virtual = 9104
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+59 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1835.371 ; gain = 58.180 ; free physical = 6730 ; free virtual = 9104
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.69 . Memory (MB): peak = 1835.371 ; gain = 0.000 ; free physical = 6724 ; free virtual = 9103
+INFO: [Common 17-1381] The checkpoint '/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/BuzzerLED_block_design_wrapper_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/BuzzerLED_block_design_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1835.371 ; gain = 0.000 ; free physical = 6727 ; free virtual = 9102
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/BuzzerLED_block_design_wrapper_methodology_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Command: report_power -file BuzzerLED_block_design_wrapper_power_routed.rpt -pb BuzzerLED_block_design_wrapper_power_summary_routed.pb -rpx BuzzerLED_block_design_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+69 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 23 22:39:21 2017...
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Jan 23 22:40:14 2017
+# Process ID: 4640
+# Current directory: /home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1
+# Command line: vivado -log BuzzerLED_block_design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source BuzzerLED_block_design_wrapper.tcl -notrace
+# Log file: /home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/BuzzerLED_block_design_wrapper.vdi
+# Journal file: /home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source BuzzerLED_block_design_wrapper.tcl -notrace
+Command: open_checkpoint BuzzerLED_block_design_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 995.832 ; gain = 0.000 ; free physical = 6847 ; free virtual = 9234
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/.Xil/Vivado-4640-cern/dcp/BuzzerLED_block_design_wrapper_early.xdc]
+Finished Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/.Xil/Vivado-4640-cern/dcp/BuzzerLED_block_design_wrapper_early.xdc]
+Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/.Xil/Vivado-4640-cern/dcp/BuzzerLED_block_design_wrapper.xdc]
+Finished Parsing XDC File [/home/sorina/Desktop/Laboratory/cern_winter_school/hdl/synthesis/vivado_project/BuzzerLED/BuzzerLED.runs/impl_1/.Xil/Vivado-4640-cern/dcp/BuzzerLED_block_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.66 . Memory (MB): peak = 1269.504 ; gain = 2.000 ; free physical = 6626 ; free virtual = 9018
+Restored from archive | CPU: 0.650000 secs | Memory: 1.311562 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.66 . Memory (MB): peak = 1269.504 ; gain = 2.000 ; free physical = 6626 ; free virtual = 9018
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1269.504 ; gain = 273.672 ; free physical = 6629 ; free virtual = 9017
+Command: write_bitstream -force -no_partial_bitfile BuzzerLED_block_design_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./BuzzerLED_block_design_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1653.605 ; gain = 384.102 ; free physical = 6260 ; free virtual = 8655
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 23 22:41:15 2017...

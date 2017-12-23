@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ip_presets schema="1.0">
+	<ip_preset preset_proc_name="ps7_preset">
+		<ip vendor="xilinx.com" library="ip" name="processing_system7" version="*">
+			<user_parameters>
+				<user_parameter name="CONFIG.preset" value="ZedBoard"/> 
+			</user_parameters>
+		</ip>
+	</ip_preset>
+</ip_presets>

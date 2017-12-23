@@ -1,0 +1,309 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Dec 23 20:50:29 2017
+# Process ID: 6949
+# Current directory: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.runs/detector_bd_pwm_verilog_0_0_synth_1
+# Command line: vivado -log detector_bd_pwm_verilog_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source detector_bd_pwm_verilog_0_0.tcl
+# Log file: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.runs/detector_bd_pwm_verilog_0_0_synth_1/detector_bd_pwm_verilog_0_0.vds
+# Journal file: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.runs/detector_bd_pwm_verilog_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source detector_bd_pwm_verilog_0_0.tcl -notrace
+Command: synth_design -top detector_bd_pwm_verilog_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6958 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1099.434 ; gain = 188.301 ; free physical = 4827 ; free virtual = 9492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'detector_bd_pwm_verilog_0_0' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ip/detector_bd_pwm_verilog_0_0_1/synth/detector_bd_pwm_verilog_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'pwm_verilog_v1_0' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/9a8d/hdl/pwm_verilog_v1_0.v:4]
+	Parameter PWM_COUNTER_MAX bound to: 30000 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'pwm_verilog_v1_0_S00_AXI' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/9a8d/hdl/pwm_verilog_v1_0_S00_AXI.v:4]
+	Parameter PWM_COUNTER_MAX bound to: 30000 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/9a8d/hdl/pwm_verilog_v1_0_S00_AXI.v:225]
+INFO: [Synth 8-226] default block is never used [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/9a8d/hdl/pwm_verilog_v1_0_S00_AXI.v:366]
+INFO: [Synth 8-256] done synthesizing module 'pwm_verilog_v1_0_S00_AXI' (1#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/9a8d/hdl/pwm_verilog_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'pwm_verilog_v1_0' (2#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/9a8d/hdl/pwm_verilog_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'detector_bd_pwm_verilog_0_0' (3#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ip/detector_bd_pwm_verilog_0_0_1/synth/detector_bd_pwm_verilog_0_0.v:56]
+WARNING: [Synth 8-3331] design pwm_verilog_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design pwm_verilog_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design pwm_verilog_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design pwm_verilog_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design pwm_verilog_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design pwm_verilog_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1139.902 ; gain = 228.770 ; free physical = 4785 ; free virtual = 9450
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1139.902 ; gain = 228.770 ; free physical = 4785 ; free virtual = 9450
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1432.023 ; gain = 1.000 ; free physical = 4626 ; free virtual = 9291
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4626 ; free virtual = 9291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4626 ; free virtual = 9291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4626 ; free virtual = 9291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4621 ; free virtual = 9286
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pwm_verilog_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design detector_bd_pwm_verilog_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design detector_bd_pwm_verilog_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design detector_bd_pwm_verilog_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design detector_bd_pwm_verilog_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design detector_bd_pwm_verilog_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design detector_bd_pwm_verilog_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'inst/pwm_verilog_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/pwm_verilog_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/pwm_verilog_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/pwm_verilog_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/pwm_verilog_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/pwm_verilog_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/pwm_verilog_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module detector_bd_pwm_verilog_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/pwm_verilog_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module detector_bd_pwm_verilog_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/pwm_verilog_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module detector_bd_pwm_verilog_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/pwm_verilog_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module detector_bd_pwm_verilog_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/pwm_verilog_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module detector_bd_pwm_verilog_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/pwm_verilog_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module detector_bd_pwm_verilog_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4596 ; free virtual = 9261
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4553 ; free virtual = 9218
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4553 ; free virtual = 9218
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4533 ; free virtual = 9198
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4533 ; free virtual = 9198
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4533 ; free virtual = 9198
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4533 ; free virtual = 9198
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4533 ; free virtual = 9198
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4533 ; free virtual = 9198
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4533 ; free virtual = 9198
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    16|
+|2     |LUT1   |    17|
+|3     |LUT2   |    26|
+|4     |LUT3   |     4|
+|5     |LUT4   |    68|
+|6     |LUT5   |     2|
+|7     |LUT6   |    36|
+|8     |FDRE   |   185|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------------------+-------------------------+------+
+|      |Instance                          |Module                   |Cells |
++------+----------------------------------+-------------------------+------+
+|1     |top                               |                         |   354|
+|2     |  inst                            |pwm_verilog_v1_0         |   354|
+|3     |    pwm_verilog_v1_0_S00_AXI_inst |pwm_verilog_v1_0_S00_AXI |   354|
++------+----------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 1432.023 ; gain = 520.891 ; free physical = 4533 ; free virtual = 9198
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1432.023 ; gain = 108.465 ; free physical = 4533 ; free virtual = 9198
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 1432.031 ; gain = 520.898 ; free physical = 4535 ; free virtual = 9201
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1432.031 ; gain = 413.180 ; free physical = 4534 ; free virtual = 9199
+INFO: [Common 17-1381] The checkpoint '/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.runs/detector_bd_pwm_verilog_0_0_synth_1/detector_bd_pwm_verilog_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.runs/detector_bd_pwm_verilog_0_0_synth_1/detector_bd_pwm_verilog_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1456.035 ; gain = 0.000 ; free physical = 4532 ; free virtual = 9197
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 23 20:51:50 2017...
