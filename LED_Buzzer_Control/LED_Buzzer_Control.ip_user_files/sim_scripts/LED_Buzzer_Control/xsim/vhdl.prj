@@ -1,7 +1,0 @@
-vhdl xil_defaultlib "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_rst_ps7_0_100M_0/sim/LED_Buzzer_Control_rst_ps7_0_100M_0.vhd" 
-vhdl xil_defaultlib "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0_S00_AXI.vhd" 
-vhdl xil_defaultlib "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ipshared/787c/hdl/PWM_v1_0.vhd" 
-vhdl xil_defaultlib "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/ip/LED_Buzzer_Control_PWM_0_2/sim/LED_Buzzer_Control_PWM_0_2.vhd" 
-vhdl xil_defaultlib "../../../../LED_Buzzer_Control.srcs/sources_1/bd/LED_Buzzer_Control/hdl/LED_Buzzer_Control.vhd" 
-
-nosort
