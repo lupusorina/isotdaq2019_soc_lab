@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Dec 23 20:51:51 2017
+# Process ID: 7058
+# Current directory: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.runs/detector_bd_auto_pc_0_synth_1
+# Command line: vivado -log detector_bd_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source detector_bd_auto_pc_0.tcl
+# Log file: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.runs/detector_bd_auto_pc_0_synth_1/detector_bd_auto_pc_0.vds
+# Journal file: /home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.runs/detector_bd_auto_pc_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source detector_bd_auto_pc_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1106.430 ; gain = 195.301 ; free physical = 4816 ; free virtual = 9481
+INFO: [Synth 8-638] synthesizing module 'detector_bd_auto_pc_0' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ip/detector_bd_auto_pc_0/synth/detector_bd_auto_pc_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_axi_protocol_converter' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4806]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4224]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_aw_channel' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3969]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_cmd_translator' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_incr_cmd' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_incr_cmd' (1#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_wrap_cmd' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_wrap_cmd' (2#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_cmd_translator' (3#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_wr_cmd_fsm' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_wr_cmd_fsm' (4#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_aw_channel' (5#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3969]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_b_channel' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_simple_fifo' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_simple_fifo' (6#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_simple_fifo__parameterized0' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_simple_fifo__parameterized0' (6#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_b_channel' (7#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_ar_channel' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4080]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_rd_cmd_fsm' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_rd_cmd_fsm' (8#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_ar_channel' (9#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4080]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_r_channel' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3809]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_simple_fifo__parameterized1' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_simple_fifo__parameterized1' (9#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_10_b2s_simple_fifo__parameterized2' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_simple_fifo__parameterized2' (9#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s_r_channel' (10#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3809]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axi_register_slice' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (11#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice' (12#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized0' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized0' (12#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized1' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized1' (12#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized2' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized2' (12#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (13#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axi_register_slice' (14#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axi_register_slice__parameterized0' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (14#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized3' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized3' (14#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized4' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized4' (14#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized5' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized5' (14#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized6' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized6' (14#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized7' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized7' (14#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (14#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axi_register_slice__parameterized0' (14#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_b2s' (15#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4224]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_10_axi_protocol_converter' (16#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ipshared/4a8b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4806]
+INFO: [Synth 8-256] done synthesizing module 'detector_bd_auto_pc_0' (17#1) [/home/sorina/Desktop/Laboratory/cern_winter_school/2018/detector/detector.srcs/sources_1/bd/detector_bd/ip/detector_bd_auto_pc_0/synth/detector_bd_auto_pc_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1226.898 ; gain = 315.770 ; free physical = 4694 ; free virtual = 9360
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1226.898 ; gain = 315.770 ; free physical = 4694 ; free virtual = 9360
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1458.652 ; gain = 0.000 ; free physical = 4506 ; free virtual = 9172
+Finished Constraint Validation : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1458.652 ; gain = 547.523 ; free physical = 4506 ; free virtual = 9172
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1458.652 ; gain = 547.523 ; free physical = 4506 ; free virtual = 9172
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1458.652 ; gain = 547.523 ; free physical = 4506 ; free virtual = 9172
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 1458.652 ; gain = 547.523 ; free physical = 4503 ; free virtual = 9169
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1458.652 ; gain = 547.523 ; free physical = 4503 ; free virtual = 9169
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 1458.652 ; gain = 547.523 ; free physical = 4496 ; free virtual = 9162
+Finished Timing Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:46 . Memory (MB): peak = 1471.254 ; gain = 560.125 ; free physical = 4484 ; free virtual = 9150
+Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:01:47 . Memory (MB): peak = 1479.262 ; gain = 568.133 ; free physical = 4476 ; free virtual = 9142
+Finished IO Insertion : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 1479.262 ; gain = 568.133 ; free physical = 4476 ; free virtual = 9142
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 1479.262 ; gain = 568.133 ; free physical = 4476 ; free virtual = 9142
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 1479.262 ; gain = 568.133 ; free physical = 4476 ; free virtual = 9142
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 1479.262 ; gain = 568.133 ; free physical = 4476 ; free virtual = 9142
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 1479.262 ; gain = 568.133 ; free physical = 4476 ; free virtual = 9142
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 1479.262 ; gain = 568.133 ; free physical = 4476 ; free virtual = 9142
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    18|
+|2     |LUT1    |    37|
+|3     |LUT2    |    17|
+|4     |LUT3    |   234|
+|5     |LUT4    |    40|
+|6     |LUT5    |    72|
+|7     |LUT6    |   107|
+|8     |SRL16E  |    22|
+|9     |SRLC32E |    47|
+|10    |FDRE    |   548|
+|11    |FDSE    |    52|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 1479.262 ; gain = 568.133 ; free physical = 4476 ; free virtual = 9142
+synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:42 . Memory (MB): peak = 1480.262 ; gain = 461.414 ; free physical = 4477 ; free virtual = 9143

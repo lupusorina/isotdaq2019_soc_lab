@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:/home/sorina/Desktop/Laboratory/cern_winter_school/2018/constraints/nets.xdc rfile:../../../../constraints/nets.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R14 [get_ports PWM_RED]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y17 [get_ports PWM_BLUE]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y16 [get_ports PWM_GREEN]
