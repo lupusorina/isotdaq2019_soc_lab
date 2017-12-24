@@ -82,7 +82,7 @@
 
 \begin{document}
 
-\title{ \LARGE \normalsize {The International School of Trigger and Data Acquisition 2017} \vspace{8cm} \\
+\title{ \LARGE \normalsize {The International School of Trigger and Data Acquisition 2018} \vspace{8cm} \\
 		\LARGE \textbf{\uppercase{System on Chip Laboratory}} \\ 
 		\normalsize \today \vspace*{2\baselineskip}}
 
@@ -115,7 +115,7 @@
 
 The System on Chip(SoC) is getting more and more popular, exceeding the capabilities of a simple microcontroller. SOCs are used mostly in smartphones and tablets due to their low power consumption, much shorter wiring and high level of integration.
 
-This laboratory will thus aim to familiarize you with the \textbf{All Programmable System on Chip (AP SoC)}. The board (presented in Figure \ref{fig:zturnboard}) that you are going to use is called Z-TURN, built around the Xilinx Zynq-7010. It contains an FPGA and a dual-core ARM microcontroller.
+This laboratory will thus aim to familiarize you with the \textbf{All Programmable System on Chip (AP SoC)}. The board (presented in Figure \ref{fig:zturnboard}) that you are going to use is called Z-TURN, built around the Xilinx Zynq-7010. It contains an FPGA and a dual-core ARM microcontroller, basically it is a \textbf{System on Chip}.
 
 
 
@@ -136,8 +136,6 @@ After fulfilling this lab, you are mainly going to learn:
 \begin{itemize}
 \item the workflow of designing an application on FPGA
 \item the interaction between an FPGA and an ARM microcontroller
-\item running and interacting with an operating system on the ARM microcontroller
-\item writing Python scripts for communicating with various pheripherals from the board
 \item getting an overview of the challenges of using this system
 \end{itemize}
 
@@ -149,70 +147,21 @@ After fulfilling this lab, you are mainly going to learn:
 \section{Applications}
 
 
-In this laboratory, you will implement the workflow for designing two applications.
-
-\vspace{1cm}
-
-\begin{mdframed}[style=MyFrame]
-\textbf{PROJECT 1. Controller of the LED and the buzzer developed on FPGA}
-
-This part will make use of the FPGA and a microcontroller, as well as the interaction between the two. On the FPGA side, we will develop a controller, for interacting with the on-board buzzer and the RGB LED, while the MCU will take care of the sequencial logic of the application.
-Specifically, the application shall generate a number between 1 and 3 and will control the LED and the buzzer accordingly:
-\begin{myitemize}
-\item 1 - LED RED - ON; BUZZER - ON
-\item 2 - LED GREEN - ON; BUZZER - OFF
-\item 3 - LED BLUE - ON; BUZZER - OFF
-\end{myitemize}
-\end{mdframed}
+In this laboratory, you will implement the workflow for designing one application used in
+High Energy Physics.
 
 
+ADD MANU's WORK
 
 
-\vspace{1cm}
+{\color{red} Explain to the students what is PWM and how does it work to control an LED.}
 
-\begin{mdframed}[style=MyFrame]
-
-\textbf{PROJECT 2. Accelerations displayed on a Webserver}
-
-The second part of the laboratory consists of reading accelerometer data from the ADXL accelerometer available on the board. This data will be further displayed on a webserver running on the device. When the acceleration will exceed a certain threashold (the system will feel hypergravity), the RED LED and the buzzer will be turned on, similar to a warning system.
-
-\end{mdframed}
-
-\newpage
-
-\subsection{Getting started}
-
-\textbf{Vivado Design Suite}, along with the \textbf{Xilinx Software Development Kit (XSDK)} are the main applications used in this laboratory. The first one will be mainly used for the hardware development(talking to the FPGA), while XSDK will be used for embedded C development (talking to the ARM processor). The Vivado Design Suite has two important modes: \textit{project mode} and \textit{non-project mode}. In project mode, Vivado tool will automatically manage the design flow and directory structure. As you will become more advanced, the non-project mode will allow you to automatize your design flow using Tcl-language commands and scripts. 
-
-\subsubsection{System on Chip Design Flow in Vivado Design Suite}
-
-Vivado design flow is based on Advanced eXtensible Interface (AXI) standard protocol which provides great flexibility and customization for each of your applications. There are three important concepts related to the AXI interface that you need to know: the AXI Master, the AXI Interconnect and the AXI Slave. Their connectivity can be seen in the next diagram.
+\subsection{Pulse Width Modulation (PWM) Slave Peripheral for LED control}
 
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.9\textwidth]{img/AXI.png}
-    \caption{AXI Architecture}
-    \label{fig:axi}
-\end{figure}
+In Figure \ref{fig:pwm_waveform}, you can see a basic PWM waveform.  
 
-As we have talked about customization per application, you can use two types of advanced eXtensible interfaces (AXIs): AXI Stream and AXI Memory Mapped (MM). Basically, a simple application such as computation of some stream of data can make use of AXI Stream, while a more complex one (e.g. writing on a memory) might need access to addresses (so AXI MM comes in place). Their diagrams can be seen in Figure  \ref{fig:axi_mm_stream}. \textbf{In our case, we will use an AXI Memory Mapped architecture, and PWM (Pulse Width Modulation) slave module to control LEDs and a buzzer.}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.6\textwidth]{img/axi_mm_stream.png}
-    \caption{AXI Memory Mapped and AXI Stream arhitecture}
-    \label{fig:axi_mm_stream}
-\end{figure}
-  
-\newpage
-
-\subsubsection{Pulse Width Modulation (PWM) Slave Peripheral}
-
-\textbf{INTRODUCTION}
-
-In Figure \ref{fig:pwm_waveform}, you can see a basic PWM waveform.  There are two important parameters that characterize the PWM waveform: \textbf{the duty cycle} and the \textbf{PWM period}. The PWM  period is set by "waiting/counting" a number of clock cycles,  while the duty cycle  tells us, in one period, how many clock cycles the PWM signal is low . 
-
+The FPGA runs at a clock frequency (for this application, we will choose 50 MHz). We can create a PWM waveform  from this clock frequency, by counting a number of clock cycles. There are two important parameters that characterize the PWM waveform: \textbf{the duty cycle} and the \textbf{PWM period}. The PWM  period is set by "waiting/counting" a number of clock cycles,  while the duty cycle  tells us, in one period, how many clock cycles the PWM signal is low.
 
 
 \begin{figure}[h!]
@@ -222,71 +171,30 @@ In Figure \ref{fig:pwm_waveform}, you can see a basic PWM waveform.  There are t
     \label{fig:pwm_waveform}
 \end{figure}
 
-Now let's see how we are going to use these two simple parameters to make an RGB LED change its color and a buzzer "sing".
+Now let's see how we are going to use these two simple parameters to make an RGB LED change its color.
+
 \begin{itemize}
 \item \textbf{RGB LED}
 
-In the case of RGB LED, we need 3 PWMs signals (one per each color), such that the brightness of each of the three LEDs can be controlled independently. 
+In the case of RGB LED, we need 3 PWMs signals (one per each color), such that the brightness of each of the three LEDs can be controlled independently.
 
-\textbf{\textit{How do we choose the PWM period?}} The driving frequency of the PWM should be fast enough to avoid the flicker effect. A normal human being sees this effect until up to 100 to 150 Hz, so a higher frequency should be better to avoid this effect. For this exercise, we will use a frequency of 1.5 KHz.
+\textbf{\textit{How do we choose the PWM period?}} The driving frequency of the PWM should be fast enough to avoid the flicker effect. A normal human being sees this effect until up to 100 to 150 Hz, so a higher frequency should be better to avoid this effect. For this exercise, we will use a frequency of 1.5 kHz. Let's make some calculations.
+
+The main clock frequency of the FPGA is 50 MHz. We want to use a 1.5 kHz frequency. How much do we need to count?
+
+\begin{equation}
+counter = \frac{50000000}{15000} = 30000
+\end{equation}
 
 \textbf{\textit{How do we choose the PWM duty cycle?}} The brightness of the LEDs is controlled by the duty cycle. This is up to you to do experiments. You can choose basically any duty cycle in the range of 0$\%$ to 100$\%$.
 
-\item \textbf{BUZZER}
-
-Previously, for the LED, we kept constant the frequency and varied the duty cycle. Now, for the buzzer, it will be the opposite: a constant duty cycle and a varying frequency.
-
-The buzzer is based on the reverse of piezoelectricity which means that if you produce a voltage, the piezoelectric material from the buzzer gets distorted. When you stop producing that voltage, it gets back to its original shape. When producing this voltage fast enough (like in the PWM waveform), the buzzer will start to oscillate and "sing". This is the reason why we are currently controlling the frequency of PWM, and not the duty cycle. In this case, the duty cycle can be interpreted as the volume of the buzzer.
-
-\textbf{\textit{How do we choose the PWM frequency?}}  The frequency range that the human ear is able to hear is between 20 Hz and 20.000Hz such as the PWM frequency for our buzzer will also fall in this range.
-
-
-\textbf{\textit{How do we choose the PWM duty cycle?}} Maximum sound is achieved with a 50$\%$ duty cycle. In this exercise, we suggest a duty cycle of 10$\%$ such as you will not bother your neighbors when testing your application, but you are free to experiment with other values as well.
-\end{itemize}
-
-
-\textbf{PWM SLAVE LOGIC}
-
-The PWM waveform can be generated either using the ARM processor and a Timer, or implemented on the FPGA. In this exercise, we will use this slave interface implemented in VHDL (VHSIC Hardware Description Language) language, directly on the fabric. 
-
-In Figure \ref{fig:pwm_logic_block}, the block diagram of the slave peripheral is showed. The explanation of each output/input as well as the internal registers is presented in Table \ref{tab:reg_def}. Read it quickly now, but refer to it when you will start implementing the design. 
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.7\textwidth]{img/pwm_logic_block.png}
-    \caption{PWM Slave IP}
-    \label{fig:pwm_logic_block}
-\end{figure}
-
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|p{6.3cm}|p{3cm}|p{7cm}|}
-\hline
-\textbf{Signal/register}                     & \textbf{Type}              & \textbf{Description}                                                                                                                       \\ \hline
-PWM\_RED \newline  PWM\_BLUE \newline  PWM\_GREEN \newline  PWM\_BUZZER & std\_logic (1-bit)         & Signal set 1 or 0 to create the PWM waveform to control the LEDs and Buzzer                                                                \\ \hline
-counter\_pwm                                 & integer (16-bit)           & Register that increments up to PWM\_LEDS\_PERIOD\_COUNTER in order to set the PWM period, and reset to 0 once its value equals that period \\ \hline
-PWM\_LEDs\_PERIOD\_COUNTER                   & integer (16-bit)            & Parameter that can be set from the User Interface to choose the period of the PWM. This value is calculated using equation (1).            \\ \hline
-counter\_pwm\_buzzer                         & integer(16-bit)            & Register similar to \textit\{counter\_pwm\}                                                                                                \\ \hline
-slv\_reg0 \newline  slv\_reg1 \newline  slv\_reg2              & std\_logic\_vector (32-bit) & Local signals memory mapped to the address space, and used to set the duty cycle of the PWM waveform for red, blue and green color.        \\ \hline
-slv\_reg3                                    & std\_logic\_vector (32-bit) & Local signal memory mapped to the address space, and used to set the PWM period of the PWM waveform for the buzzer                         \\ \hline
-
-
-S00\_AXI & set of registers & This interface pin is connected to the AXI\_Interconnect which makes the link to the AXI Master, as explained conceptually above. \\ \hline
-
-s00\_axi\_aclk & std\_logic (1-bit) & Synchronized the logic peripheral. Currently, it is connected to the Master Clock. \\ \hline
-
-s00\_axi\_aresetn & std\_logic (1-bit) & Resets the peripheral. Connected to the reset of the Master reset which is mapped to the reset button on the Z-Turn board.\\ \hline
-
-\end{tabular}
-\caption{Register definition for the PWM Slave}
-\label{tab:reg_def}
-\end{table}
 
 
 %\noindent\rule{18cm}{1pt}
 
 \clearpage
+
+
 
 \subsubsection{Implementation}
 
@@ -302,10 +210,10 @@ vivado &
 
 Vivado Design Suite is launched and a Getting Started Page is displayed.
 
-\item Create a new project and set the project name to \textbf{Peripherals}. 
+\item Create a new project and set the project name to \textbf{detector}. 
 
 Select \textbf{Next} and tick \textbf{RTL Project}. 
-Next, you will be asked to add sources to your design. For the moment, we will keep the project empty. However, we need to specify \textbf{VHDL} for both \textit{Target Language} and \textit{Simulator Language}. Press \textbf{Next}, and you will be asked about Existing IP and Constrains files. Keep them both empty again.
+Next, you will be asked to add sources to your design. For the moment, we will keep the project empty. However, we need to specify \textbf{VERILOG} for both \textit{Target Language} and \textit{Simulator Language}. Press \textbf{Next}, and you will be asked about Existing IP and Constrains files. Keep them both empty again.
 
 Now, we need to choose the platform where we implement our design. The development board is entitled MYS-7Z010-C-S Z-turn (Figure \ref{fig:board}).  Press \textbf{Next} and \textbf{Finish}.  Now, the project will initialize.
 \begin{figure}[h!]
@@ -315,7 +223,7 @@ Now, we need to choose the platform where we implement our design. The developme
     \label{fig:board}
 \end{figure}
  
-\item  The \textbf{Peripherals} project should now look  similar to Figure \ref{fig:first_page}. In this project, we will implement the necessary files to control an RGB LED and a buzzer.
+\item  The \textbf{detector} project should now look  similar to Figure \ref{fig:first_page}. In this project, we will implement the necessary files to control an RGB LED.
 
 \begin{figure}[h!]
     \centering
@@ -325,17 +233,23 @@ Now, we need to choose the platform where we implement our design. The developme
 \end{figure}
 
 
-\item Create the Block Design. On the left, in the Flow Navigator window, choose \textbf{Create Block Design} and call it \textbf{Peripherals}. Press OK, and now the environment should look like in Figure \ref{fig:diagram_second_page}. Vivado is based on an IP-centric design flow, in order to rapidly configure the AXI interconnect, AXI Masters and Slaves. 
+\item Create the Block Design. On the left, in the Flow Navigator window, choose \textbf{Create Block Design} and call it \textbf{detector_bd}. Press OK, and now the environment should look like in Figure \ref{fig:diagram_second_page}. 
+
+{\color{red} Explain to the students that Vivado is based on an IP-centric design flow and why it is like this. Explain the AXI protocol used in System on Chips}
+
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.85\textwidth]{img/project_first_page.png}
-    \caption{Project Structure}
+    \caption{Block Diagram}
     \label{fig:diagram_second_page}
 \end{figure}
 
 
-\item Now we will add the AXI Master (Zynq7 Processing System) and the PWM IP (PWM\_v1.3) in the block diagram. The PWM IP was already implemented for you, such as you can choose it from the library, as in the pictures below. Press Add IP \includegraphics[width = 0.5cm]{img/icon_add.png}. 
+
+\item Now we will add the AXI Master (Zynq7 Processing System) and the PWM IP () in the block diagram. The PWM IP was already implemented for you, and you need to add it to the library. Click on the \textbf{IP settings} icon like in Figure X. Choose \textbf{Repository Manager} from the tabs. Click on $+$ symbol and go into the following path: /ip/pwm_verilog_1.0. Click Select and then OK.
+
+Now the PWM folder is added to your project so you can choose it from the library, as in the pictures below. Press Add IP \includegraphics[width = 0.5cm]{img/icon_add.png}. 
  
  \begin{figure}[h!]
 \centering
@@ -353,6 +267,8 @@ Now, we need to choose the platform where we implement our design. The developme
 
 
 Of course, there are other important IPs that should be added, such as AXI Interface or Processor System Reset, as well as the interconnectivity between them. However, the advantage of using Block Design is that these extra work is automated for you. 
+
+
 Therefore, you should press {\color{blue}\underline{Run Block Automation}} and {\color{blue} \underline{Run Connection Automation}}, let the settings as default, press OK and let the Designer Assistance to do this work on your behalf. The window should now look similar to Figure \ref{fig:block_diagram_system}. However, the Design Assistant is placing the blocks in a not-very-organized way. For a better view, we advise you to click on the Regenerate Design button \includegraphics[width = 0.5cm]{img/icon_refresh.png} in the right Menu. Looks better, right?
 
 \begin{figure}[h!]
@@ -367,13 +283,14 @@ Therefore, you should press {\color{blue}\underline{Run Block Automation}} and {
 
 Right click on the PWM\_0 IP and select \textit{Edit in IP Packager}. Another project (Figure \ref{fig:ip}) will open that contains the files generated for this IP. Vivado Design Suite provides you with \textit{Packaging Steps} to configure the current IP. In the Source part, you will see an hierarchical design in VHDL. The top level is called \textit{PWM\_v1\_0.vhd} and contains an instantiation of the  \textit{PWM\_v1\_0\_S00\_AXI.vhd} where the logic is implemented. If you open  \textit{PWM\_v1\_0\_S00\_AXI.vhd}, you will see the registers specific to the AXI-Memory Map architecture (Figure \ref{fig:axi_mm_stream}). In addition, the user can add its own logic and signals. Thus, you can see the implementation of PWM outlined by the following comments:
 
+{\color{red} Can you explain the code a bit to the students?}
+
 \begin{minted}{vhdl}
  -- User to add parameters/ports/logic here
  ...
  -- User parameters/ports/logic ends
 \end{minted}
 
-Check Table \ref{tab:reg_def} for a better understanding of the code. 
 
 \begin{figure}[h!]
     \centering
@@ -382,53 +299,32 @@ Check Table \ref{tab:reg_def} for a better understanding of the code.
     \label{fig:ip}
 \end{figure}
 
-
-\noindent\rule{16.5cm}{1pt}
-
-\noindent\begin{minipage}{.1\textwidth}
-  \centering
-  \includegraphics[height=1.5cm]{img/icon.png}
-\end{minipage}
-\begin{minipage}{.8\textwidth}
-In this exercise, you will need to change the following parameter \textbf{PWM\_LEDs\_COUNTER\_PWM} to obtain a PWM frequency for the LEDs of 2kHz. Check its usage in this file and consider an input clock frequency of 50MHz.
-\end{minipage}%
-
-\noindent\rule{16.5cm}{1.5pt}
-
-After modifying the frequency, you need to re-package the design. In order to do so, go back in the Package IP window and click on the Steps that are not checked green. Merge the changes and finally press the \textit{Review and Package} step and follow the indications from the window. Afterwards, the program will ask you if you want to exit. Press OK, and now you should be back in the previous project.
-
-Now, the environment will detect a change in the IP and will ask you to update your component, as in Figure \ref{fig:upgrade_ip}. Press \textbf{Upgrade Selected}, check in the \textbf{Synthesis Option: Global} and now the changes should take place. 
-Don't panic if you see the following error: {\color{red} ERROR: BD 41\-758 The following clock pins are not connected to a valid clock source: HP0\_ACLK}, we have not configured the Processing System yet. 
-
- 
- \begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.85\textwidth]{img/upgrade.png}
-    \caption{Upgrade IP Window}
-    \label{fig:upgrade_ip}
-\end{figure}
-
+Now, let's close the project and return to our beautiful Block Design.
 
 
 
  \item Create PWM output ports
  
-We need to create PWM outputs, in order to assign them to our board. Click on each PWM output and press CTRL-T or the Make External \includegraphics[width = 0.5cm]{img/make_exernal.png} symbol from the Menu. Do so for all the 4 ports. Now your IP should look like in Figure \ref{fig:pwm_logic_block}. You can also assign Highlight colors if you want.
+We need to create PWM outputs, in order to connect them to our board. Click on each PWM output and press CTRL-K or Create Port \includegraphics[width = 0.5cm]{img/make_exernal.png} symbol from the Menu. Do so for all the 3 ports. Now your IP should look like in Figure \ref{fig:pwm_logic_block}. 
 
- \item Configure the ZYNQ7 Processing System
+
+
+ \item Let's configure the ZYNQ7 Processing System
  
 Double click on the ZYNQ7 Processing System IP will open a user-friendly interface for selecting the clocks/memory/IOs. Now, you need to follow the next sub-steps:
 \begin{itemize}
+
 \item  \textbf{Zynq Block Diagram} 
 
-Take some time to look at the diagram in order to understand the interface between PS and PL. Ask your tutor for further details, as this diagram is extremely important for future development with this board. 
+Take some time to look at the diagram in order to understand the interface between PS and PL. Ask your tutor for further details, as this diagram is extremely important for a better understanding of the system.
 
-\item \textbf{PS-PL Configuration}
-
-This part will solve our previous error. We don't need high performance slave interface, so just deselect the \textit{S AXI HPO Interface}. Make sure everything is deselected as well.
+Go to \textbf{Peripherals I/O Pins} tab.
 
 \item \textbf{Peripherals I/O Pins}
-Deselect everything apart from UART, as we want to transmit through serial interface(USB-UART) different messages from the board. Make sure both Bank 0 and Bank 1 is set to LVCMOS 3.3V. 
+1. Select UART, as we want to transmit through serial interface(USB-UART) different messages from the board. 
+
+2. Select I2C1 (which will be used to talk to our light detector)
+
 
 \noindent\rule{16.5cm}{1pt}
 
@@ -456,6 +352,11 @@ Delect \textbf{Enable DDR}
 \end{itemize}
 
 Now press OK. Your ZYNQ7 Processing System should look more simplistic now, and easier to understand. 
+
+
+
+Therefore, you should press {\color{blue}\underline{Run Block Automation}} and {\color{blue} \underline{Run Connection Automation}}, let the settings as default, press OK and let the Designer Assistance to do this work on your behalf. The window should now look similar to Figure \ref{fig:block_diagram_system}. However, the Design Assistant is placing the blocks in a not-very-organized way. For a better view, we advise you to click on the Regenerate Design button \includegraphics[width = 0.5cm]{img/icon_refresh.png} in the right Menu. Looks better, right?
+
 
 \item Create VHDL Wrapper
 
