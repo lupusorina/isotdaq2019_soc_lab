@@ -1,0 +1,14 @@
+
+<!ELEMENT ip ( user_parameters ) ><!ATTLIST ip library NMTOKEN #REQUIRED >
+<!ATTLIST ip name NMTOKEN #REQUIRED >
+<!ATTLIST ip vendor NMTOKEN #REQUIRED >
+<!ATTLIST ip version NMTOKEN #REQUIRED >
+
+<!ELEMENT ip_preset ( ip ) ><!ATTLIST ip_preset preset_proc_name NMTOKEN #REQUIRED >
+
+<!ELEMENT ip_presets ( ip_preset ) ><!ATTLIST ip_presets schema NMTOKEN #REQUIRED >
+
+<!ELEMENT user_parameter EMPTY ><!ATTLIST user_parameter name ID #REQUIRED >
+<!ATTLIST user_parameter value NMTOKEN #REQUIRED >
+
+<!ELEMENT user_parameters ( user_parameter+ ) >

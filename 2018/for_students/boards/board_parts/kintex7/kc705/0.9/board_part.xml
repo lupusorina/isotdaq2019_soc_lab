@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<board_part board_name="kc705" board_revision="1.0" board_part="part0" schema_version="1.0" vendor="xilinx.com" version="0.9">
+
+  <part_info part_name="xc7k325tffg900-2" jtag_position="1" silicon_version="1.0"/>
+
+  <board_info description="Kintex-7 KC705 Evaluation Platform" display_name="Kintex-7 KC705 Evaluation Platform" url="www.xilinx.com/kc705"/>
+
+  <interfaces>
+    <interface mode="master" name="DDR3_SDRAM" type="xilinx.com:interface:ddrx_rtl:1.0">
+      <preset_file name="mig.prj"/>
+    </interface>
+    <interface mode="master" name="DIP_Switches_4Bits" type="xilinx.com:interface:gpio_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TRI_I" physical_port="DIP_Switches_TRI_I"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="GMII" type="xilinx.com:interface:gmii_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TXD" physical_port="GMII_TXD"/>
+        <port_map logical_port="TX_EN" physical_port="GMII_TX_EN"/>
+        <port_map logical_port="TX_ER" physical_port="GMII_TX_ER"/>
+        <port_map logical_port="GTX_CLK" physical_port="GMII_GTX_CLK"/>
+        <port_map logical_port="TX_CLK" physical_port="GMII_TX_CLK"/>
+        <port_map logical_port="RXD" physical_port="GMII_RXD"/>
+        <port_map logical_port="RX_DV" physical_port="GMII_RX_DV"/>
+        <port_map logical_port="RX_ER" physical_port="GMII_RX_ER"/>
+        <port_map logical_port="RX_CLK" physical_port="GMII_RX_CLK"/>
+        <port_map logical_port="COL" physical_port="GMII_COL"/>
+        <port_map logical_port="CRS" physical_port="GMII_CRS"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="IIC_MAIN" type="xilinx.com:interface:iic_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="SDA_I" physical_port="IIC_MAIN_SDA_I"/>
+        <port_map logical_port="SDA_O" physical_port="IIC_MAIN_SDA_O"/>
+        <port_map logical_port="SDA_T" physical_port="IIC_MAIN_SDA_T"/>
+        <port_map logical_port="SCL_I" physical_port="IIC_MAIN_SCL_I"/>
+        <port_map logical_port="SCL_O" physical_port="IIC_MAIN_SCL_O"/>
+        <port_map logical_port="SCL_T" physical_port="IIC_MAIN_SCL_T"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="LCD_7Bits" type="xilinx.com:interface:gpio_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TRI_O" physical_port="LCD_7Bits_TRI_O"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="LED_8Bits" type="xilinx.com:interface:gpio_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TRI_O" physical_port="LEDs_8Bits_TRI_O"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="Linear_Flash" type="xilinx.com:interface:emc_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="ADDR" physical_port="Linear_Flash_ADDR"/>
+        <port_map logical_port="DQ_O" physical_port="Linear_Flash_DQ_O"/>
+        <port_map logical_port="DQ_I" physical_port="Linear_Flash_DQ_I"/>
+        <port_map logical_port="DQ_T" physical_port="Linear_Flash_DQ_T"/>
+        <port_map logical_port="ADV_LDN" physical_port="Linear_Flash_ADV_LDN"/>
+        <port_map logical_port="OEN" physical_port="Linear_Flash_OEN"/>
+        <port_map logical_port="WEN" physical_port="Linear_Flash_WEN"/>
+        <port_map logical_port="CE_N" physical_port="Linear_Flash_CE_N"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="mdio_io" type="xilinx.com:interface:mdio_io:1.0">
+      <port_maps>
+        <port_map logical_port="IO" physical_port="mdio_io"/>
+        <port_map logical_port="MDC" physical_port="mdio_io_mdc"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="MDIO_MDC" type="xilinx.com:interface:mdio_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="MDIO_I" physical_port="MDIO_I"/>
+        <port_map logical_port="MDIO_O" physical_port="MDIO_O"/>
+        <port_map logical_port="MDIO_T" physical_port="MDIO_T"/>
+        <port_map logical_port="MDC" physical_port="MDC"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="MII" type="xilinx.com:interface:mii_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TXD" physical_port="MII_TXD"/>
+        <port_map logical_port="TX_EN" physical_port="MII_TX_EN"/>
+        <port_map logical_port="TX_CLK" physical_port="MII_TX_CLK"/>
+        <port_map logical_port="COL" physical_port="MII_COL"/>
+        <port_map logical_port="RXD" physical_port="MII_RXD"/>
+        <port_map logical_port="RX_ER" physical_port="MII_RX_ER"/>
+        <port_map logical_port="TX_ER" physical_port="MII_TX_ER"/>
+        <port_map logical_port="RX_CLK" physical_port="MII_RX_CLK"/>
+        <port_map logical_port="CRS" physical_port="MII_CRS"/>
+        <port_map logical_port="RX_DV" physical_port="MII_RX_DV"/>
+        <port_map logical_port="RST_N" physical_port="MII_PHY_RST_N"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="phy_reset_out" type="xilinx.com:signal:reset_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="RESET" physical_port="phy_rst_out"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="Push_Buttons_5Bits" type="xilinx.com:interface:gpio_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TRI_I" physical_port="Push_Buttons_5Bits_TRI_I"/>
+      </port_maps>
+    </interface>
+    <interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="RESET" physical_port="RESET"/>
+      </port_maps>
+      <parameters>
+        <parameter name="RST_POLARITY" value="1"/>
+      </parameters>
+    </interface>
+    <interface mode="master" name="RGMII" type="xilinx.com:interface:rgmii_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TD" physical_port="RGMII_TD"/>
+        <port_map logical_port="TX_CTL" physical_port="RGMII_TX_CTL"/>
+        <port_map logical_port="TXC" physical_port="RGMII_TXC"/>
+        <port_map logical_port="RD" physical_port="RGMII_RD"/>
+        <port_map logical_port="RX_CTL" physical_port="RGMII_RX_CTL"/>
+        <port_map logical_port="RXC" physical_port="RGMII_RXC"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="Rotary_Switch" type="xilinx.com:interface:gpio_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TRI_I" physical_port="ROTARY_INCA_PUSH_INCB_TRI_I"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="RS232_Uart" type="xilinx.com:interface:uart_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TxD" physical_port="RS232_Uart_TxD"/>
+        <port_map logical_port="RxD" physical_port="RS232_Uart_RxD"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="sfp" type="xilinx.com:interface:sfp_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TXN" physical_port="sfp_txn"/>
+        <port_map logical_port="TXP" physical_port="sfp_txp"/>
+        <port_map logical_port="RXN" physical_port="sfp_rxn"/>
+        <port_map logical_port="RXP" physical_port="sfp_rxp"/>
+      </port_maps>
+      <parameters>
+        <parameter name="GT_LOC" value="GTXE2_CHANNEL_X0Y10"/>
+      </parameters>
+    </interface>
+    <interface mode="master" name="sfp_sgmii" type="xilinx.com:interface:sgmii_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TXN" physical_port="sfp_sgmii_txn"/>
+        <port_map logical_port="TXP" physical_port="sfp_sgmii_txp"/>
+        <port_map logical_port="RXN" physical_port="sfp_sgmii_rxn"/>
+        <port_map logical_port="RXP" physical_port="sfp_sgmii_rxp"/>
+      </port_maps>
+      <parameters>
+        <parameter name="GT_LOC" value="GTXE2_CHANNEL_X0Y10"/>
+      </parameters>
+    </interface>
+    <interface mode="master" name="sgmii" type="xilinx.com:interface:sgmii_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TXN" physical_port="sgmii_txn"/>
+        <port_map logical_port="TXP" physical_port="sgmii_txp"/>
+        <port_map logical_port="RXN" physical_port="sgmii_rxn"/>
+        <port_map logical_port="RXP" physical_port="sgmii_rxp"/>
+      </port_maps>
+      <parameters>
+        <parameter name="GT_LOC" value="GTXE2_CHANNEL_X0Y9"/>
+      </parameters>
+    </interface>
+    <interface mode="slave" name="sgmii_mgt_clk" type="xilinx.com:interface:diff_clock_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="CLK_P" physical_port="sgmii_mgt_clkp"/>
+        <port_map logical_port="CLK_N" physical_port="sgmii_mgt_clkn"/>
+      </port_maps>
+      <parameters>
+        <parameter name="TYPE" value="ETH_MGT_CLK"/>
+        <parameter name="frequency" value="125000000"/>
+      </parameters>
+    </interface>
+    <interface mode="master" name="sma_lvds" type="xilinx.com:interface:sgmii_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TXN" physical_port="sma_lvds_txn"/>
+        <port_map logical_port="TXP" physical_port="sma_lvds_txp"/>
+        <port_map logical_port="RXN" physical_port="sma_lvds_rxn"/>
+        <port_map logical_port="RXP" physical_port="sma_lvds_rxp"/>
+      </port_maps>
+    </interface>
+    <interface mode="slave" name="sma_mgt_clk" type="xilinx.com:interface:diff_clock_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="CLK_P" physical_port="sma_mgt_clkp"/>
+        <port_map logical_port="CLK_N" physical_port="sma_mgt_clkn"/>
+      </port_maps>
+      <parameters>
+        <parameter name="TYPE" value="ETH_MGT_CLK"/>
+        <parameter name="frequency" value="125000000"/>
+      </parameters>
+    </interface>
+    <interface mode="master" name="sma_sfp" type="xilinx.com:interface:sfp_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TXN" physical_port="sma_sfp_txn"/>
+        <port_map logical_port="TXP" physical_port="sma_sfp_txp"/>
+        <port_map logical_port="RXN" physical_port="sma_sfp_rxn"/>
+        <port_map logical_port="RXP" physical_port="sma_sfp_rxp"/>
+      </port_maps>
+      <parameters>
+        <parameter name="GT_LOC" value="GTXE2_CHANNEL_X0Y8"/>
+      </parameters>
+    </interface>
+    <interface mode="master" name="sma_sgmii" type="xilinx.com:interface:sgmii_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TXN" physical_port="sma_sgmii_txn"/>
+        <port_map logical_port="TXP" physical_port="sma_sgmii_txp"/>
+        <port_map logical_port="RXN" physical_port="sma_sgmii_rxn"/>
+        <port_map logical_port="RXP" physical_port="sma_sgmii_rxp"/>
+      </port_maps>
+      <parameters>
+        <parameter name="GT_LOC" value="GTXE2_CHANNEL_X0Y8"/>
+      </parameters>
+    </interface>
+    <interface mode="master" name="spi_flash" type="xilinx.com:interface:spi_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="IO0_I" physical_port="SPI_IO0_I"/>
+        <port_map logical_port="IO0_O" physical_port="SPI_IO0_O"/>
+        <port_map logical_port="IO0_T" physical_port="SPI_IO0_T"/>
+        <port_map logical_port="IO1_I" physical_port="SPI_IO1_I"/>
+        <port_map logical_port="IO1_O" physical_port="SPI_IO1_O"/>
+        <port_map logical_port="IO1_T" physical_port="SPI_IO1_T"/>
+        <port_map logical_port="IO2_I" physical_port="SPI_IO2_I"/>
+        <port_map logical_port="IO2_O" physical_port="SPI_IO2_O"/>
+        <port_map logical_port="IO2_T" physical_port="SPI_IO2_T"/>
+        <port_map logical_port="IO3_I" physical_port="SPI_IO3_I"/>
+        <port_map logical_port="IO3_O" physical_port="SPI_IO3_O"/>
+        <port_map logical_port="IO3_T" physical_port="SPI_IO3_T"/>
+        <port_map logical_port="SS_I" physical_port="SPI_SS_I"/>
+        <port_map logical_port="SS_O" physical_port="SPI_SS_O"/>
+        <port_map logical_port="SS_T" physical_port="SPI_SS_T"/>
+      </port_maps>
+    </interface>
+    <interface mode="slave" name="sys_diff_clock" type="xilinx.com:interface:diff_clock_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="CLK_P" physical_port="CLK_P"/>
+        <port_map logical_port="CLK_N" physical_port="CLK_N"/>
+      </port_maps>
+      <parameters>
+        <parameter name="frequency" value="200000000"/>
+      </parameters>
+    </interface>
+  </interfaces>
+
+  <ports>
+    <port dir="in" name="CLK_N">
+      <pins>
+        <pin iostandard="DIFF_SSTL15" loc="AD11"/>
+      </pins>
+    </port>
+    <port dir="in" name="CLK_P">
+      <pins>
+        <pin iostandard="DIFF_SSTL15" loc="AD12"/>
+      </pins>
+    </port>
+    <port dir="in" left="3" name="DIP_Switches_TRI_I" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="Y29"/>
+        <pin index="1" iostandard="LVCMOS25" loc="W29"/>
+        <pin index="2" iostandard="LVCMOS25" loc="AA28"/>
+        <pin index="3" iostandard="LVCMOS25" loc="Y28"/>
+      </pins>
+    </port>
+    <port dir="in" name="GMII_COL">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="W19"/>
+      </pins>
+    </port>
+    <port dir="in" name="GMII_CRS">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R30"/>
+      </pins>
+    </port>
+    <port dir="out" name="GMII_GTX_CLK">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="K30"/>
+      </pins>
+    </port>
+    <port dir="in" left="7" name="GMII_RXD" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="U30"/>
+        <pin index="1" iostandard="LVCMOS25" loc="U25"/>
+        <pin index="2" iostandard="LVCMOS25" loc="T25"/>
+        <pin index="3" iostandard="LVCMOS25" loc="U28"/>
+        <pin index="4" iostandard="LVCMOS25" loc="R19"/>
+        <pin index="5" iostandard="LVCMOS25" loc="T27"/>
+        <pin index="6" iostandard="LVCMOS25" loc="T26"/>
+        <pin index="7" iostandard="LVCMOS25" loc="T28"/>
+      </pins>
+    </port>
+    <port dir="in" name="GMII_RX_CLK">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="U27"/>
+      </pins>
+    </port>
+    <port dir="in" name="GMII_RX_DV">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R28"/>
+      </pins>
+    </port>
+    <port dir="in" name="GMII_RX_ER">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="V26"/>
+      </pins>
+    </port>
+    <port dir="out" left="7" name="GMII_TXD" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="N27"/>
+        <pin index="1" iostandard="LVCMOS25" loc="N25"/>
+        <pin index="2" iostandard="LVCMOS25" loc="M29"/>
+        <pin index="3" iostandard="LVCMOS25" loc="L28"/>
+        <pin index="4" iostandard="LVCMOS25" loc="J26"/>
+        <pin index="5" iostandard="LVCMOS25" loc="K26"/>
+        <pin index="6" iostandard="LVCMOS25" loc="L30"/>
+        <pin index="7" iostandard="LVCMOS25" loc="J28"/>
+      </pins>
+    </port>
+    <port dir="in" name="GMII_TX_CLK">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="M28"/>
+      </pins>
+    </port>
+    <port dir="out" name="GMII_TX_EN">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="M27"/>
+      </pins>
+    </port>
+    <port dir="out" name="GMII_TX_ER">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="N29"/>
+      </pins>
+    </port>
+    <port dir="in" name="IIC_MAIN_SCL_I">
+      <pins>
+        <pin drive="8" iostandard="LVCMOS25" loc="K21" slew="SLOW"/>
+      </pins>
+    </port>
+    <port dir="out" name="IIC_MAIN_SCL_O">
+      <pins>
+        <pin drive="8" iostandard="LVCMOS25" loc="K21" slew="SLOW"/>
+      </pins>
+    </port>
+    <port dir="out" name="IIC_MAIN_SCL_T">
+      <pins>
+        <pin drive="8" iostandard="LVCMOS25" loc="K21" slew="SLOW"/>
+      </pins>
+    </port>
+    <port dir="in" name="IIC_MAIN_SDA_I">
+      <pins>
+        <pin drive="8" iostandard="LVCMOS25" loc="L21" slew="SLOW"/>
+      </pins>
+    </port>
+    <port dir="out" name="IIC_MAIN_SDA_O">
+      <pins>
+        <pin drive="8" iostandard="LVCMOS25" loc="L21" slew="SLOW"/>
+      </pins>
+    </port>
+    <port dir="out" name="IIC_MAIN_SDA_T">
+      <pins>
+        <pin drive="8" iostandard="LVCMOS25" loc="L21" slew="SLOW"/>
+      </pins>
+    </port>
+    <port dir="out" left="6" name="LCD_7Bits_TRI_O" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS15" loc="AB10"/>
+        <pin index="1" iostandard="LVCMOS15" loc="Y11"/>
+        <pin index="2" iostandard="LVCMOS15" loc="AB13"/>
+        <pin index="3" iostandard="LVCMOS15" loc="Y10"/>
+        <pin index="4" iostandard="LVCMOS15" loc="AA11"/>
+        <pin index="5" iostandard="LVCMOS15" loc="AA10"/>
+        <pin index="6" iostandard="LVCMOS15" loc="AA13"/>
+      </pins>
+    </port>
+    <port dir="out" left="7" name="LEDs_8Bits_TRI_O" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS15" loc="AB8"/>
+        <pin index="1" iostandard="LVCMOS15" loc="AA8"/>
+        <pin index="2" iostandard="LVCMOS15" loc="AC9"/>
+        <pin index="3" iostandard="LVCMOS15" loc="AB9"/>
+        <pin index="4" iostandard="LVCMOS25" loc="AE26"/>
+        <pin index="5" iostandard="LVCMOS25" loc="G19"/>
+        <pin index="6" iostandard="LVCMOS25" loc="E18"/>
+        <pin index="7" iostandard="LVCMOS25" loc="F16"/>
+      </pins>
+    </port>
+    <port dir="inout" left="26" name="Linear_Flash_ADDR" right="1">
+      <pins>
+        <pin index="1" iostandard="LVCMOS25" loc="W22"/>
+        <pin index="2" iostandard="LVCMOS25" loc="W21"/>
+        <pin index="3" iostandard="LVCMOS25" loc="V24"/>
+        <pin index="4" iostandard="LVCMOS25" loc="U24"/>
+        <pin index="5" iostandard="LVCMOS25" loc="V22"/>
+        <pin index="6" iostandard="LVCMOS25" loc="V21"/>
+        <pin index="7" iostandard="LVCMOS25" loc="U23"/>
+        <pin index="8" iostandard="LVCMOS25" loc="W24"/>
+        <pin index="9" iostandard="LVCMOS25" loc="W23"/>
+        <pin index="10" iostandard="LVCMOS25" loc="V20"/>
+        <pin index="11" iostandard="LVCMOS25" loc="V19"/>
+        <pin index="12" iostandard="LVCMOS25" loc="W26"/>
+        <pin index="13" iostandard="LVCMOS25" loc="V25"/>
+        <pin index="14" iostandard="LVCMOS25" loc="V30"/>
+        <pin index="15" iostandard="LVCMOS25" loc="V29"/>
+        <pin index="16" iostandard="LVCMOS25" loc="V27"/>
+        <pin index="17" iostandard="LVCMOS25" loc="P22"/>
+        <pin index="18" iostandard="LVCMOS25" loc="P21"/>
+        <pin index="19" iostandard="LVCMOS25" loc="N24"/>
+        <pin index="20" iostandard="LVCMOS25" loc="N22"/>
+        <pin index="21" iostandard="LVCMOS25" loc="N21"/>
+        <pin index="22" iostandard="LVCMOS25" loc="N20"/>
+        <pin index="23" iostandard="LVCMOS25" loc="N19"/>
+        <pin index="24" iostandard="LVCMOS25" loc="N26"/>
+        <pin index="25" iostandard="LVCMOS25" loc="M23"/>
+        <pin index="26" iostandard="LVCMOS25" loc="M22"/>
+      </pins>
+    </port>
+    <port dir="inout" name="Linear_Flash_ADV_LDN">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="M30"/>
+      </pins>
+    </port>
+    <port dir="inout" name="Linear_Flash_CE_N">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="U19"/>
+      </pins>
+    </port>
+    <port dir="out" left="15" name="Linear_Flash_DQ_I" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="P24"/>
+        <pin index="1" iostandard="LVCMOS25" loc="R25"/>
+        <pin index="2" iostandard="LVCMOS25" loc="R20"/>
+        <pin index="3" iostandard="LVCMOS25" loc="R21"/>
+        <pin index="4" iostandard="LVCMOS25" loc="T20"/>
+        <pin index="5" iostandard="LVCMOS25" loc="T21"/>
+        <pin index="6" iostandard="LVCMOS25" loc="T22"/>
+        <pin index="7" iostandard="LVCMOS25" loc="T23"/>
+        <pin index="8" iostandard="LVCMOS25" loc="U20"/>
+        <pin index="9" iostandard="LVCMOS25" loc="P29"/>
+        <pin index="10" iostandard="LVCMOS25" loc="R29"/>
+        <pin index="11" iostandard="LVCMOS25" loc="P27"/>
+        <pin index="12" iostandard="LVCMOS25" loc="P28"/>
+        <pin index="13" iostandard="LVCMOS25" loc="T30"/>
+        <pin index="14" iostandard="LVCMOS25" loc="P26"/>
+        <pin index="15" iostandard="LVCMOS25" loc="R26"/>
+      </pins>
+    </port>
+    <port dir="out" left="15" name="Linear_Flash_DQ_O" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="P24"/>
+        <pin index="1" iostandard="LVCMOS25" loc="R25"/>
+        <pin index="2" iostandard="LVCMOS25" loc="R20"/>
+        <pin index="3" iostandard="LVCMOS25" loc="R21"/>
+        <pin index="4" iostandard="LVCMOS25" loc="T20"/>
+        <pin index="5" iostandard="LVCMOS25" loc="T21"/>
+        <pin index="6" iostandard="LVCMOS25" loc="T22"/>
+        <pin index="7" iostandard="LVCMOS25" loc="T23"/>
+        <pin index="8" iostandard="LVCMOS25" loc="U20"/>
+        <pin index="9" iostandard="LVCMOS25" loc="P29"/>
+        <pin index="10" iostandard="LVCMOS25" loc="R29"/>
+        <pin index="11" iostandard="LVCMOS25" loc="P27"/>
+        <pin index="12" iostandard="LVCMOS25" loc="P28"/>
+        <pin index="13" iostandard="LVCMOS25" loc="T30"/>
+        <pin index="14" iostandard="LVCMOS25" loc="P26"/>
+        <pin index="15" iostandard="LVCMOS25" loc="R26"/>
+      </pins>
+    </port>
+    <port dir="out" left="15" name="Linear_Flash_DQ_T" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="P24"/>
+        <pin index="1" iostandard="LVCMOS25" loc="R25"/>
+        <pin index="2" iostandard="LVCMOS25" loc="R20"/>
+        <pin index="3" iostandard="LVCMOS25" loc="R21"/>
+        <pin index="4" iostandard="LVCMOS25" loc="T20"/>
+        <pin index="5" iostandard="LVCMOS25" loc="T21"/>
+        <pin index="6" iostandard="LVCMOS25" loc="T22"/>
+        <pin index="7" iostandard="LVCMOS25" loc="T23"/>
+        <pin index="8" iostandard="LVCMOS25" loc="U20"/>
+        <pin index="9" iostandard="LVCMOS25" loc="P29"/>
+        <pin index="10" iostandard="LVCMOS25" loc="R29"/>
+        <pin index="11" iostandard="LVCMOS25" loc="P27"/>
+        <pin index="12" iostandard="LVCMOS25" loc="P28"/>
+        <pin index="13" iostandard="LVCMOS25" loc="T30"/>
+        <pin index="14" iostandard="LVCMOS25" loc="P26"/>
+        <pin index="15" iostandard="LVCMOS25" loc="R26"/>
+      </pins>
+    </port>
+    <port dir="inout" name="Linear_Flash_OEN">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="M24"/>
+      </pins>
+    </port>
+    <port dir="inout" name="Linear_Flash_WEN">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="M25"/>
+      </pins>
+    </port>
+    <port dir="out" name="MDC">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R23"/>
+      </pins>
+    </port>
+    <port dir="in" name="MDIO_I">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="J21"/>
+      </pins>
+    </port>
+    <port dir="inout" name="mdio_io">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="J21"/>
+      </pins>
+    </port>
+    <port dir="out" name="mdio_io_mdc">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R23"/>
+      </pins>
+    </port>
+    <port dir="out" name="MDIO_O">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="J21"/>
+      </pins>
+    </port>
+    <port dir="out" name="MDIO_T">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="J21"/>
+      </pins>
+    </port>
+    <port dir="in" name="MII_COL">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="W19"/>
+      </pins>
+    </port>
+    <port dir="in" name="MII_CRS">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R30"/>
+      </pins>
+    </port>
+    <port dir="out" name="MII_PHY_RST_N">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="L20"/>
+      </pins>
+    </port>
+    <port dir="in" left="3" name="MII_RXD" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="U30"/>
+        <pin index="1" iostandard="LVCMOS25" loc="U25"/>
+        <pin index="2" iostandard="LVCMOS25" loc="T25"/>
+        <pin index="3" iostandard="LVCMOS25" loc="U28"/>
+      </pins>
+    </port>
+    <port dir="in" name="MII_RX_CLK">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="U27"/>
+      </pins>
+    </port>
+    <port dir="in" name="MII_RX_DV">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R28"/>
+      </pins>
+    </port>
+    <port dir="in" name="MII_RX_ER">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="V26"/>
+      </pins>
+    </port>
+    <port dir="out" left="3" name="MII_TXD" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="N27"/>
+        <pin index="1" iostandard="LVCMOS25" loc="N25"/>
+        <pin index="2" iostandard="LVCMOS25" loc="M29"/>
+        <pin index="3" iostandard="LVCMOS25" loc="L28"/>
+      </pins>
+    </port>
+    <port dir="in" name="MII_TX_CLK">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="M28"/>
+      </pins>
+    </port>
+    <port dir="out" name="MII_TX_EN">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="M27"/>
+      </pins>
+    </port>
+    <port dir="out" name="MII_TX_ER">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="N29" slew="FAST"/>
+      </pins>
+    </port>
+    <port dir="out" name="phy_rst_out">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="L20"/>
+      </pins>
+    </port>
+    <port dir="in" left="4" name="Push_Buttons_5Bits_TRI_I" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="G12"/>
+        <pin index="1" iostandard="LVCMOS15" loc="AC6"/>
+        <pin index="2" iostandard="LVCMOS15" loc="AB12"/>
+        <pin index="3" iostandard="LVCMOS15" loc="AG5"/>
+        <pin index="4" iostandard="LVCMOS15" loc="AA12"/>
+      </pins>
+    </port>
+    <port dir="in" name="RESET">
+      <pins>
+        <pin iostandard="LVCMOS15" loc="AB7"/>
+      </pins>
+    </port>
+    <port dir="in" left="3" name="RGMII_RD" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="U30"/>
+        <pin index="1" iostandard="LVCMOS25" loc="U25"/>
+        <pin index="2" iostandard="LVCMOS25" loc="T25"/>
+        <pin index="3" iostandard="LVCMOS25" loc="U28"/>
+      </pins>
+    </port>
+    <port dir="in" name="RGMII_RXC">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="U27"/>
+      </pins>
+    </port>
+    <port dir="in" name="RGMII_RX_CTL">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R28"/>
+      </pins>
+    </port>
+    <port dir="out" left="3" name="RGMII_TD" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="N27"/>
+        <pin index="1" iostandard="LVCMOS25" loc="N25"/>
+        <pin index="2" iostandard="LVCMOS25" loc="M29"/>
+        <pin index="3" iostandard="LVCMOS25" loc="L28"/>
+      </pins>
+    </port>
+    <port dir="out" name="RGMII_TXC">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="K30"/>
+      </pins>
+    </port>
+    <port dir="out" name="RGMII_TX_CTL">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="M27"/>
+      </pins>
+    </port>
+    <port dir="in" left="2" name="ROTARY_INCA_PUSH_INCB_TRI_I" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="Y26"/>
+        <pin index="1" iostandard="LVCMOS25" loc="AA26"/>
+        <pin index="2" iostandard="LVCMOS25" loc="Y25"/>
+      </pins>
+    </port>
+    <port dir="in" name="RS232_Uart_RxD">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="M19"/>
+      </pins>
+    </port>
+    <port dir="out" name="RS232_Uart_TxD">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="K24"/>
+      </pins>
+    </port>
+    <port dir="in" name="sfp_rxn">
+      <pins>
+        <pin loc="G4"/>
+      </pins>
+    </port>
+    <port dir="in" name="sfp_rxp">
+      <pins>
+        <pin loc="G3"/>
+      </pins>
+    </port>
+    <port dir="in" name="sfp_sgmii_rxn">
+      <pins>
+        <pin loc="G4"/>
+      </pins>
+    </port>
+    <port dir="in" name="sfp_sgmii_rxp">
+      <pins>
+        <pin loc="G3"/>
+      </pins>
+    </port>
+    <port dir="out" name="sfp_sgmii_txn">
+      <pins>
+        <pin loc="H1"/>
+      </pins>
+    </port>
+    <port dir="out" name="sfp_sgmii_txp">
+      <pins>
+        <pin loc="H2"/>
+      </pins>
+    </port>
+    <port dir="out" name="sfp_txn">
+      <pins>
+        <pin loc="H1"/>
+      </pins>
+    </port>
+    <port dir="out" name="sfp_txp">
+      <pins>
+        <pin loc="H2"/>
+      </pins>
+    </port>
+    <port dir="in" name="sgmii_mgt_clkn">
+      <pins>
+        <pin loc="G7"/>
+      </pins>
+    </port>
+    <port dir="in" name="sgmii_mgt_clkp">
+      <pins>
+        <pin loc="G8"/>
+      </pins>
+    </port>
+    <port dir="in" name="sgmii_rxn">
+      <pins>
+        <pin loc="H5"/>
+      </pins>
+    </port>
+    <port dir="in" name="sgmii_rxp">
+      <pins>
+        <pin loc="H6"/>
+      </pins>
+    </port>
+    <port dir="out" name="sgmii_txn">
+      <pins>
+        <pin loc="J3"/>
+      </pins>
+    </port>
+    <port dir="out" name="sgmii_txp">
+      <pins>
+        <pin loc="J4"/>
+      </pins>
+    </port>
+    <port dir="in" name="sma_lvds_rxn">
+      <pins>
+        <pin iostandard="LVDS_25" loc="K25"/>
+      </pins>
+    </port>
+    <port dir="in" name="sma_lvds_rxp">
+      <pins>
+        <pin iostandard="LVDS_25" loc="L25"/>
+      </pins>
+    </port>
+    <port dir="out" name="sma_lvds_txn">
+      <pins>
+        <pin iostandard="LVDS_25" loc="Y24"/>
+      </pins>
+    </port>
+    <port dir="out" name="sma_lvds_txp">
+      <pins>
+        <pin iostandard="LVDS_25" loc="Y23"/>
+      </pins>
+    </port>
+    <port dir="in" name="sma_mgt_clkn">
+      <pins>
+        <pin loc="J7"/>
+      </pins>
+    </port>
+    <port dir="in" name="sma_mgt_clkp">
+      <pins>
+        <pin loc="J8"/>
+      </pins>
+    </port>
+    <port dir="in" name="sma_sfp_rxn">
+      <pins>
+        <pin loc="K5"/>
+      </pins>
+    </port>
+    <port dir="in" name="sma_sfp_rxp">
+      <pins>
+        <pin loc="K6"/>
+      </pins>
+    </port>
+    <port dir="out" name="sma_sfp_txn">
+      <pins>
+        <pin loc="K1"/>
+      </pins>
+    </port>
+    <port dir="out" name="sma_sfp_txp">
+      <pins>
+        <pin loc="K2"/>
+      </pins>
+    </port>
+    <port dir="in" name="sma_sgmii_rxn">
+      <pins>
+        <pin loc="K5"/>
+      </pins>
+    </port>
+    <port dir="in" name="sma_sgmii_rxp">
+      <pins>
+        <pin loc="K6"/>
+      </pins>
+    </port>
+    <port dir="out" name="sma_sgmii_txn">
+      <pins>
+        <pin loc="K1"/>
+      </pins>
+    </port>
+    <port dir="out" name="sma_sgmii_txp">
+      <pins>
+        <pin loc="K2"/>
+      </pins>
+    </port>
+    <port dir="out" name="sm_fan_pwm_net_vcc">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="L26"/>
+      </pins>
+    </port>
+    <port dir="in" name="SPI_IO0_I">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="P24"/>
+      </pins>
+    </port>
+    <port dir="out" name="SPI_IO0_O">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="P24"/>
+      </pins>
+    </port>
+    <port dir="out" name="SPI_IO0_T">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="P24"/>
+      </pins>
+    </port>
+    <port dir="in" name="SPI_IO1_I">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R25"/>
+      </pins>
+    </port>
+    <port dir="out" name="SPI_IO1_O">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R25"/>
+      </pins>
+    </port>
+    <port dir="out" name="SPI_IO1_T">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R25"/>
+      </pins>
+    </port>
+    <port dir="in" name="SPI_IO2_I">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R20"/>
+      </pins>
+    </port>
+    <port dir="out" name="SPI_IO2_O">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R20"/>
+      </pins>
+    </port>
+    <port dir="out" name="SPI_IO2_T">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R20"/>
+      </pins>
+    </port>
+    <port dir="in" name="SPI_IO3_I">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R21"/>
+      </pins>
+    </port>
+    <port dir="out" name="SPI_IO3_O">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R21"/>
+      </pins>
+    </port>
+    <port dir="out" name="SPI_IO3_T">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="R21"/>
+      </pins>
+    </port>
+    <port dir="in" left="0" name="SPI_SS_I" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="U19"/>
+      </pins>
+    </port>
+    <port dir="out" left="0" name="SPI_SS_O" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS25" loc="U19"/>
+      </pins>
+    </port>
+    <port dir="out" name="SPI_SS_T">
+      <pins>
+        <pin iostandard="LVCMOS25" loc="U19"/>
+      </pins>
+    </port>
+  </ports>
+
+</board_part>
