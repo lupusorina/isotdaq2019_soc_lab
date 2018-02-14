@@ -38,7 +38,19 @@ int main(){
 		 */
 
 		readOutDetector = i2c_getDataDetector(IIC_DEVICE_ID);
+		if (readOutDetector < THRESHOLD)
+		{
+			Xil_Out32(BLUE, 2*readOutDetector);
+			Xil_Out32(RED, 0);
+		}
 
+		if (readOutDetector > THRESHOLD)
+		{
+			Xil_Out32(RED, MAX_BRIGHTNESS);
+			Xil_Out32(BLUE, 0);
+		}
+
+		xil_printf("Value = %d \n\r", readOutDetector);
 	}
 	return 0;
 }
